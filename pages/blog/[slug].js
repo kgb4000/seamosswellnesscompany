@@ -197,7 +197,7 @@ const BlogContent = styled.main`
     }
     .avatar {
       max-width: 2.5rem;
-      border: 2px solid #000;
+      border: 2px solid #cf0a0a;
       border-radius: 100%;
     }
   }
