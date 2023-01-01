@@ -52,7 +52,7 @@ export default function Blog({ data }) {
         <div className="blog-container">
           {data.posts.map((post) => (
             <div key={post.slug}>
-              <Link href={`/blog/${post.slug}`} passHref>
+              <Link href={`/blog/${encodeURIComponent(post.slug)}`} passHref>
                 <div className="blog-posts">
                   <img
                     src={post.coverImage.url}
