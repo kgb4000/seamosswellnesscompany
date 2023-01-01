@@ -1,26 +1,25 @@
 export default {
-  title:
-    'Wedding Planner Maryland | Exclusive Events by Monica Browne Weddings',
+  title: 'See How Sea Moss can help you live | Sea Moss Wellness Company',
   description:
-    "Looking for a wedding planner in Maryland? We'll take care of everything, from finding the perfect venue to finding the best caterers. Call us today!",
-  canonical: 'https://monicabrowneweddings.com',
+    'A place to get learn all about Sea Moss. From recipes to DIY, weight loss, tips, and more, become part of the few who are already on the road to true self-discovery!',
+  canonical: 'https://seamosswellnessco.com',
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://monicabrowneweddings.com',
-    site_name: 'Monica Browne Weddings',
+    url: 'https://seamosswellnessco.com',
+    site_name: 'Sea Moss Wellness',
     images: [
       {
-        url: 'https://monicabrowneweddings.com/public/images/bride-with-flowers.webp',
+        url: 'https://seamosswellnessco.com/public/images/bride-with-flowers.webp',
         width: 1000,
         height: 1500,
-        alt: 'Beautiful bride with flowers.',
+        alt: 'Sea Moss Wellness Company.',
       },
     ],
   },
   twitter: {
-    handle: '@monicabrowneweddings',
-    site: '@monicabrowneweddings',
+    handle: '@seamosswellness',
+    site: '@seamosswellness',
     cardType: 'summary_large_image',
   },
 }

@@ -25,7 +25,7 @@ export default function Blog({ data }) {
     description:
       'This is a blog about sea moss and the wonders it can do for you and your body. Join our emial list today!',
     type: 'website',
-    canonical: 'https://seamosswellnessco.com/',
+    canonical: 'https://seamosswellnessco.com',
     openGraph: {
       title: 'Sea Moss Wellness Blog | Sea Moss Wellness Company',
       description:
@@ -36,7 +36,7 @@ export default function Blog({ data }) {
   return (
     <>
       <ArticleJsonLd
-        url="https://seamossWellnessco.com/"
+        url="https://seamosswellnessco.com"
         title="Blog"
         images={[]}
         authorName="Kester Browne"
