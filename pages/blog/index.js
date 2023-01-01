@@ -23,7 +23,7 @@ export default function Blog({ data }) {
     description:
       'This is the SEO Blog for Bowie SEO. Here we give customers free advice on improving their websites with search engine optimization.',
     type: 'website',
-    canonical: 'https://slamjunkremoval.com/blog',
+    canonical: 'https://seamosswellnessco.com/blog',
     openGraph: {
       title: 'Learn how SEO can help your business | Blog | Bowie SEO',
       description:
@@ -34,7 +34,7 @@ export default function Blog({ data }) {
   return (
     <>
       <ArticleJsonLd
-        url="https://bowieseo.com/blog"
+        url="https://seamosswellnessco.com/blog"
         title="Blog"
         images={[]}
         authorName="Kester Browne"
@@ -43,12 +43,9 @@ export default function Blog({ data }) {
       <NextSeo {...SEO} />
       <Nav />
       <section>
-        <div className="container">
+        <div className="top-blog-container">
           <h1 className="title">Sea Moss Health Blog</h1>
-          <p className="subtext">
-            Tips to help you navigate junk removal from your residence and
-            commerical properties.
-          </p>
+          <p className="subtext">Read my posts about sea moss.</p>
         </div>
       </section>
       <BlogMain>

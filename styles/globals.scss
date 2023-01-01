@@ -22,6 +22,12 @@ body {
   padding: 0 1.2rem;
 }
 
+.top-blog-container {
+  margin: 0 auto;
+  padding: 0 1.2rem;
+  text-align: center;
+}
+
 .container {
   @media (min-width: 540px) {
     max-width: 540px;
