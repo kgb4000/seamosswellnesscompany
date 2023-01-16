@@ -16,21 +16,24 @@ export const getStaticProps = async () => {
     props: {
       data,
     },
+    // Next.js will attempt to re-generate the page:
+    // - When a request comes in
+    // - At most once every 10 seconds
+    revalidate: 10, // In seconds
   }
 }
 
 export default function Blog({ data }) {
   const SEO = {
-    title: 'Sea Moss Wellness Blog | Sea Moss Wellness Company',
+    title: 'Sea Moss Wellness Blog | Sea Moss Wellness',
     description:
-      'This is a blog about sea moss and the wonders it can do for you and your body. Join our email list today!',
+      'Sea Moss Wellness is the ultimate source of holistic health tips using sea moss. Learn about sea moss and improve your mental and physical well-being!',
     type: 'website',
     canonical: 'https://seamosswellness.com',
     openGraph: {
       title: 'Sea Moss Wellness Blog | Sea Moss Wellness',
       description:
-        'This is a blog about sea moss and the wonders it can do for you and your body. Join our emial list today!',
-      type: 'website',
+        'Sea Moss Wellness is the ultimate source of holistic health tips using sea moss. Learn about sea moss and improve your mental and physical well-being!',
     },
   }
   return (
@@ -40,14 +43,15 @@ export default function Blog({ data }) {
         title="Blog"
         images={[]}
         authorName="Kester Browne"
-        description="This is a blog about sea moss and the wonders it can do for you and your body. Join our emial list today!"
+        description="Sea Moss Wellness is the ultimate source of holistic health tips using sea moss. Learn about sea moss and improve your mental and physical well-being!"
       />
       <NextSeo {...SEO} />
       <Nav />
       <section>
         <div className="header-container">
           <h1 className="title">
-            Learn how using sea moss can lead you to healthier living!
+            Learn how using sea moss can improve your mental and physical
+            well-being!
           </h1>
         </div>
       </section>

@@ -14,20 +14,25 @@ export const getStaticProps = async () => {
     props: {
       data,
     },
+    // Next.js will attempt to re-generate the page:
+    // - When a request comes in
+    // - At most once every 10 seconds
+    revalidate: 10, // In seconds
   }
 }
 
 export default function Blog({ data }) {
   const SEO = {
-    title: 'Learn how SEO can help your business | Blog | Bowie SEO',
+    title:
+      'Sea Moss Health Blog | Learn about the health benefits of sea moss.',
     description:
-      'This is the SEO Blog for Bowie SEO. Here we give customers free advice on improving their websites with search engine optimization.',
+      'Learn about sea moss and its nutritional health benefits. Get advice on how using sea moss can help improve your mental and physical well-being.',
     type: 'website',
     canonical: 'https://seamosswellness.com/blog',
     openGraph: {
-      title: 'Learn how SEO can help your business | Blog | Bowie SEO',
-      description:
-        'This is the SEO Blog for Bowie SEO. Here we give customers free advice on improving their websites with search engine optimization.',
+      title:
+        'Sea Moss Health Blog | Learn about the health benefits of sea moss.',
+      description: `Learn about sea moss and its nutritional health benefits. Get advice on how using sea moss can help improve your mental and physical well-being.`,
       type: 'website',
     },
   }
@@ -38,14 +43,16 @@ export default function Blog({ data }) {
         title="Blog"
         images={[]}
         authorName="Kester Browne"
-        description="This is the SEO Blog for Bowie SEO. Here we give customers free advice on improving their websites with search engine optimization."
+        description="This is the Sea Moss Wellness blog. Learn about sea moss and its nutritional health benefits. Get advice on how using sea moss can help improve your mental and physical well-being."
       />
       <NextSeo {...SEO} />
       <Nav />
       <section>
         <div className="top-blog-container">
           <h1 className="title">Sea Moss Health Blog</h1>
-          <p className="subtext">Read my posts about sea moss.</p>
+          <p className="subtext">
+            Read my posts about sea moss and learn about it's health benefits.
+          </p>
         </div>
       </section>
       <BlogMain>
