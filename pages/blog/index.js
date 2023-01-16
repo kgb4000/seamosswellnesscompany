@@ -23,7 +23,7 @@ export default function Blog({ data }) {
     description:
       'This is the SEO Blog for Bowie SEO. Here we give customers free advice on improving their websites with search engine optimization.',
     type: 'website',
-    canonical: 'https://seamosswellnessco.com/blog',
+    canonical: 'https://seamosswellness.com/blog',
     openGraph: {
       title: 'Learn how SEO can help your business | Blog | Bowie SEO',
       description:
@@ -34,7 +34,7 @@ export default function Blog({ data }) {
   return (
     <>
       <ArticleJsonLd
-        url="https://seamosswellnessco.com/blog"
+        url="https://seamosswellness.com/blog"
         title="Blog"
         images={[]}
         authorName="Kester Browne"

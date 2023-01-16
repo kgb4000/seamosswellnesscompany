@@ -32,11 +32,11 @@ const FooterSection = () => {
               </nav>
             </div>
             <p> Sea Moss Wellness Company &copy;{new Date().getFullYear()}</p>
-            <p>
+            {/* <p>
               <Link href="/terms-of-service" passHref>
                 Terms of Service
               </Link>
-            </p>
+            </p> */}
             <p>Privacy Policy</p>
           </LowerFooter>
         </div>

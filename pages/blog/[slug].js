@@ -96,7 +96,7 @@ const Articles = ({ post }) => {
               </div>
               <div className="date">
                 <BiStopwatch />
-                <p>02 min read</p>
+                <p>{post.readTime}</p>
               </div>
             </div>
             <div className="author-info">
@@ -110,11 +110,11 @@ const Articles = ({ post }) => {
             </div>
           </div>
           <ShareBtn
-            shareLink={`https://seamosswellnessco.com/blog/${post.slug}`}
+            shareLink={`https://seamosswellness.com/blog/${post.slug}`}
           />
           <RichText content={post.content.raw} />
           <ShareBtn
-            shareLink={`https://seamosswellnessco.com/blog/${post.slug}`}
+            shareLink={`https://seamosswellness.com/blog/${post.slug}`}
           />
           <Bio
             authorImg={post.author.photo.url}

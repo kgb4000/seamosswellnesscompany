@@ -23,11 +23,11 @@ export default function Blog({ data }) {
   const SEO = {
     title: 'Sea Moss Wellness Blog | Sea Moss Wellness Company',
     description:
-      'This is a blog about sea moss and the wonders it can do for you and your body. Join our emial list today!',
+      'This is a blog about sea moss and the wonders it can do for you and your body. Join our email list today!',
     type: 'website',
-    canonical: 'https://seamosswellnessco.com',
+    canonical: 'https://seamosswellness.com',
     openGraph: {
-      title: 'Sea Moss Wellness Blog | Sea Moss Wellness Company',
+      title: 'Sea Moss Wellness Blog | Sea Moss Wellness',
       description:
         'This is a blog about sea moss and the wonders it can do for you and your body. Join our emial list today!',
       type: 'website',
@@ -36,7 +36,7 @@ export default function Blog({ data }) {
   return (
     <>
       <ArticleJsonLd
-        url="https://seamosswellnessco.com"
+        url="https://seamosswellness.com"
         title="Blog"
         images={[]}
         authorName="Kester Browne"
@@ -47,8 +47,7 @@ export default function Blog({ data }) {
       <section>
         <div className="header-container">
           <h1 className="title">
-            Learn how using sea weed and sea moss can lead you to healthier
-            living!
+            Learn how using sea moss can lead you to healthier living!
           </h1>
         </div>
       </section>
@@ -81,7 +80,7 @@ export default function Blog({ data }) {
                         </div>
                         <div className="date">
                           <BiStopwatch />
-                          <p>02 min read</p>
+                          <p>{post.readTime}</p>
                         </div>
                       </div>
                       <div className="author-info">
@@ -124,9 +123,12 @@ const BlogMain = styled.main`
   }
 
   .blog-posts {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 3rem;
     img {
       max-width: 100%;
+      display: block;
     }
   }
 
@@ -172,7 +174,4 @@ const BlogMain = styled.main`
   }
 `
 
-const Card = styled.div`
-  display: flex;
-  flex: 1 1 auto;
-`
+const Card = styled.div``
