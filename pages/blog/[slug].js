@@ -20,7 +20,7 @@ export const getStaticProps = async ({ params }) => {
     // Next.js will attempt to re-generate the page:
     // - When a request comes in
     // - At most once every 10 seconds
-    revalidate: 10, // In seconds
+    revalidate: 30, // In seconds
   }
 }
 
@@ -30,7 +30,7 @@ export const getStaticPaths = async () => {
   console.log(slugs)
   return {
     paths: slugs.map((slug) => ({ params: { slug: slug.slug } })),
-    fallback: false,
+    fallback: 'blocking',
   }
 }
 
