@@ -38,8 +38,8 @@ const Articles = ({ post }) => {
   const SEO = {
     title: post.title,
     description: post.description,
-    url: `https://seamosswellnessco.com/blog/${post.slug}`,
-    canonical: `https://seamosswellnessco.com/blog/${post.slug}`,
+    url: `https://seamosswellness.com/blog/${post.slug}`,
+    canonical: `https://seamosswellness.com/blog/${post.slug}`,
     type: 'article',
     openGraph: {
       type: 'article',
@@ -57,14 +57,14 @@ const Articles = ({ post }) => {
         },
       ],
       locale: 'en_US',
-      url: `https://seamosswellnessco.com/blog/${post.slug}`,
+      url: `https://seamosswellness.com/blog/${post.slug}`,
       site_name: 'Sea Moss Wellness',
     },
   }
   return (
     <>
       <ArticleJsonLd
-        url={`https://seamosswellnessco.com/blog/${post.slug}`}
+        url={`https://seamosswellness.com/blog/${post.slug}`}
         title={post.title}
         images={[post.coverImage.url]}
         alt={post.title}
@@ -72,7 +72,7 @@ const Articles = ({ post }) => {
         authorName={[post.author.name]}
         authorImg={post.author.photo.url}
         publisherName={post.author.name}
-        publisherLogo="https://seamosswellnessco.com/public/images/logo.jpg"
+        publisherLogo="https://seamosswellness.com/public/images/logo.jpg"
         description={post.excerpt}
       />
       <NextSeo {...SEO} />
