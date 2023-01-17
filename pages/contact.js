@@ -21,6 +21,7 @@ const Contact = () => {
           </Form>
         </div>
       </div>
+      <FooterSection />
     </>
   )
 }

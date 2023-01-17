@@ -50,13 +50,11 @@ export default function Blog({ data }) {
       <section>
         <div className="header-container">
           <h1 className="title">
-            Learn how using sea moss can improve your mental and physical
-            well-being!
+            Learn how sea moss can improve your mental and physical well-being!
           </h1>
         </div>
       </section>
       <BlogMain>
-        <h2 className="blog-title">Recent Posts</h2>
         <div className="container">
           {data.posts.map((post) => (
             <div key={post.slug}>

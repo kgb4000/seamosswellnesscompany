@@ -9,7 +9,7 @@ const FooterSection = () => {
           <h2>Get my latest posts delivered right to your inbox</h2>
           <form>
             <input type="text" placeholder="Email" />
-            <button>Join today!</button>
+            <input type="submit" value="Join today!" />
           </form>
           <LowerFooter>
             <div className="menu">
@@ -63,11 +63,15 @@ const Footer = styled.footer`
     padding: 1rem;
     margin-bottom: 0.5rem;
     text-align: center;
+    border: none;
   }
 
-  button {
+  input[type='submit'] {
     width: 100%;
     padding: 1rem;
+    border: none;
+    color: #fff;
+    background-color: #d63031;
   }
 `
 
