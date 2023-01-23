@@ -47,66 +47,69 @@ export default function Blog({ data }) {
       />
       <NextSeo {...SEO} />
       <Nav />
-      <section>
-        <div className="header-container">
-          <h1 className="title">
-            Learn how sea moss can improve your mental and physical well-being!
-          </h1>
-        </div>
-      </section>
-      <BlogMain>
-        <div className="container">
-          {data.posts.map((post) => (
-            <div key={post.slug}>
-              <Link href={`/blog/${post.slug}`} passHref>
-                <Card>
-                  <div className="blog-posts">
-                    <img
-                      src={post.coverImage.url}
-                      alt={post.title}
-                      loading="lazy"
-                      title={post.title}
-                    />
-                    <div className="blog-info">
-                      <h2>{post.title}</h2>
-                      <div className="date-time">
-                        <div className="date">
-                          <BiCalendar />
-                          <p>
-                            {new Date(post.date).toLocaleDateString('en-us', {
-                              year: 'numeric',
-                              month: 'short',
-                              day: 'numeric',
-                            })}
-                          </p>
+      <div className="content">
+        <section>
+          <div className="header-container">
+            <h1 className="title">
+              Learn how sea moss can improve your mental and physical
+              well-being!
+            </h1>
+          </div>
+        </section>
+        <BlogMain>
+          <div className="container">
+            {data.posts.map((post) => (
+              <div key={post.slug}>
+                <Link href={`/${post.slug}`} passHref>
+                  <Card>
+                    <div className="blog-posts">
+                      <img
+                        src={post.coverImage.url}
+                        alt={post.title}
+                        loading="lazy"
+                        title={post.title}
+                      />
+                      <div className="blog-info">
+                        <h2>{post.title}</h2>
+                        <div className="date-time">
+                          <div className="date">
+                            <BiCalendar />
+                            <p>
+                              {new Date(post.date).toLocaleDateString('en-us', {
+                                year: 'numeric',
+                                month: 'short',
+                                day: 'numeric',
+                              })}
+                            </p>
+                          </div>
+                          <div className="date">
+                            <BiStopwatch />
+                            <p>{post.readTime}</p>
+                          </div>
                         </div>
-                        <div className="date">
-                          <BiStopwatch />
-                          <p>{post.readTime}</p>
+                        <div className="author-info">
+                          <img
+                            className="avatar"
+                            src={post.author.photo.url}
+                            alt={post.author.name}
+                            loading="lazy"
+                          />
+                          <span>- by {post.author.name}</span>
                         </div>
-                      </div>
-                      <div className="author-info">
-                        <img
-                          className="avatar"
-                          src={post.author.photo.url}
-                          alt={post.author.name}
-                          loading="lazy"
-                        />
-                        <span>- by {post.author.name}</span>
                       </div>
                     </div>
-                  </div>
-                </Card>
-              </Link>
-            </div>
-          ))}
-        </div>
-        <div className="center">
-          <Link href="/blog" passHref>
-            <Button>View more posts</Button>
-          </Link>
-        </div>
-      </BlogMain>
+                  </Card>
+                </Link>
+              </div>
+            ))}
+          </div>
+          <div className="center">
+            <Link href="/blog" passHref>
+              <Button>View more posts</Button>
+            </Link>
+          </div>
+        </BlogMain>
+      </div>
       <FooterSection />
     </>
   )

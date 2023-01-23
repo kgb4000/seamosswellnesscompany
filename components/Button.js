@@ -10,6 +10,7 @@ const Button = styled.button`
   text-transform: uppercase;
   cursor: pointer;
   font-weight: 700;
+  height: 60px;
 `
 
 export default Button

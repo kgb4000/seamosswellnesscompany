@@ -1,12 +1,12 @@
 import { getPost, getPosts, getPostsSlugs } from '/lib/data'
-import Nav from '../../components/Nav'
-import Button from '../../components/Button'
+import Nav from '../components/Nav'
+import Button from '../components/Button'
 import { RichText } from '@graphcms/rich-text-react-renderer'
 import { NextSeo, ArticleJsonLd } from 'next-seo'
-import Bio from '../../components/Bio'
-import ShareBtn from '../../components/ShareBtn'
+import Bio from '../components/Bio'
+import ShareBtn from '../components/ShareBtn'
 import styled from 'styled-components'
-import Footer from '../../components/FooterSection'
+import Footer from '../components/FooterSection'
 import { BiCalendar, BiStopwatch } from 'react-icons/bi'
 
 export const getStaticProps = async ({ params }) => {
@@ -38,8 +38,8 @@ const Articles = ({ post }) => {
   const SEO = {
     title: post.title,
     description: post.description,
-    url: `https://seamosswellness.com/blog/${post.slug}`,
-    canonical: `https://seamosswellness.com/blog/${post.slug}`,
+    url: `https://seamosswellness.com/${post.slug}`,
+    canonical: `https://seamosswellness.com/${post.slug}`,
     type: 'article',
     openGraph: {
       type: 'article',
@@ -57,14 +57,14 @@ const Articles = ({ post }) => {
         },
       ],
       locale: 'en_US',
-      url: `https://seamosswellness.com/blog/${post.slug}`,
+      url: `https://seamosswellness.com/${post.slug}`,
       site_name: 'Sea Moss Wellness',
     },
   }
   return (
     <>
       <ArticleJsonLd
-        url={`https://seamosswellness.com/blog/${post.slug}`}
+        url={`https://seamosswellness.com/${post.slug}`}
         title={post.title}
         images={[post.coverImage.url]}
         alt={post.title}
@@ -113,13 +113,9 @@ const Articles = ({ post }) => {
               <span>- by {post.author.name}</span>
             </div>
           </div>
-          <ShareBtn
-            shareLink={`https://seamosswellness.com/blog/${post.slug}`}
-          />
+          <ShareBtn shareLink={`https://seamosswellness.com/${post.slug}`} />
           <RichText content={post.content.raw} />
-          <ShareBtn
-            shareLink={`https://seamosswellness.com/blog/${post.slug}`}
-          />
+          <ShareBtn shareLink={`https://seamosswellness.com/${post.slug}`} />
           <Bio
             authorImg={post.author.photo.url}
             authorBio={post.author.bio}

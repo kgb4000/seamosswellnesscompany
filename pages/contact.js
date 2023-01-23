@@ -2,10 +2,23 @@ import React from 'react'
 import Nav from '../components/Nav'
 import FooterSection from '../components/FooterSection'
 import styled from 'styled-components'
+import { NextSeo } from 'next-seo'
 
 const Contact = () => {
+  const SEO = {
+    title: 'Contact us | Sea Moss Wellness',
+    description: `Want to learn more about sea moss, or want to send us a message? Contact us today!`,
+    type: 'website',
+    canonical: 'https://seamosswellness.com/contact',
+    openGraph: {
+      title: 'Contact us | Sea Moss Wellness',
+      description: `Want to learn more about sea moss, or want to send us a message? Contact us today!`,
+      type: 'website',
+    },
+  }
   return (
     <>
+      <NextSeo {...SEO} />
       <Nav />
       <div className="content">
         <div className="container">

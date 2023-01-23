@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import styled from 'styled-components'
+import Button from './Button'
 
 const FooterSection = () => {
   return (
@@ -9,7 +10,7 @@ const FooterSection = () => {
           <h2>Get my latest posts delivered right to your inbox</h2>
           <form>
             <input type="text" placeholder="Email" />
-            <input type="submit" value="Join today!" />
+            <FormButton type="submit">Join today!</FormButton>
           </form>
           <LowerFooter>
             <div className="menu">
@@ -73,6 +74,10 @@ const Footer = styled.footer`
     color: #fff;
     background-color: #d63031;
   }
+`
+
+const FormButton = styled(Button)`
+  width: 100%;
 `
 
 const LowerFooter = styled.div`

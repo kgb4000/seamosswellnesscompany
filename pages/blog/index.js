@@ -47,36 +47,38 @@ export default function Blog({ data }) {
       />
       <NextSeo {...SEO} />
       <Nav />
-      <section>
-        <div className="top-blog-container">
-          <h1 className="title">Sea Moss Health Blog</h1>
-          <p className="subtext">
-            Read my posts about sea moss and learn about it's health benefits.
-          </p>
-        </div>
-      </section>
-      <BlogMain>
-        <div className="blog-container">
-          {data.posts.map((post) => (
-            <div key={post.slug}>
-              <Link href={`/blog/${post.slug}`} passHref>
-                <div className="blog-posts">
-                  <img
-                    src={post.coverImage.url}
-                    alt={post.title}
-                    loading="lazy"
-                    title={post.title}
-                  />
-                  <div className="blog-info">
-                    <h2>{post.title}</h2>
-                    <p>Read more</p>
+      <div className="content">
+        <section>
+          <div className="top-blog-container">
+            <h1 className="title">Sea Moss Health Blog</h1>
+            <p className="subtext">
+              Read my posts about sea moss and learn about it's health benefits.
+            </p>
+          </div>
+        </section>
+        <BlogMain>
+          <div className="blog-container">
+            {data.posts.map((post) => (
+              <div key={post.slug}>
+                <Link href={`/${post.slug}`} passHref>
+                  <div className="blog-posts">
+                    <img
+                      src={post.coverImage.url}
+                      alt={post.title}
+                      loading="lazy"
+                      title={post.title}
+                    />
+                    <div className="blog-info">
+                      <h2>{post.title}</h2>
+                      <p>Read more</p>
+                    </div>
                   </div>
-                </div>
-              </Link>
-            </div>
-          ))}
-        </div>
-      </BlogMain>
+                </Link>
+              </div>
+            ))}
+          </div>
+        </BlogMain>
+      </div>
       <Footer />
     </>
   )
