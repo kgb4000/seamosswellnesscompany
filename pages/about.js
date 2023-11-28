@@ -3,7 +3,7 @@ import Nav from '../components/Nav'
 import { NextSeo } from 'next-seo'
 import FooterSection from '../components/FooterSection'
 
-const About = () => {
+const About = ({ totalItems }) => {
   const SEO = {
     title: 'About us | Sea Moss Wellness',
     description: `Want to learn more about sea moss, or want to send us a message? Contact us today!`,
@@ -18,7 +18,7 @@ const About = () => {
   return (
     <>
       <NextSeo {...SEO} />
-      <Nav />
+      <Nav totalItems={totalItems} />
       <div className="content">
         <div className="container">
           <h1 className="center">About Sea Moss Wellness</h1>

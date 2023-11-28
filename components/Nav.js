@@ -1,8 +1,11 @@
+import { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import Link from 'next/link'
-import { FaBars } from 'react-icons/fa'
+import { FaShoppingCart } from 'react-icons/fa'
 
-const Nav = () => {
+import commerce from '../utils/commerce' //Commerece instance
+
+const Nav = ({ totalItems }) => {
   return (
     <>
       <div className="nav-container">
@@ -14,11 +17,6 @@ const Nav = () => {
           </div>
           <nav>
             <ul className="nav">
-              <li>
-                <Link href="/" passHref>
-                  Home
-                </Link>
-              </li>
               <li>
                 <Link href="/about" passHref>
                   About
@@ -36,7 +34,6 @@ const Nav = () => {
               </li>
             </ul>
           </nav>
-          <FaBars />
         </TopNav>
       </div>
     </>
