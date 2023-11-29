@@ -229,10 +229,8 @@ export default function Blog({ data }) {
       <div className="content">
         <section>
           <div className="top-blog-container">
-            <h1 className="title">Sea Moss Health Blog</h1>
-            <p className="subtext">
-              Read my posts about sea moss and learn about it's health benefits.
-            </p>
+            <h1 className="title">Sea Moss Wellnes Blog</h1>
+            <p className="subtext">A blog about everything sea moss</p>
           </div>
         </section>
         <BlogMain>

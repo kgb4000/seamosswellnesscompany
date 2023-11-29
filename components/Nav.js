@@ -70,7 +70,7 @@ const TopNav = styled.header`
       display: none;
       @media (min-width: 1024px) {
         display: flex;
-        width: 300px;
+        width: 150px;
         justify-content: space-between;
         align-items: center;
         list-style-type: none;

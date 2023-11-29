@@ -18,7 +18,7 @@ const About = ({ totalItems }) => {
   return (
     <>
       <NextSeo {...SEO} />
-      <Nav totalItems={totalItems} />
+      <Nav />
       <div className="content">
         <div className="container">
           <h1 className="center">About Sea Moss Wellness</h1>
@@ -47,9 +47,11 @@ const About = ({ totalItems }) => {
           <p>
             Our products are carefully curated from sustainable sources and
             crafted with love in order to bring you the best possible
-            experience. We are also dedicated to the education of our customers,
-            providing valuable information on the benefits and uses of each
-            product.
+            experience.
+          </p>
+          <p>
+            We are also dedicated to the education of our customers, providing
+            valuable information on the benefits and uses of each product.
           </p>
           <p>
             At Sea Moss Wellness, we are committed to providing you with natural
