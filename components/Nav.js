@@ -1,11 +1,8 @@
 import { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import Link from 'next/link'
-import { FaShoppingCart } from 'react-icons/fa'
 
-import commerce from '../utils/commerce' //Commerece instance
-
-const Nav = ({ totalItems }) => {
+const Nav = () => {
   return (
     <>
       <div className="nav-container">
