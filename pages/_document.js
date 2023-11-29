@@ -37,11 +37,7 @@ export default class MyDocument extends Document {
           /> */}
           <link rel="preconnect" href="https://fonts.gstatic.com"></link>
           <link
-            href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400&display=swap"
-            rel="stylesheet"
-          ></link>
-          <link
-            href="https://fonts.googleapis.com/css2?family=Crete+Round:wght@400&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;700;900&display=swap"
             rel="stylesheet"
           ></link>
         </Head>

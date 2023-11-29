@@ -10,7 +10,7 @@ body {
 }
 
 body {
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   font-size: 1rem;
@@ -66,22 +66,38 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Crete Round', serif;
+  font-family: 'Poppins', sans-serif;
   line-height: 1.65;
   letter-spacing: 0.5px;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
 }
 
 h1 {
-  font-size: 2.8rem;
+  font-size: 2.8em;
+  line-height: 1.2;
+  @media (min-width: 1024px) {
+    font-size: 4em;
+  }
 }
 
 h2 {
-  font-size: 2.2rem;
+  font-size: 2.2em;
+  @media (min-width: 1024px) {
+    font-size: 3em;
+  }
 }
 
 h3 {
-  font-size: 1.8rem;
+  font-size: 1.5em;
+  @media (min-width: 1024px) {
+    font-size: 2em;
+  }
+}
+h4 {
+  font-size: 1.2em;
+  @media (min-width: 1024px) {
+    font-size: 1.8em;
+  }
 }
 
 p,
