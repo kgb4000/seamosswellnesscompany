@@ -51,8 +51,7 @@ export default function Blog({ data }) {
         <section>
           <div className="header-container">
             <h1 className="title">
-              Learn how sea moss can improve your mental and physical
-              well-being!
+              Learn How Sea Moss Can Improve Your Overall Health!
             </h1>
           </div>
         </section>
@@ -116,7 +115,7 @@ export default function Blog({ data }) {
 }
 
 const BlogMain = styled.main`
-  margin-bottom: 2rem;
+  margin: 2rem 0;
   .blog-title {
     margin: 2rem;
     text-align: center;
