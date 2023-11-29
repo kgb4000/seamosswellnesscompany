@@ -80,12 +80,12 @@ const Articles = ({ post }) => {
       <BlogContent>
         <div className="blog-container">
           <h1 className="title">{post.title}</h1>
-          <img
+          {/* <img
             src={[post.coverImage.url]}
             alt={post.title}
             title={post.title}
             loading="lazy"
-          />
+          /> */}
           <div className="blog-info">
             <div className="date-time">
               <div className="date">
@@ -137,6 +137,15 @@ const BlogContent = styled.main`
     padding: 0 1.2rem;
 
     h1 {
+      font-size: 3em;
+      margin-bottom: 1rem;
+    }
+    h2 {
+      font-size: 2em;
+      margin-bottom: 1rem;
+    }
+    h3 {
+      font-size: 1.7em;
       margin-bottom: 1rem;
     }
 
@@ -155,12 +164,12 @@ const BlogContent = styled.main`
     .blog-info {
       margin-bottom: 1rem;
     h2 {
-      font-size: 1.75rem;
+      font-size: 1.75em;
     }
 
     p,
     span {
-      font-size: 1rem;
+      font-size: 1em;
       margin-bottom: 0;
     }
 
@@ -170,17 +179,19 @@ const BlogContent = styled.main`
       align-items: center;
 
       p {
-        margin-left: 0.5rem;
+        margin-left: 0.5em;
       }
     }
 
     .date-time {
       display: flex;
+      justify-content: center;
     }
 
     .author-info {
       margin-top: 1rem;
       display: flex;
+      justify-content: center;
       align-items: center;
       
 

@@ -20,11 +20,6 @@ const Nav = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/blog" passHref>
-                  Blog
-                </Link>
-              </li>
-              <li>
                 <Link href="/contact" passHref>
                   Contact
                 </Link>
