@@ -115,6 +115,7 @@ const Articles = ({ post }) => {
           </div>
           <ShareBtn shareLink={`https://seamosswellness.com/${post.slug}`} />
           <RichText content={post.content.raw} />
+          {/* <RichText content={post.references.raw} /> */}
           <ShareBtn shareLink={`https://seamosswellness.com/${post.slug}`} />
           <Bio
             authorImg={post.author.photo.url}
