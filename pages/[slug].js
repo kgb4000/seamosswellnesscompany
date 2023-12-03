@@ -1,4 +1,5 @@
-import { getPost, getPosts, getPostsSlugs } from '/lib/data'
+import { useState } from 'react'
+import { getPost, getPosts, getPostsSlugs, getRecentPosts } from '/lib/data'
 import Nav from '../components/Nav'
 import Button from '../components/Button'
 import { RichText } from '@graphcms/rich-text-react-renderer'
@@ -34,7 +35,7 @@ export const getStaticPaths = async () => {
   }
 }
 
-const Articles = ({ post }) => {
+const Articles = ({ post, recentPosts }) => {
   const SEO = {
     title: post.title,
     description: post.description,
@@ -61,6 +62,7 @@ const Articles = ({ post }) => {
       site_name: 'Sea Moss Wellness',
     },
   }
+  console.log('yo')
   return (
     <>
       <ArticleJsonLd
@@ -122,6 +124,12 @@ const Articles = ({ post }) => {
             authorBio={post.author.bio}
             authorName={post.author.name}
           />
+          <h3>Other Posts You May Like</h3>
+          {/* {recentPosts.map((post) => {
+            ;<div key={post.title}>
+              <p>{post.title}</p>
+            </div>
+          })} */}
         </div>
       </BlogContent>
       <Footer />
