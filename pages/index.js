@@ -6,6 +6,7 @@ import { getPosts } from '../lib/data'
 import { ArticleJsonLd, NextSeo } from 'next-seo'
 import Nav from '../components/Nav'
 import Footer from '../components/FooterSection'
+import Image from 'next/image'
 
 export const getStaticProps = async () => {
   const data = await getPosts()
@@ -60,7 +61,7 @@ export default function Blog({ data }) {
               <div key={post.slug}>
                 <Link href={`/${post.slug}`} passHref>
                   <div className="blog-posts">
-                    <img
+                    <Image
                       src={post.coverImage.url}
                       alt={post.atlText}
                       loading="lazy"

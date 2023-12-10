@@ -1,7 +1,5 @@
-import { useState } from 'react'
-import { getPost, getPosts, getPostsSlugs, getRecentPosts } from '/lib/data'
+import { getPost, getPosts, getPostsSlugs } from '/lib/data'
 import Nav from '../components/Nav'
-import Button from '../components/Button'
 import { RichText } from '@graphcms/rich-text-react-renderer'
 import { NextSeo, ArticleJsonLd } from 'next-seo'
 import Bio from '../components/Bio'
@@ -9,6 +7,7 @@ import ShareBtn from '../components/ShareBtn'
 import styled from 'styled-components'
 import Footer from '../components/FooterSection'
 import { BiCalendar, BiStopwatch } from 'react-icons/bi'
+import Image from 'next/image'
 
 export const getStaticProps = async ({ params }) => {
   const post = await getPost(params.slug)
@@ -106,7 +105,7 @@ const Articles = ({ post, recentPosts }) => {
               </div>
             </div>
             <div className="author-info">
-              <img
+              <Image
                 className="avatar"
                 src={post.author.photo.url}
                 alt={post.author.name}
