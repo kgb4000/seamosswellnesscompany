@@ -117,19 +117,12 @@ const Articles = ({ post, recentPosts }) => {
           </div>
           <ShareBtn shareLink={`https://seamosswellness.com/${post.slug}`} />
           <RichText content={post.content.raw} />
-          {/* <RichText content={post.references.raw} /> */}
           <ShareBtn shareLink={`https://seamosswellness.com/${post.slug}`} />
           <Bio
             authorImg={post.author.photo.url}
             authorBio={post.author.bio}
             authorName={post.author.name}
           />
-          <h3>Other Posts You May Like</h3>
-          {/* {recentPosts.map((post) => {
-            ;<div key={post.title}>
-              <p>{post.title}</p>
-            </div>
-          })} */}
         </div>
       </BlogContent>
       <Footer />
