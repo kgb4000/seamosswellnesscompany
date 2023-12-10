@@ -62,7 +62,7 @@ export default function Blog({ data }) {
                   <div className="blog-posts">
                     <img
                       src={post.coverImage.url}
-                      alt={post.coverImage.atlText}
+                      alt={post.coverImage.altText}
                       loading="lazy"
                       title={post.title}
                     />
