@@ -5,10 +5,9 @@ import Button from './Button'
 const FooterSection = () => {
   return (
     <>
-      footer
-      {/* <Footer>
+      <Footer>
         <div className="footer-container">
-          <p>Get my latest posts delivered right to your inbox</p>
+          <p>Get our latest posts delivered right to your inbox</p>
           <form>
             <input type="text" placeholder="Email" />
             <FormButton type="submit">Join today!</FormButton>
@@ -30,16 +29,16 @@ const FooterSection = () => {
                 </ul>
               </nav>
             </div>
-            <p> Sea Moss Wellness Company &copy;{new Date().getFullYear()}</p> */}
-      {/* <p>
+            <p> Sea Moss Wellness Company &copy;{new Date().getFullYear()}</p>
+            {/* <p>
               <Link href="/terms-of-service" passHref>
                 Terms of Service
               </Link>
             </p> */}
-      {/* <p>Privacy Policy</p>
+            <p>Privacy Policy</p>
           </LowerFooter>
         </div>
-      </Footer> */}
+      </Footer>
     </>
   )
 }
