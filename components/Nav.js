@@ -1,33 +1,30 @@
-import { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import Link from 'next/link'
 
 const Nav = () => {
   return (
     <>
-      <div className="nav-container">
-        <TopNav>
-          <div className="logo">
-            <Link href="/" passHref>
-              Sea Moss Wellness
-            </Link>
-          </div>
-          <nav>
-            <ul className="nav">
-              <li>
-                <Link href="/about" passHref>
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact" passHref>
-                  Contact
-                </Link>
-              </li>
-            </ul>
-          </nav>
-        </TopNav>
-      </div>
+      <TopNav>
+        <div className="logo">
+          <Link href="/" passHref>
+            Sea Moss Wellness
+          </Link>
+        </div>
+        <nav>
+          <ul className="nav">
+            <li>
+              <Link href="/about" passHref>
+                About
+              </Link>
+            </li>
+            <li>
+              <Link href="/contact" passHref>
+                Contact
+              </Link>
+            </li>
+          </ul>
+        </nav>
+      </TopNav>
     </>
   )
 }

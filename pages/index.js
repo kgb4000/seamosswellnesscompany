@@ -47,14 +47,14 @@ export default function Blog({ data }) {
       />
       <NextSeo {...SEO} />
       <Nav />
-      <div className="content">
-        <section>
-          <div className="top-blog-container">
-            <h1 className="title">Sea Moss Wellness Blog</h1>
-            <p className="subtext">A blog about everything sea moss</p>
-          </div>
-        </section>
-        <BlogMain>
+      <BlogMain>
+        <div className="content">
+          <section>
+            <div className="top-blog-container">
+              <h1 className="title">Sea Moss Wellness Blog</h1>
+              <p className="subtext">A blog about everything sea moss</p>
+            </div>
+          </section>
           <div className="blog-container">
             {data.posts.map((post) => (
               <div key={post.slug}>
@@ -75,8 +75,8 @@ export default function Blog({ data }) {
               </div>
             ))}
           </div>
-        </BlogMain>
-      </div>
+        </div>
+      </BlogMain>
       <Footer />
     </>
   )

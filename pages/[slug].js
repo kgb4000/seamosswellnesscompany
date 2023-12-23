@@ -16,10 +16,6 @@ export const getStaticProps = async ({ params }) => {
       post: post.posts[0],
       data,
     },
-    // Next.js will attempt to re-generate the page:
-    // - When a request comes in
-    // - At most once every 10 seconds
-    revalidate: 30, // In seconds
   }
 }
 
@@ -29,11 +25,11 @@ export const getStaticPaths = async () => {
   console.log(slugs)
   return {
     paths: slugs.map((slug) => ({ params: { slug: slug.slug } })),
-    fallback: 'blocking',
+    fallback: false,
   }
 }
 
-const Articles = ({ post, recentPosts }) => {
+const Articles = ({ post }) => {
   const SEO = {
     title: post.title,
     description: post.description,
@@ -60,7 +56,6 @@ const Articles = ({ post, recentPosts }) => {
       site_name: 'Sea Moss Wellness',
     },
   }
-  console.log('yo')
   return (
     <>
       <ArticleJsonLd
@@ -139,16 +134,36 @@ const BlogContent = styled.main`
     padding: 0 1.2rem;
 
     h1 {
-      font-size: 3em;
+      font-size: 2.5em;
       margin-bottom: 1rem;
+      
+      @media (min-width: 1024px) {
+        font-size: 3em;
+      }
     }
     h2 {
       font-size: 2em;
       margin-bottom: 1rem;
+
+      @media (min-width: 1024px) {
+        font-size: 2.5em;
+      }
     }
     h3 {
-      font-size: 1.7em;
+      font-size: 1.8em;
       margin-bottom: 1rem;
+
+      @media (min-width: 1024px) {
+        font-size: 2em;
+      }
+    }
+    h4 {
+      font-size: 1.6em;
+      margin-bottom: 1rem;
+
+      @media (min-width: 1024px) {
+        font-size: 1.2em;
+      }
     }
 
     ul,

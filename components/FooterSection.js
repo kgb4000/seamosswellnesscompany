@@ -5,9 +5,10 @@ import Button from './Button'
 const FooterSection = () => {
   return (
     <>
-      <Footer>
+      footer
+      {/* <Footer>
         <div className="footer-container">
-          <h2>Get my latest posts delivered right to your inbox</h2>
+          <p>Get my latest posts delivered right to your inbox</p>
           <form>
             <input type="text" placeholder="Email" />
             <FormButton type="submit">Join today!</FormButton>
@@ -29,16 +30,16 @@ const FooterSection = () => {
                 </ul>
               </nav>
             </div>
-            <p> Sea Moss Wellness Company &copy;{new Date().getFullYear()}</p>
-            {/* <p>
+            <p> Sea Moss Wellness Company &copy;{new Date().getFullYear()}</p> */}
+      {/* <p>
               <Link href="/terms-of-service" passHref>
                 Terms of Service
               </Link>
             </p> */}
-            <p>Privacy Policy</p>
+      {/* <p>Privacy Policy</p>
           </LowerFooter>
         </div>
-      </Footer>
+      </Footer> */}
     </>
   )
 }
@@ -49,6 +50,13 @@ const Footer = styled.footer`
   .footer-container {
     max-width: 400px;
     margin: 0 auto;
+  }
+
+  p {
+    font-size: 1.8em;
+    @media (min-width: 1024px) {
+      font-size: 2.5em;
+    }
   }
   padding: 1.2rem;
   text-align: center;

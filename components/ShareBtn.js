@@ -8,7 +8,7 @@ import {
 const ShareBtn = ({ shareLink }) => {
   return (
     <>
-      <SocialContainer>
+      {/* <SocialContainer>
         <div className="social-btns">
           <div className="facebook-btn">
             <FacebookShareButton url={shareLink}>
@@ -26,7 +26,7 @@ const ShareBtn = ({ shareLink }) => {
             </TwitterShareButton>
           </div>
         </div>
-      </SocialContainer>
+      </SocialContainer> */}
     </>
   )
 }
