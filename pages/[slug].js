@@ -1,4 +1,4 @@
-import { getPost, getPosts, getPostsSlugs } from '/lib/data'
+import { getPost, getPosts, getPostsSlugs, getRelatedPosts } from '/lib/data'
 import Nav from '../components/Nav'
 import { RichText } from '@graphcms/rich-text-react-renderer'
 import { NextSeo, ArticleJsonLd } from 'next-seo'
@@ -7,6 +7,7 @@ import ShareBtn from '../components/ShareBtn'
 import styled from 'styled-components'
 import Footer from '../components/FooterSection'
 import { BiCalendar, BiStopwatch } from 'react-icons/bi'
+import Link from 'next/link'
 
 export const getStaticProps = async ({ params }) => {
   const post = await getPost(params.slug)
@@ -29,7 +30,7 @@ export const getStaticPaths = async () => {
   }
 }
 
-const Articles = ({ post }) => {
+const Articles = ({ post, data }) => {
   const SEO = {
     title: post.title,
     description: post.description,
@@ -120,6 +121,7 @@ const Articles = ({ post }) => {
           />
         </div>
       </BlogContent>
+
       <Footer />
     </>
   )
@@ -136,7 +138,7 @@ const BlogContent = styled.main`
     h1 {
       font-size: 2.5em;
       margin-bottom: 1rem;
-      
+
       @media (min-width: 1024px) {
         font-size: 3em;
       }
@@ -178,8 +180,8 @@ const BlogContent = styled.main`
       margin-bottom: 1rem;
     }
   }
-    .blog-info {
-      margin-bottom: 1rem;
+  .blog-info {
+    margin-bottom: 1rem;
     h2 {
       font-size: 1.75em;
     }
@@ -210,11 +212,10 @@ const BlogContent = styled.main`
       display: flex;
       justify-content: center;
       align-items: center;
-      
 
       img {
-      margin-bottom: 0;
-    }
+        margin-bottom: 0;
+      }
       span {
         margin-left: 0.5rem;
       }
@@ -224,6 +225,8 @@ const BlogContent = styled.main`
       border: 2px solid #cf0a0a;
       border-radius: 100%;
     }
-  }
+
+    li {
+    list-style-type: none;
   }
 `
