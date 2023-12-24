@@ -7,7 +7,7 @@ const FooterSection = () => {
     <>
       <Footer>
         <div className="footer-container">
-          <p>Get our latest posts delivered right to your inbox</p>
+          <p>Get My Latest Post Delivered Right To Your Inbox</p>
           <form>
             <input type="text" placeholder="Email" />
             <FormButton type="submit">Join today!</FormButton>
