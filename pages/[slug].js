@@ -76,12 +76,6 @@ const Articles = ({ post, data }) => {
       <BlogContent>
         <div className="blog-container">
           <h1 className="title">{post.title}</h1>
-          {/* <img
-            src={[post.coverImage.url]}
-            alt={post.title}
-            title={post.title}
-            loading="lazy"
-          /> */}
           <div className="blog-info">
             <div className="date-time">
               <div className="date">
