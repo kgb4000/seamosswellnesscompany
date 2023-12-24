@@ -29,7 +29,7 @@ const FooterSection = () => {
                 </ul>
               </nav>
             </div>
-            <p> Sea Moss Wellness Company &copy;{new Date().getFullYear()}</p>
+
             {/* <p>
               <Link href="/terms-of-service" passHref>
                 Terms of Service
@@ -39,6 +39,16 @@ const FooterSection = () => {
           </LowerFooter>
         </div>
       </Footer>
+      <div className="container">
+        <p className="center">
+          The content in this website is not medical advice and it’s intended
+          for informational and educational purposes only.{' '}
+        </p>
+        <p className="center">
+          {' '}
+          Sea Moss Wellness Company &copy;{new Date().getFullYear()}
+        </p>
+      </div>
     </>
   )
 }
