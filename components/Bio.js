@@ -16,7 +16,7 @@ export const getStaticProps = async ({ params }) => {
 export default function Bio({ authorName, authorImg, authorBio }) {
   return (
     <>
-      {/* <BioSection>
+      <BioSection>
         <div className="solution-container">
           <img src={authorImg} alt={authorName} loading="lazy" />
           <div>
@@ -24,7 +24,7 @@ export default function Bio({ authorName, authorImg, authorBio }) {
             <p>{authorBio}</p>
           </div>
         </div>
-      </BioSection> */}
+      </BioSection>
     </>
   )
 }
