@@ -72,7 +72,6 @@ const Articles = ({ post, data }) => {
         description={post.excerpt}
       />
       <NextSeo {...SEO} />
-      <Nav />
       <BlogContent>
         <div className="blog-container">
           <h1 className="title">{post.title}</h1>
@@ -115,8 +114,6 @@ const Articles = ({ post, data }) => {
           />
         </div>
       </BlogContent>
-
-      <Footer />
     </>
   )
 }

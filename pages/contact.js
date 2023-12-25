@@ -19,7 +19,6 @@ const Contact = () => {
   return (
     <>
       <NextSeo {...SEO} />
-      <Nav />
       <div className="content">
         <div className="container">
           <h1 className="center">Contact us</h1>
@@ -34,7 +33,6 @@ const Contact = () => {
           </Form>
         </div>
       </div>
-      <FooterSection />
     </>
   )
 }

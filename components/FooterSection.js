@@ -7,7 +7,7 @@ const FooterSection = () => {
     <>
       <Footer>
         <div className="footer-container">
-          <p>Get My Latest Post Delivered Right To Your Inbox</p>
+          <p>Get my latest post delivered right to your inbox.</p>
           <form>
             <input type="text" placeholder="Email" />
             <FormButton type="submit">Join today!</FormButton>
@@ -29,42 +29,56 @@ const FooterSection = () => {
                 </ul>
               </nav>
             </div>
-
-            {/* <p>
-              <Link href="/terms-of-service" passHref>
+            <p>
+              <Link href="/terms-of-service" target="_blank">
                 Terms of Service
               </Link>
-            </p> */}
-            <p>Privacy Policy</p>
+            </p>
+            <Link href="/privacy-policy" target="_blank">
+              Privacy Policy
+            </Link>
           </LowerFooter>
         </div>
-      </Footer>
-      <div className="container">
+
+        <Disclaimer>
+          <div className="container">
+            <p className="center">
+              The content in this website is not medical advice and it’s
+              intended for informational and educational purposes only. Read our
+              disclaimer{' '}
+              <Link href="/disclaimer" target="_blank">
+                here
+              </Link>
+              .
+            </p>
+          </div>
+        </Disclaimer>
         <p className="center">
-          The content in this website is not medical advice and it’s intended
-          for informational and educational purposes only.{' '}
-        </p>
-        <p className="center">
-          {' '}
           Sea Moss Wellness Company &copy;{new Date().getFullYear()}
         </p>
-      </div>
+      </Footer>
     </>
   )
 }
 
 export default FooterSection
+const Disclaimer = styled.div`
+  p {
+    font-size: 1em;
+  }
+`
 
 const Footer = styled.footer`
   .footer-container {
-    max-width: 400px;
+    max-width: 500px;
     margin: 0 auto;
   }
 
   p {
-    font-size: 1.8em;
+    font-size: 1em;
     @media (min-width: 1024px) {
-      font-size: 2.5em;
+      font-size: 1em;
+      margin: 2em 0;
     }
   }
   padding: 1.2rem;
@@ -78,7 +92,8 @@ const Footer = styled.footer`
     padding: 1rem;
     margin-bottom: 0.5rem;
     text-align: center;
-    border: none;
+    border: 1px solid #ddd;
+    border-radius: 10px;
   }
 
   input[type='submit'] {

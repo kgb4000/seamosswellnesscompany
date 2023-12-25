@@ -46,7 +46,6 @@ export default function Blog({ data }) {
         description="This is the Sea Moss Wellness blog. Learn about sea moss and its nutritional health benefits. Get advice on how using sea moss can help improve your mental and physical well-being."
       />
       <NextSeo {...SEO} />
-      <Nav />
       <BlogMain>
         <div className="content">
           <section>
@@ -77,7 +76,6 @@ export default function Blog({ data }) {
           </div>
         </div>
       </BlogMain>
-      <Footer />
     </>
   )
 }

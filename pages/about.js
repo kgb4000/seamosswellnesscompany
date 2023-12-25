@@ -1,9 +1,7 @@
 import React from 'react'
-import Nav from '../components/Nav'
 import { NextSeo } from 'next-seo'
-import FooterSection from '../components/FooterSection'
 
-const About = ({ totalItems }) => {
+const About = () => {
   const SEO = {
     title: 'About us | Sea Moss Wellness',
     description: `Want to learn more about sea moss, or want to send us a message? Contact us today!`,
@@ -18,7 +16,6 @@ const About = ({ totalItems }) => {
   return (
     <>
       <NextSeo {...SEO} />
-      <Nav />
       <div className="content">
         <div className="container">
           <h1 className="center">About Sea Moss Wellness</h1>
@@ -67,7 +64,6 @@ const About = ({ totalItems }) => {
           <p>Kester.</p>
         </div>
       </div>
-      <FooterSection />
     </>
   )
 }

@@ -50,7 +50,7 @@ const TopNav = styled.header`
   .logo a {
     color: #000;
     text-decoration: none;
-    font-weight: 900;
+    font-weight: 700;
   }
 
   nav {
