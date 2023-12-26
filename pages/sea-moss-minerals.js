@@ -90,8 +90,8 @@ const SeaMossMinerals = () => {
               </p>
               <p>There is no scientific data to back this up.</p>
               <p>
-                Some sea moss, depending on the body of water, can contain
-                traces of mercury, lead, arcenic and more.
+                Some sea moss, depending on the body of water it grows in, can
+                contain traces of mercury, lead, arcenic and more.
               </p>
               <p>
                 These heavy metals and elements and not good for your health.
@@ -810,32 +810,34 @@ const SeaMossMinerals = () => {
                 collagen and keratin, vital for healthy skin, hair, and nails.
               </p>
               <p>
-                Sulfur compounds in the body contribute to the strength and
+                Sulfur compounds in the body also contribute to the strength and
                 elasticity of connective tissue, promoting joint and skin
                 health.
               </p>
               <p>
                 Additionally, sulfur is involved in various metabolic processes,
-                including detoxification, where it aids in removing toxins and
-                waste products from the body.
+                including detoxification, where helps remove toxins and waste
+                products from the body.
               </p>
               <p>
-                Additionally, balanced thyroid function, supported by sufficient
-                iodine, is critical in preventing conditions like goiter
-                (thyroid gland enlargement) and hypothyroidism (underactive
-                thyroid), which can lead to fatigue, weight gain, and other
-                health issues.
+                This detoxifying effect also play a role in helps liver health
+                and can improve overall health.
               </p>
               <p>
-                This detoxifying effect benefits liver health and can improve
-                overall bodily function. Sulfur also has anti-inflammatory
-                properties, which can be advantageous for conditions like
-                arthritis, helping to reduce joint pain and inflammation.
+                Sulfur also has anti-inflammatory properties, which can be
+                advantageous for conditions like arthritis, helping to reduce
+                joint pain and inflammation.
               </p>
+              <p>Sulfur can be particularly beneficial for skin health.</p>
               <p>
-                The sulfur content in sea moss can be particularly beneficial
-                for skin health. It's known to have antimicrobial properties,
-                making it helpful in treating skin conditions like{' '}
+                It's known to have{' '}
+                <a
+                  href="https://www.who.int/news-room/fact-sheets/detail/antimicrobial-resistance#:~:text=Antimicrobials%20%E2%80%93%20including%20antibiotics%2C%20antivirals%2C,longer%20respond%20to%20antimicrobial%20medicines."
+                  target="_blank"
+                >
+                  antimicrobial properties
+                </a>
+                , making it helpful in treating skin conditions like{' '}
                 <Link href="/sea-moss-for-acne" target="_blank">
                   acne
                 </Link>
@@ -913,58 +915,6 @@ const SeaMossMinerals = () => {
               </p>
             </div>
           </div>
-          {/* <div className="grid">
-            <img
-              src="/images/raw-purple-sea-moss.webp"
-              alt="Raw purple sea moss."
-              className="grid-image-1"
-            />
-            <div className="grid-text-1">
-              <h3>#13. Silicon</h3>
-              <p>
-                Silicon forms and maintains connective tissues, including bones,
-                skin, hair, and nails.
-              </p>
-              <p>
-                Its role in collagen synthesis contributes to the strength and
-                elasticity of these tissues, making it vital for bone health,
-                wound healing, and overall skin integrity.
-              </p>
-              <p>
-                Silicon's impact on collagen is beneficial for maintaining
-                youthful skin and bone mineralization and bone health, aiding in
-                the prevention of bone-related diseases like osteoporosis.
-              </p>
-              <p>
-                Additionally, silicon forms compounds called glycosaminoglycans.
-                These compounds provide support and structure to connective
-                tissues and are essential for joint health.
-              </p>
-              <p>
-                Incorporating sea moss into the diet for its silicon content can
-                benefit connective tissue health.
-              </p>
-              <p>
-                This is especially relevant for individuals concerned with skin
-                aging, as silicon helps maintain skin elasticity and reduces the
-                appearance of fine lines and wrinkles.
-              </p>
-              <p>
-                Furthermore, silicon promotes strength and can prevent
-                brittleness for hair and nail health.
-              </p>
-              <p>
-                Beyond its structural roles, silicon also plays a part in the
-                cardiovascular system; it helps maintain the elasticity of blood
-                vessel walls, contributing to cardiovascular health.
-              </p>
-              <p>
-                While silicon is not as widely discussed as other minerals, its
-                presence in sea moss adds to the superfood's diverse nutritional
-                profile.
-              </p>
-            </div>
-          </div> */}
         </div>
         <ShareBtn shareLink={`https://seamosswellness.com/sea-moss-minerals`} />
       </Section>
