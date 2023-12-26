@@ -30,7 +30,7 @@ const SeaMossMinerals = () => {
       </Section>
       <Section>
         <div className="wide-container">
-          <div className="flex">
+          <div className="grid-top">
             <div>
               <h2>What is Sea Moss?</h2>
               <p>
@@ -262,7 +262,7 @@ const SeaMossMinerals = () => {
           <div className="grid">
             <img
               src="/images/full-spectrum-sea-moss.webp"
-              alt="raw-gold-sea-moss"
+              alt="Full spectrum sea moss."
               className="grid-image-2"
             />
             <div className="grid-text-2">
@@ -333,7 +333,7 @@ const SeaMossMinerals = () => {
           <div className="grid">
             <img
               src="/images/raw-gold-sea-moss.webp"
-              alt="raw-gold-sea-moss"
+              alt="Raw gold sea moss."
               className="grid-image-1"
             />
             <div className="grid-text-1">
@@ -407,7 +407,7 @@ const SeaMossMinerals = () => {
           <div className="grid">
             <img
               src="/images/full-spectrum-sea-moss.webp"
-              alt="raw-gold-sea-moss"
+              alt="Full spectrum sea moss."
               className="grid-image-2"
             />
             <div className="grid-text-2">
@@ -471,7 +471,415 @@ const SeaMossMinerals = () => {
               </p>
             </div>
           </div>
+          <div className="grid">
+            <img
+              src="/images/raw-gold-sea-moss.webp"
+              alt="Raw gold sea moss."
+              className="grid-image-1"
+            />
+            <div className="grid-text-1">
+              <h3>#7. Manganese</h3>
+              <p>
+                Manganese offers several health benefits and is essential for
+                various physiological processes.
+              </p>
+              <p>
+                It plays a critical role in bone health, a component of the
+                enzyme required for bone and cartilage formation.
+              </p>
+              <p>
+                This makes manganese essential not only for bone growth but also
+                for bone strength and repair.
+              </p>
+              <p>
+                Additionally, manganese is involved in the metabolism of amino
+                acids, cholesterol, glucose, and carbohydrates, which are vital
+                for energy production and overall metabolic health.
+              </p>
+              <p>
+                It also acts as a cofactor for several enzymes, including those
+                involved in wound healing.
+              </p>
+              <p>
+                It has antioxidant properties due to its role in the formation
+                of superoxide dismutase (SOD).
+              </p>
+              <p>This enzyme helps fight free radicals.</p>
+              <p>
+                Beyond its direct health benefits, manganese in sea moss
+                supports the body's overall functioning in several ways.
+              </p>
+              <p>
+                For instance, it plays a role in blood clotting, working with
+                vitamin K and other nutrients to aid in forming blood clots
+                necessary for wound healing.
+              </p>
+              <p>
+                Manganese also contributes to the nervous system's health; it
+                synthesizes neurotransmitters crucial for brain function and
+                mental health.
+              </p>
+              <p>
+                Furthermore, its antioxidant properties make it beneficial in
+                combating oxidative stress, which is linked to a range of
+                chronic diseases, including aging and various neurodegenerative
+                disorders.
+              </p>
+            </div>
+          </div>
+          <div className="grid">
+            <img
+              src="/images/raw-green-sea-moss.webp"
+              alt="Raw green sea moss."
+              className="grid-image-2"
+            />
+            <div className="grid-text-2">
+              <h3>#8. Copper</h3>
+              <p>
+                Copper plays a significant role in various bodily functions,
+                offering a range of health benefits.
+              </p>
+              <p>
+                One of its primary roles is forming healthy red blood cells and
+                maintaining healthy blood vessels, nerves, immune systems, and
+                bones.
+              </p>
+              <p>
+                Copper is a critical component of hemoglobin and collagen, two
+                fundamental proteins in the body.
+              </p>
+              <p>
+                Hemoglobin is necessary for transporting oxygen in the blood,
+                while collagen is vital for skin, bone, and connective tissue
+                health.
+              </p>
+              <p>
+                Also, copper acts as an antioxidant, helping to reduce the
+                damage caused by free radicals, and is involved in energy
+                production at the cellular level.
+              </p>
+              <p>
+                It also plays a crucial role in brain development and function,
+                aiding in neurotransmitter production, which affects mood and
+                cognitive performance.
+              </p>
+              <p>
+                Copper also works synergistically with iron to form red blood
+                cells and reduce the risk of anemia.
+              </p>
+              <p>
+                This synergy is vital for maintaining energy levels and
+                preventing fatigue. Copper is also essential for maintaining a
+                strong and healthy immune system, aiding the body in fighting
+                off infections and promoting faster wound healing.
+              </p>
+              <p>
+                In addition to these benefits, adequate copper intake is linked
+                to cardiovascular health, as it helps maintain the health of
+                blood vessels and the heart.
+              </p>
+              <p>
+                It's essential, however, to consume copper in moderation, as
+                both deficiency and excess can lead to health issues.
+              </p>
+              <p>
+                Particularly for individuals with conditions affecting copper
+                metabolism, such as Wilson's disease, it's crucial to manage
+                copper intake carefully.
+              </p>
+            </div>
+          </div>
+          <div className="grid">
+            <img
+              src="/images/raw-purple-sea-moss.webp"
+              alt="Raw purple sea moss."
+              className="grid-image-1"
+            />
+            <div className="grid-text-1">
+              <h3>#9 Selenium</h3>
+              <p>
+                Selenium offers numerous health benefits due to its critical
+                role in various bodily functions.
+              </p>
+              <p>
+                It is best known for its antioxidant properties, which help
+                protect cells from damage caused by free radicals.
+              </p>
+              <p>
+                These molecules can contribute to the development of chronic
+                diseases like heart disease and cancer.
+              </p>
+              <p>
+                It also has anti-inflammatory properties, which can be
+                beneficial in reducing the symptoms of conditions like asthma
+                and arthritis.
+              </p>
+              <p>
+                Selenium is essential for the immune system to function
+                adequately, boosting the body's defense against infections,
+                illnesses, and stress.
+              </p>
+              <p>
+                It also plays a vital role in maintaining a healthy thyroid
+                gland by producing thyroid hormones crucial for regulating
+                metabolism, growth, and energy production.
+              </p>
+              <p>
+                Furthermore, selenium supports reproductive health, contributes
+                to fertility in both men and women and is involved in DNA
+                synthesis, which is vital for cell growth and repair.
+              </p>
+              <p>
+                Incorporating sea moss into the diet can be an effective way to
+                boost selenium intake naturally.
+              </p>
+              <p>
+                This is particularly beneficial given the synergistic effect of
+                selenium with other nutrients found in sea moss, such as iodine,
+                which is also essential for thyroid health.
+              </p>
+              <p>
+                Adequate selenium intake is associated with a reduced risk of
+                certain types of cancer, and its antioxidant action may help
+                slow down aging processes and protect against heart disease and
+                cognitive decline.
+              </p>
+            </div>
+          </div>
+          <div className="grid">
+            <img
+              src="/images/full-spectrum-sea-moss.webp"
+              alt="Full spectrum sea moss."
+              className="grid-image-2"
+            />
+            <div className="grid-text-2">
+              <h3>#10 Iodine</h3>
+              <p>
+                Iodine is a vital mineral primarily known for its crucial role
+                in thyroid health.
+              </p>
+              <p>
+                The thyroid gland uses iodine to produce thyroid hormones
+                essential for regulating metabolism, body temperature, and
+                energy production.
+              </p>
+              <p>
+                These hormones are also vital for proper brain development
+                during pregnancy and infancy, making adequate iodine intake
+                essential for expecting mothers and young children.
+              </p>
+              <p>
+                Iodine's role in thyroid function extends to maintaining healthy
+                skin, hair, and nails, as thyroid hormones influence the growth
+                and repair of these tissues.
+              </p>
+              <p>
+                Additionally, balanced thyroid function, supported by sufficient
+                iodine, is critical in preventing conditions like goiter
+                (thyroid gland enlargement) and hypothyroidism (underactive
+                thyroid), which can lead to fatigue, weight gain, and other
+                health issues.
+              </p>
+              <p>
+                As a natural source of iodine, sea moss can be particularly
+                beneficial in supporting thyroid health and overall well-being.
+              </p>
+              <p>
+                Its iodine content helps maintain the body's metabolic rate,
+                ensuring efficient energy utilization and aiding in losing
+                weight.
+              </p>
+              <p>
+                Furthermore, for individuals following vegetarian or vegan
+                diets, which might lack adequate iodine sources, incorporating
+                sea moss can effectively supplement this essential mineral.
+              </p>
+              <p>
+                However, consuming iodine in moderation is crucial, as both
+                deficiency and excess can lead to thyroid problems.
+              </p>
+              <p>
+                Excessive iodine intake, for example, can cause hyperthyroidism
+                (overactive thyroid) or worsen existing thyroid conditions.
+              </p>
+            </div>
+          </div>
+          <div className="grid">
+            <img
+              src="/images/raw-gold-sea-moss.webp"
+              alt="Raw gold sea moss."
+              className="grid-image-1"
+            />
+            <div className="grid-text-1">
+              <h3>#11 Sulfur</h3>
+              <p>
+                Although less talked about than other minerals, sulfur is a
+                crucial component in sea moss and offers several health
+                benefits.
+              </p>
+              <p>
+                It plays an essential role in synthesizing amino acids, the
+                building blocks of proteins, and is necessary for producing
+                collagen and keratin, vital for healthy skin, hair, and nails.
+              </p>
+              <p>
+                Sulfur compounds in the body contribute to the strength and
+                elasticity of connective tissue, promoting joint and skin
+                health.
+              </p>
+              <p>
+                Additionally, sulfur is involved in various metabolic processes,
+                including detoxification, where it aids in removing toxins and
+                waste products from the body.
+              </p>
+              <p>
+                Additionally, balanced thyroid function, supported by sufficient
+                iodine, is critical in preventing conditions like goiter
+                (thyroid gland enlargement) and hypothyroidism (underactive
+                thyroid), which can lead to fatigue, weight gain, and other
+                health issues.
+              </p>
+              <p>
+                This detoxifying effect benefits liver health and can improve
+                overall bodily function. Sulfur also has anti-inflammatory
+                properties, which can be advantageous for conditions like
+                arthritis, helping to reduce joint pain and inflammation.
+              </p>
+              <p>
+                The sulfur content in sea moss can be particularly beneficial
+                for skin health. It's known to have antimicrobial properties,
+                making it helpful in treating skin conditions like{' '}
+                <Link href="/sea-moss-for-acne" target="_blank">
+                  acne
+                </Link>
+                , eczema, and psoriasis.
+              </p>
+              <p>
+                Sulfur helps balance oil production in the skin, reducing
+                clogged pores and promoting a clear complexion.
+              </p>
+              <p>
+                For hair health, sulfur from sea moss can contribute to
+                stronger, thicker hair by supporting keratin production.
+              </p>
+              <p>
+                Moreover, the presence of sulfur in sea moss complements its
+                other nutrients, like vitamins and antioxidants, enhancing
+                overall health benefits.
+              </p>
+            </div>
+          </div>
+          <div className="grid">
+            <img
+              src="/images/raw-green-sea-moss.webp"
+              alt="Raw green sea moss."
+              className="grid-image-2"
+            />
+            <div className="grid-text-2">
+              <h3>#12. Phosphorus</h3>
+              <p>
+                Phosphorus, a mineral abundant in sea moss, is critical in
+                various bodily functions and offers significant health benefits.
+              </p>
+              <p>
+                It is primarily known for contributing to bone health, as it is
+                a critical component of bones and teeth, working alongside
+                calcium to strengthen and maintain their structure.
+              </p>
+              <p>
+                This synergistic relationship is essential for bone formation
+                and preserving bone density, making phosphorus crucial for
+                preventing conditions like osteoporosis.
+              </p>
+              <p>
+                Besides its role in bone health, phosphorus is vital for forming
+                ATP (adenosine triphosphate), the body's primary energy
+                molecule.
+              </p>
+              <p>
+                This makes phosphorus necessary for overall energy levels and
+                cellular function. ATP is required for every bodily process,
+                including muscle contractions and nerve signaling.
+              </p>
+              <p>
+                In addition to these roles, phosphorus in sea moss contributes
+                to effective digestion and nutrient utilization.
+              </p>
+              <p>
+                It aids in the breakdown of carbohydrates and fats, playing a
+                role in the body's metabolism.
+              </p>
+              <p>
+                Phosphorus is also a component of DNA and RNA, the molecules
+                responsible for genetic information and cellular function,
+                underscoring its importance in growth and repair processes.
+              </p>
+              <p>
+                Furthermore, phosphorus maintains the body's pH balance. It
+                facilitates using other vitamins and minerals, like vitamin D
+                and iodine, enhancing their absorption and efficacy.
+              </p>
+              <p>
+                Phosphorus in sea moss and other essential minerals makes it a
+                valuable dietary addition, especially for individuals looking to
+                support bone health and energy metabolism.
+              </p>
+            </div>
+          </div>
+          <div className="grid">
+            <img
+              src="/images/raw-purple-sea-moss.webp"
+              alt="Raw purple sea moss."
+              className="grid-image-1"
+            />
+            <div className="grid-text-1">
+              <h3>#13. Silicon</h3>
+              <p>
+                Silicon forms and maintains connective tissues, including bones,
+                skin, hair, and nails.
+              </p>
+              <p>
+                Its role in collagen synthesis contributes to the strength and
+                elasticity of these tissues, making it vital for bone health,
+                wound healing, and overall skin integrity.
+              </p>
+              <p>
+                Silicon's impact on collagen is beneficial for maintaining
+                youthful skin and bone mineralization and bone health, aiding in
+                the prevention of bone-related diseases like osteoporosis.
+              </p>
+              <p>
+                Additionally, silicon forms compounds called glycosaminoglycans.
+                These compounds provide support and structure to connective
+                tissues and are essential for joint health.
+              </p>
+              <p>
+                Incorporating sea moss into the diet for its silicon content can
+                benefit connective tissue health.
+              </p>
+              <p>
+                This is especially relevant for individuals concerned with skin
+                aging, as silicon helps maintain skin elasticity and reduces the
+                appearance of fine lines and wrinkles.
+              </p>
+              <p>
+                Furthermore, silicon promotes strength and can prevent
+                brittleness for hair and nail health.
+              </p>
+              <p>
+                Beyond its structural roles, silicon also plays a part in the
+                cardiovascular system; it helps maintain the elasticity of blood
+                vessel walls, contributing to cardiovascular health.
+              </p>
+              <p>
+                While silicon is not as widely discussed as other minerals, its
+                presence in sea moss adds to the superfood's diverse nutritional
+                profile.
+              </p>
+            </div>
+          </div>
         </div>
+        <ShareBtn shareLink={`https://seamosswellness.com/sea-moss-minerals`} />
       </Section>
     </>
   )
@@ -480,11 +888,7 @@ const SeaMossMinerals = () => {
 export default SeaMossMinerals
 
 const Section = styled.section`
-  .flex {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-  }
+  margin-bottom: 5em;
   .wide-container {
     max-width: 1540px;
     margin: 0 auto;
@@ -496,10 +900,13 @@ const Section = styled.section`
   }
 
   .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    align-items: center;
+    @media (min-width: 1028px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+    }
   }
 
   .grid-text-1 {
