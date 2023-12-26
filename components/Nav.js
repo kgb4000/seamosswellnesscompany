@@ -34,7 +34,7 @@ export default Nav
 const TopNav = styled.header`
   height: 100px;
   line-height: 100px;
-  max-width: 900px;
+  max-width: 1540px;
   padding: 0 1.2rem;
   margin: 0 auto;
   display: flex;

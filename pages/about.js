@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import { NextSeo } from 'next-seo'
 
 const About = () => {
@@ -26,7 +27,8 @@ const About = () => {
           </p>
           <p>
             We believe in nourishing our bodies with whole foods that are rich
-            in minerals, vitamins, and other essential nutrients.
+            in <Link href="/sea-moss-minerals">minerals</Link>, vitamins, and
+            other essential nutrients.
           </p>
           <p>
             We strive to provide information and products that support healthy

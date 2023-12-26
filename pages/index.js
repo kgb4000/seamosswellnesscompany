@@ -51,7 +51,10 @@ export default function Blog({ data }) {
           <section>
             <div className="top-blog-container">
               <h1 className="title">Sea Moss Wellness Blog</h1>
-              <p className="subtext">A blog about everything sea moss</p>
+              <p className="subtext">
+                A blog about the health benefits you can get by adding sea moss
+                to your diet
+              </p>
             </div>
           </section>
           <div className="blog-container">
@@ -81,15 +84,12 @@ export default function Blog({ data }) {
 }
 
 const BlogMain = styled.main`
-  margin-top: 2rem;
+
   .blog-container {
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 4em auto;
     padding: 0 1.2rem;
-    margin-bottom: 4rem;
-  }
-  h1 {
-    text-align: center;
+    margin-bottom: 2em;
   }
 
   .blog-info {

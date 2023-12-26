@@ -1,13 +1,10 @@
 import { getPost, getPosts, getPostsSlugs, getRelatedPosts } from '/lib/data'
-import Nav from '../components/Nav'
 import { RichText } from '@graphcms/rich-text-react-renderer'
 import { NextSeo, ArticleJsonLd } from 'next-seo'
 import Bio from '../components/Bio'
 import ShareBtn from '../components/ShareBtn'
 import styled from 'styled-components'
-import Footer from '../components/FooterSection'
 import { BiCalendar, BiStopwatch } from 'react-icons/bi'
-import Link from 'next/link'
 
 export const getStaticProps = async ({ params }) => {
   const post = await getPost(params.slug)
