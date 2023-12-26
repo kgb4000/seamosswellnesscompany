@@ -27,16 +27,22 @@ const SeaMossMinerals = () => {
             alt="Sea moss minerals."
           />
         </div>
+        <ShareBtn shareLink={`https://seamosswellness.com/sea-moss-minerals`} />
       </Section>
+
       <Section>
         <div className="wide-container">
           <div className="grid-top">
             <div>
               <h2>What is Sea Moss?</h2>
               <p>
-                Sea moss, also known as Irish moss, is a type of red algae found
-                worldwide. You can find sea moss in Africa, Asia, the Caribbean,
-                South America, and on the coasts of the North Atlantic.
+                Sea moss, also known as{' '}
+                <Link href="/irish-moss-vs-sea-moss">Irish moss</Link>, is a
+                type of red algae found worldwide.
+              </p>
+              <p>
+                You can find sea moss in Africa, Asia, the Caribbean, South
+                America, and on the coasts of the North Atlantic.
               </p>
               <p>
                 This nutritional powerhouse is gaining popularity in health and
@@ -69,12 +75,78 @@ const SeaMossMinerals = () => {
           </div>
         </div>
       </Section>
-      <ShareBtn shareLink={`https://seamosswellness.com/sea-moss-minerals`} />
       <Section>
         <div className="wide-container">
-          <div className="section-header">
-            <h2>Sea Moss Minerals: What Are They?</h2>
-            <p>Raw sea moss contains:</p>
+          <div className="grid">
+            <img
+              src="/images/sea-moss-92-minerals.jpeg"
+              alt="Sea moss minerals."
+              className="grid-image-2"
+            />
+            <div>
+              <h2>What Are The 92 Minerals In Sea Moss?</h2>
+              <p>
+                Sea moss <b>doesn't have 92 minerals</b> that your body needs.
+              </p>
+              <p>There is no scientific data to back this up.</p>
+              <p>
+                Some sea moss, depending on the body of water, can contain
+                traces of mercury, lead, arcenic and more.
+              </p>
+              <p>
+                These heavy metals and elements and not good for your health.
+              </p>
+
+              <p>
+                According to the{' '}
+                <a
+                  href="https://fdc.nal.usda.gov/fdc-app.html#/food-details/168456/nutrients"
+                  target="_blank"
+                >
+                  US Department of Agriculture
+                </a>
+                , one serving of sea moss contains 12 minerals that your body
+                needs.
+              </p>
+              <p>These minerals include:</p>
+              <ul className="grid">
+                <li>Calcium</li>
+                <li>Magnesium</li>
+                <li>Potassium</li>
+                <li>Sodium</li>
+                <li>Zinc</li>
+                <li>Iron</li>
+                <li>Maganese</li>
+                <li>Copper</li>
+                <li>Selenium</li>
+                <li>Iodine</li>
+                <li>Sulfur</li>
+                <li>Phosphorus</li>
+              </ul>
+              <p>
+                The myth of sea moss containing 92 minerals might be attributed
+                to marketing strategies rather than factual evidence.
+              </p>
+              <p>
+                This false marketing emphasises the need for consumers to
+                critically assess health claims and seek information from
+                credible sources.
+              </p>
+            </div>
+          </div>
+        </div>
+      </Section>
+      <Section>
+        <div className="wide-container">
+          <div className="section-header grid">
+            <img
+              src="/images/raw-green-sea-moss.webp"
+              alt="raw-green-sea-moss"
+              className="grid-image-2"
+            />
+            <h2>
+              Sea Moss Minerals: What Are They and What Do They Do For You Body?
+            </h2>
           </div>
           <div className="grid">
             <img
@@ -83,7 +155,7 @@ const SeaMossMinerals = () => {
               className="grid-image-1"
             />
             <div className="grid-text-1">
-              <h3>#1. Calcium</h3>
+              <h3>#1. Calcium (7.2mg)</h3>
               <p>
                 Calcium is vital in maintaining various aspects of human health.
               </p>
@@ -93,8 +165,14 @@ const SeaMossMinerals = () => {
                 preventing conditions like osteoporosis.
               </p>
               <p>
-                Calcium's role extends to the cardiovascular system, which aids
-                in regulating blood.
+                Calcium's role extends to the{' '}
+                <a
+                  href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5620030/"
+                  target="_blank"
+                >
+                  cardiovascular system
+                </a>
+                , which aids in regulating blood.
               </p>
               <p>
                 It's also essential for muscle function and nerve signaling,
@@ -157,7 +235,14 @@ const SeaMossMinerals = () => {
               </p>
               <p>
                 It also contributes significantly to bone health, working with
-                calcium to strengthen bones and prevent osteoporosis.
+                calcium to{' '}
+                <a
+                  href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4586582/"
+                  target="_blank"
+                >
+                  strengthen bones
+                </a>{' '}
+                and prevent osteoporosis.
               </p>
               <p>
                 For mental health, magnesium is known to regulate
@@ -176,10 +261,13 @@ const SeaMossMinerals = () => {
                 absorption and effectiveness.
               </p>
               <p>
-                For instance, vitamin D in sea moss can improve the body’s
-                ability to absorb and utilize magnesium. This synergistic
-                relationship is crucial for optimizing the benefits of both
-                nutrients.
+                For instance,{' '}
+                <a href="https://pubmed.ncbi.nlm.nih.gov/29480918/">
+                  vitamin D
+                </a>{' '}
+                in sea moss can improve the body’s ability to absorb and utilize
+                magnesium. This synergistic relationship is crucial for
+                optimizing the benefits of both nutrients.
               </p>
               <p>
                 Moreover, magnesium helps regulate calcium and potassium levels,
@@ -213,8 +301,11 @@ const SeaMossMinerals = () => {
               </p>
               <p>
                 Potassium is also key in maintaining a healthy cardiovascular
-                system; it helps regulate heart rate and blood pressure,
-                reducing the risk of stroke and heart-related issues.
+                system; it helps regulate heart rate and{' '}
+                <Link href="/sea-moss-blood-pressure" target="_blank">
+                  blood pressure
+                </Link>
+                , reducing the risk of stroke and heart-related issues.
               </p>
               <p>
                 This mineral aids in muscle function, including smooth muscle
@@ -236,10 +327,6 @@ const SeaMossMinerals = () => {
                 Incorporating sea moss into the diet provides a natural source
                 of potassium, which is especially beneficial given its synergy
                 with other minerals and nutrients.
-              </p>
-              <p>
-                For instance, the balance of potassium with sodium in sea moss
-                helps in managing and maintaining optimal blood pressure levels.
               </p>
               <p>
                 This balance is crucial as high sodium intake, common in many
@@ -826,7 +913,7 @@ const SeaMossMinerals = () => {
               </p>
             </div>
           </div>
-          <div className="grid">
+          {/* <div className="grid">
             <img
               src="/images/raw-purple-sea-moss.webp"
               alt="Raw purple sea moss."
@@ -877,7 +964,7 @@ const SeaMossMinerals = () => {
                 profile.
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
         <ShareBtn shareLink={`https://seamosswellness.com/sea-moss-minerals`} />
       </Section>
@@ -895,8 +982,15 @@ const Section = styled.section`
     padding: 0 1.2em;
   }
 
+  ul.grid {
+    margin-left: 1.5em;
+    margin-bottom: 2em;
+    li {
+      margin-bottom: 0.2em;
+    }
+  }
+
   .section-header {
-    text-align: center;
   }
 
   .grid {
