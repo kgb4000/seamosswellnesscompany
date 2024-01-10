@@ -63,11 +63,12 @@ export default function Blog({ data }) {
                 <Link href={`/${post.slug}`} passHref>
                   <div className="blog-posts">
                     <img
-                      src={post.coverImage.url}
+                      src={post.coverImage}
                       alt={post.coverImage.atlText}
                       loading="lazy"
                       title={post.title}
-                      width={post.coverImage.url.width}
+                      width={post.coverImage.width}
+                      height={post.coverImage.height}
                     />
                     <div className="blog-info">
                       <h2>{post.title}</h2>
