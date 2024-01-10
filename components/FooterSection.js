@@ -72,6 +72,7 @@ const Footer = styled.footer`
   .footer-container {
     max-width: 500px;
     margin: 0 auto;
+    margin-bottom: 2em;
   }
 
   p {
