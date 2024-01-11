@@ -4,8 +4,17 @@ import Link from 'next/link'
 import styled from 'styled-components'
 import { getPosts } from '../lib/data'
 import { ArticleJsonLd, NextSeo } from 'next-seo'
-import Nav from '../components/Nav'
-import Footer from '../components/FooterSection'
+import { Cloudinary } from '@cloudinary/url-gen'
+import { scale } from '@cloudinary/url-gen/actions/resize'
+
+const cld = new Cloudinary({
+  cloud: {
+    cloudName: 'browne-company',
+  },
+  url: {
+    secure: true, // force https, set to false to force http
+  },
+})
 
 export const getStaticProps = async () => {
   const data = await getPosts()
@@ -22,6 +31,14 @@ export const getStaticProps = async () => {
 }
 
 export default function Blog({ data }) {
+  const url = cld
+    .image(data.posts[0].coverImage.public_id)
+    .quality('auto')
+    .format('auto')
+    .resize(scale().width(400))
+    .toURL()
+  console.log(url)
+
   const SEO = {
     title:
       'Sea Moss Health Blog | Learn about the health benefits of sea moss.',
@@ -58,24 +75,31 @@ export default function Blog({ data }) {
             </div>
           </section>
           <div className="blog-container">
-            {data.posts.map((post) => (
-              <div key={post.slug}>
-                <Link href={`/${post.slug}`} passHref>
-                  <div className="blog-posts">
-                    <img
-                      src={post.coverImage.url}
-                      alt={post.coverImage.altText}
-                      loading="lazy"
-                      title={post.title}
-                    />
-                    <div className="blog-info">
-                      <h2>{post.title}</h2>
-                      <p>Read more</p>
+            {data.posts.map((post) => {
+              const imageUrl = cld
+                .image(post.coverImage.public_id)
+                .quality('auto')
+                .format('auto')
+                .toURL()
+              return (
+                <div key={post.slug}>
+                  <Link href={`/${post.slug}`} passHref>
+                    <div className="blog-posts">
+                      <img
+                        src={imageUrl}
+                        alt={post.title}
+                        loading="lazy"
+                        title={post.title}
+                      />
+                      <div className="blog-info">
+                        <h2>{post.title}</h2>
+                        <p>Read more</p>
+                      </div>
                     </div>
-                  </div>
-                </Link>
-              </div>
-            ))}
+                  </Link>
+                </div>
+              )
+            })}
           </div>
         </div>
       </BlogMain>

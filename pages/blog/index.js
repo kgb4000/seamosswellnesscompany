@@ -9,7 +9,8 @@ import Footer from '../../components/FooterSection'
 
 export const getStaticProps = async () => {
   const data = await getPosts()
-
+  const url = cld.image(post.coverImage[0].public_id).toURL()
+  console.log(url)
   return {
     props: {
       data,
@@ -36,6 +37,7 @@ export default function Blog({ data }) {
       type: 'website',
     },
   }
+
   return (
     <>
       <ArticleJsonLd
@@ -64,7 +66,7 @@ export default function Blog({ data }) {
                   <div className="blog-posts">
                     <img
                       src={post.coverImage}
-                      alt={post.coverImage.atlText}
+                      alt={post.title}
                       loading="lazy"
                       title={post.title}
                       width={post.coverImage.width}

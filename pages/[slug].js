@@ -5,6 +5,17 @@ import Bio from '../components/Bio'
 import ShareBtn from '../components/ShareBtn'
 import styled from 'styled-components'
 import { BiCalendar, BiStopwatch } from 'react-icons/bi'
+import { Cloudinary } from '@cloudinary/url-gen'
+import { scale } from '@cloudinary/url-gen/actions/resize'
+
+const cld = new Cloudinary({
+  cloud: {
+    cloudName: 'browne-company',
+  },
+  url: {
+    secure: true, // force https, set to false to force http
+  },
+})
 
 export const getStaticProps = async ({ params }) => {
   const post = await getPost(params.slug)
@@ -54,6 +65,11 @@ const Articles = ({ post, data }) => {
       site_name: 'Sea Moss Wellness',
     },
   }
+  const imageUrl = cld
+    .image(post.author.photo.public_id)
+    .quality('auto')
+    .format('auto')
+    .toURL()
   return (
     <>
       <ArticleJsonLd
@@ -92,7 +108,7 @@ const Articles = ({ post, data }) => {
             <div className="author-info">
               <img
                 className="avatar"
-                src={post.author.photo.url}
+                src={imageUrl}
                 alt={post.author.name}
                 loading="lazy"
                 width={54}
@@ -105,7 +121,7 @@ const Articles = ({ post, data }) => {
           <RichText content={post.content.raw} />
           <ShareBtn shareLink={`https://seamosswellness.com/${post.slug}`} />
           <Bio
-            authorImg={post.author.photo.url}
+            authorImg={imageUrl}
             authorBio={post.author.bio}
             authorName={post.author.name}
           />
