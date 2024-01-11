@@ -1,4 +1,4 @@
-import { getPost, getPosts, getPostsSlugs, getRelatedPosts } from '/lib/data'
+import { getPost, getPosts, getPostsSlugs } from '/lib/data'
 import { RichText } from '@graphcms/rich-text-react-renderer'
 import { NextSeo, ArticleJsonLd } from 'next-seo'
 import Bio from '../components/Bio'
@@ -6,14 +6,13 @@ import ShareBtn from '../components/ShareBtn'
 import styled from 'styled-components'
 import { BiCalendar, BiStopwatch } from 'react-icons/bi'
 import { Cloudinary } from '@cloudinary/url-gen'
-import { scale } from '@cloudinary/url-gen/actions/resize'
 
 const cld = new Cloudinary({
   cloud: {
     cloudName: 'browne-company',
   },
   url: {
-    secure: true, // force https, set to false to force http
+    secure: true,
   },
 })
 
@@ -38,7 +37,7 @@ export const getStaticPaths = async () => {
   }
 }
 
-const Articles = ({ post, data }) => {
+const Articles = ({ post }) => {
   const SEO = {
     title: post.title,
     description: post.description,
