@@ -139,7 +139,7 @@ const BlogContent = styled.main`
     padding: 0 1.2rem;
 
     h1 {
-      font-size: 2.5em;
+      font-size: 2em;
       margin-bottom: 1rem;
 
       @media (min-width: 1024px) {
@@ -147,7 +147,7 @@ const BlogContent = styled.main`
       }
     }
     h2 {
-      font-size: 2em;
+      font-size: 1.8em;
       margin-bottom: 1rem;
 
       @media (min-width: 1024px) {
@@ -155,7 +155,7 @@ const BlogContent = styled.main`
       }
     }
     h3 {
-      font-size: 1.8em;
+      font-size: 1.6em;
       margin-bottom: 1rem;
 
       @media (min-width: 1024px) {
@@ -163,7 +163,7 @@ const BlogContent = styled.main`
       }
     }
     h4 {
-      font-size: 1.6em;
+      font-size: 1.4em;
       margin-bottom: 1rem;
 
       @media (min-width: 1024px) {
