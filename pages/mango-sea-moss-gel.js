@@ -24,9 +24,9 @@ const MangoSeaMossGel = () => {
       <ProductJsonLd
         productName="Mango Sea Moss Gel"
         images={[
-          'https://example.com/photos/1x1/photo.jpg',
-          'https://example.com/photos/4x3/photo.jpg',
-          'https://example.com/photos/16x9/photo.jpg',
+          'https://res.cloudinary.com/browne-company/image/upload/v1704729837/seaMossProducts/gold-sea-moss-gel-with-mango_hfzyes.webp',
+          'https://res.cloudinary.com/browne-company/image/upload/v1704729837/seaMossProducts/gold-sea-moss-gel-with-mango_hfzyes.webp',
+          'https://res.cloudinary.com/browne-company/image/upload/v1704729837/seaMossProducts/gold-sea-moss-gel-with-mango_hfzyes.webp',
         ]}
         description="Elevate your health routine with our Mango Sea Moss Gel. Packed with essential nutrients and delicious flavors. Shop now for a natural wellness boost!"
         brand="Sea Moss Wellness"
@@ -133,7 +133,7 @@ const MangoSeaMossGel = () => {
         <div className="wide-container">
           <div>
             <div>
-              <h2>Why Mango?</h2>
+              <h2>Benefits of Mango?</h2>
               <p>
                 Mangoes are not only a deliciously sweet fruit but also a
                 powerhouse of nutrients, offering numerous health benefits:
@@ -217,7 +217,7 @@ const MangoSeaMossGel = () => {
               alt="Raw gold sea moss"
             />
             <div className="grid-text-1 ">
-              <h2>Why Gold Sea Moss Gel?</h2>
+              <h2>Benefits of Gold Sea Moss Gel?</h2>
               <div>
                 <h3>Rich in Nutrients:</h3>
                 <p>
