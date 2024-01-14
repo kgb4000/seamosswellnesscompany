@@ -15,9 +15,9 @@ const cld = new Cloudinary({
 
 const SoursopSeaMossGel = () => {
   const SEO = {
-    title: `Soursop Sea Moss Gel: Nature's Secret for Radiant Health | Shop Now!`,
+    title: `Soursop Sea Moss Gel | Nature's Secret for Radiant Health | Shop Online!`,
     description:
-      'Uncover the incredible health benefits of our Soursop Sea Moss Gel blend. Shop now for a natural boost in vitality and well-being!',
+      'Uncover the incredible health benefits of our Soursop Sea Moss Gel blend. Get fantastic taste and health at the same time. Shop now for a natural boost!',
     canonical: `https://seamosswellness.com/soursop-sea-moss-gel`,
   }
   return (
