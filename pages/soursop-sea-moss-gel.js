@@ -23,7 +23,7 @@ const SoursopSeaMossGel = () => {
   return (
     <>
       <ProductJsonLd
-        productName="Mango Sea Moss Gel"
+        productName="Soursop Sea Moss Gel"
         images={[
           'https://res.cloudinary.com/browne-company/image/upload/v1704729837/seaMossProducts/gold-sea-moss-gel-with-soursop_f7urvp.webp',
           ,
@@ -125,9 +125,20 @@ const SoursopSeaMossGel = () => {
       </Section>
       <Section>
         <div className="wide-container">
-          <p>Get Your Sea Moss Fast! Orders Ship Within 3-5 Business Days</p>
-          <p>5-Star Reviews See Why Our Customers Love Our Products</p>
-          <p>Get Free Shipping Today! Order over $100 and shippings on us!</p>
+          <div>
+            <div>
+              <p>Get Your Sea Moss Fast!</p>
+              <p>Orders Ship Within 3-5 Business Days</p>
+            </div>
+            <div>
+              <p>5-Star Reviews</p>
+              <p>See Why Our Customers Love Our Products</p>
+            </div>
+            <div>
+              <p>Get Free Shipping Today!</p>
+              <p>Order over $100 and shippings on us!</p>
+            </div>
+          </div>
         </div>
       </Section>
       <Section>
@@ -139,7 +150,7 @@ const SoursopSeaMossGel = () => {
               title="Soursop cut in half."
             />
             <div>
-              <h2>Soursop Benefits?</h2>
+              <h2>Benefits of Soursop</h2>
               <p>
                 Soursop, also known as Graviola or Guanabana, is a tropical
                 fruit that is not only delicious but also offers a range of
@@ -407,8 +418,9 @@ const SoursopSeaMossGel = () => {
             <div>
               <h3>What is the texture of the gel like?</h3>
               <p>
-                Our Soursop Sea Moss Gel has a smooth and creamy texture, making
-                it easy to mix into your favorite drinks or recipes.
+                Our Soursop Sea Moss Gel has a smooth and creamy texture almost
+                like jelly, making it easy to mix into your favorite drinks or
+                recipes.
               </p>
               <h3>
                 How can I incorporate Soursop Sea Moss Gel into my daily
