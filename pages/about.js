@@ -27,7 +27,7 @@ const About = () => {
           </p>
           <p>
             We believe in nourishing our bodies with whole foods that are rich
-            in <Link href="/sea-moss-minerals">minerals</Link>, vitamins, and
+            in vitamins, <Link href="/sea-moss-minerals">minerals</Link>, and
             other essential nutrients.
           </p>
           <p>
