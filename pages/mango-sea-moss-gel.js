@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import { NextSeo, ProductJsonLd } from 'next-seo'
 import styled from 'styled-components'
 import { Cloudinary } from '@cloudinary/url-gen'
@@ -329,12 +330,14 @@ const MangoSeaMossGel = () => {
               <button>Add To Cart</button>
             </div>
             <div className="related-products">
-              <img
-                src="https://res.cloudinary.com/browne-company/image/upload/v1704729837/seaMossProducts/gold-sea-moss-gel-with-soursop_f7urvp.webp"
-                alt="Soursop sea moss gel"
-                title="Soursop sea moss gel"
-                className="related-products"
-              />
+              <Link href="/soursop-sea-moss-gel">
+                <img
+                  src="https://res.cloudinary.com/browne-company/image/upload/v1704729837/seaMossProducts/gold-sea-moss-gel-with-soursop_f7urvp.webp"
+                  alt="Soursop sea moss gel"
+                  title="Soursop sea moss gel"
+                  className="related-products"
+                />
+              </Link>
               <h3>Soursop Sea Moss Gel</h3>
               <p>$29.99</p>
               <button>Add To Cart</button>
@@ -445,7 +448,7 @@ const Section = styled.section`
   .related-products {
     img {
       display: block;
-      max-width: 300px;
+      max-width: 500px;
       margin: 0 auto;
     }
 
@@ -480,6 +483,7 @@ const Section = styled.section`
       display: grid;
       grid-template-columns: 1fr 1fr;
       justify-content: center;
+      align-items: center;
       gap: 40px;
     }
   }
