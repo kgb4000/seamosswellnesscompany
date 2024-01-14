@@ -326,6 +326,7 @@ const MangoSeaMossGel = () => {
                 className="related-products"
               />
               <h3>Strawberry Sea Moss Gel</h3>
+              <p> Nutrient-rich | Delectable | Revitalizing</p>
               <p>$29.99</p>
               <button>Add To Cart</button>
             </div>
@@ -359,7 +360,7 @@ const MangoSeaMossGel = () => {
       <Section>
         <div className="wide-container">
           <h2>Frequently Asked Questions</h2>
-          <div className="grid">
+          <div className="grid-faq">
             <div>
               <h3>What is the texture of Mango Sea Moss Gel?</h3>
               <p>
@@ -484,6 +485,15 @@ const Section = styled.section`
       grid-template-columns: 1fr 1fr;
       justify-content: center;
       align-items: center;
+      gap: 40px;
+    }
+  }
+
+  .grid-faq {
+    @media (min-width: 1028px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-content: center;
       gap: 40px;
     }
   }

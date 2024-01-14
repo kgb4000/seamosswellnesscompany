@@ -77,14 +77,14 @@ const SoursopSeaMossGel = () => {
       <NextSeo {...SEO} />
       <Section>
         <div className="wide-container">
-          <div className="grid">
+          <div className="grid-hero">
             <img
               src="https://res.cloudinary.com/browne-company/image/upload/v1704729837/seaMossProducts/gold-sea-moss-gel-with-soursop_f7urvp.webp"
               alt="Soursop sea moss gel."
               title="Soursop sea moss gel."
             />
             <div>
-              <h1>Soursop Sea Moss gel</h1>
+              <h1>Soursop Sea Moss Gel</h1>
               <p className="price">$29.99</p>
               <p>
                 Embark on a journey of taste and well-being with our Soursop Sea
@@ -125,7 +125,7 @@ const SoursopSeaMossGel = () => {
       </Section>
       <Section>
         <div className="wide-container">
-          <div>
+          <div className="grid-shipping">
             <div>
               <p>Get Your Sea Moss Fast!</p>
               <p>Orders Ship Within 3-5 Business Days</p>
@@ -135,8 +135,8 @@ const SoursopSeaMossGel = () => {
               <p>See Why Our Customers Love Our Products</p>
             </div>
             <div>
-              <p>Get Free Shipping Today!</p>
-              <p>Order over $100 and shippings on us!</p>
+              <p>Get FREE Shipping Today!</p>
+              <p>Orders over $35 get FREE shipping on us!</p>
             </div>
           </div>
         </div>
@@ -226,7 +226,7 @@ const SoursopSeaMossGel = () => {
         </div>
       </Section>
       <Section>
-        <div className="wide-container">
+        <div className="faq-container">
           <div className="grid">
             <img
               className="img"
@@ -322,7 +322,7 @@ const SoursopSeaMossGel = () => {
       <Section>
         <div className="wide-container">
           <h2>Related Products</h2>
-          <div className="grid">
+          <div className="grid-related">
             <div className="related-products">
               <img
                 src="https://res.cloudinary.com/browne-company/image/upload/v1704729836/seaMossProducts/gold-sea-moss-gel-with-guava_zwyily.webp"
@@ -334,14 +334,16 @@ const SoursopSeaMossGel = () => {
               <button>Add To Cart</button>
             </div>
             <div className="related-products">
-              <img
-                src="https://res.cloudinary.com/browne-company/image/upload/v1704729837/seaMossProducts/gold-sea-moss-gel-with-strawberries_e4iagz.webp"
-                alt="Strawberry sea moss gel"
-                title="Strawberry sea moss gel"
-                className="related-products"
-              />
-              <h3>Strawberry Sea Moss Gel</h3>
-              <p>$29.99</p>
+              <Link href="/strawberry-sea-moss-gel">
+                <img
+                  src="https://res.cloudinary.com/browne-company/image/upload/v1704729837/seaMossProducts/gold-sea-moss-gel-with-strawberries_e4iagz.webp"
+                  alt="Strawberry sea moss gel"
+                  title="Strawberry sea moss gel"
+                  className="related-products"
+                />
+                <h3>Strawberry Sea Moss Gel</h3>
+                <p>$29.99</p>
+              </Link>
               <button>Add To Cart</button>
             </div>
             <div className="related-products">
@@ -374,7 +376,7 @@ const SoursopSeaMossGel = () => {
       <Section>
         <div className="wide-container">
           <h2>Frequently Asked Questions</h2>
-          <div className="grid">
+          <div className="grid-faq">
             <div>
               <h3>
                 Is your Soursop Sea Moss Gel made from real soursop fruit?
@@ -395,7 +397,7 @@ const SoursopSeaMossGel = () => {
                 Absolutely! Our Soursop Sea Moss Gel is 100% plant-based, making
                 it perfect for vegans and vegetarians.
               </p>
-              <h3>Is Mango Sea Moss Gel gluten-free and vegan?</h3>
+              <h3>Is Soursop Sea Moss Gel gluten-free and vegan?</h3>
               <p>
                 Yes, our gel is both gluten-free and vegan, making it suitable
                 for a wide range of dietary preferences.
@@ -481,12 +483,12 @@ const Section = styled.section`
   .related-products {
     img {
       display: block;
-      max-width: 500px;
+      width: 400px;
       margin: 0 auto;
     }
 
     h3 {
-      font-size: 1.4rem;
+      font-size: 1.2rem;
     }
 
     text-align: center;
@@ -494,10 +496,17 @@ const Section = styled.section`
   }
 
   margin-bottom: 5em;
+
   .wide-container {
-    max-width: 1540px;
     margin: 0 auto;
     padding: 0 1.2em;
+    max-width: 1140px;
+  }
+
+  .faq-container {
+    margin: 0 auto;
+    padding: 0 1.2em;
+    max-width: 1140px;
   }
 
   ul.grid {
@@ -508,7 +517,13 @@ const Section = styled.section`
     }
   }
 
-  .section-header {
+  .grid-hero {
+    @media (min-width: 1028px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-content: center;
+      gap: 40px;
+    }
   }
 
   .grid {
@@ -517,6 +532,37 @@ const Section = styled.section`
       grid-template-columns: 1fr 1fr;
       justify-content: center;
       align-items: center;
+      gap: 40px;
+    }
+  }
+
+  .grid-shipping {
+    @media (min-width: 1028px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    p {
+      margin: 0.5em auto;
+    }
+  }
+
+  .grid-faq {
+    @media (min-width: 1028px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-content: center;
+      gap: 40px;
+    }
+  }
+
+  .grid-related {
+    @media (min-width: 1028px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      justify-content: center;
       gap: 40px;
     }
   }
@@ -539,16 +585,5 @@ const Section = styled.section`
   .grid-image-2 {
     grid-column: 2;
     grid-row: 1;
-  }
-
-  .flex {
-    display: grid;
-    grid-template-columns: repeat(1fr, 4);
-    justify-content: center;
-    gap: 40px;
-    text-align: center;
-    h3 {
-      font-size: 1.4rem;
-    }
   }
 `
