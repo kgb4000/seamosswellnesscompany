@@ -324,13 +324,15 @@ const SoursopSeaMossGel = () => {
           <h2>Related Products</h2>
           <div className="grid-related">
             <div className="related-products">
-              <img
-                src="https://res.cloudinary.com/browne-company/image/upload/v1704729836/seaMossProducts/gold-sea-moss-gel-with-guava_zwyily.webp"
-                alt="Guava sea moss gel"
-                title="Guava sea moss gel"
-              />
-              <h3>Guava Se Moss Gel</h3>
-              <p>$29.99</p>
+              <Link href="/pink-guava-sea-moss">
+                <img
+                  src="https://res.cloudinary.com/browne-company/image/upload/v1704729836/seaMossProducts/gold-sea-moss-gel-with-guava_zwyily.webp"
+                  alt="Guava sea moss gel"
+                  title="Guava sea moss gel"
+                />
+                <h3>Guava Se Moss Gel</h3>
+                <p>$29.99</p>
+              </Link>
               <button>Add To Cart</button>
             </div>
             <div className="related-products">
@@ -360,14 +362,16 @@ const SoursopSeaMossGel = () => {
               <button>Add To Cart</button>
             </div>
             <div className="related-products">
-              <img
-                src="https://res.cloudinary.com/browne-company/image/upload/v1704729836/seaMossProducts/gold-sea-moss-gel-with-ginger_v1vszu.webp"
-                title="Ginger sea moss gel"
-                alt="Ginger sea moss gel"
-                className="related-products"
-              />
-              <h3>Ginger Sea Moss Gel</h3>
-              <p>$29.99</p>
+              <Link href="/ginger-sea-moss-gel">
+                <img
+                  src="https://res.cloudinary.com/browne-company/image/upload/v1704729836/seaMossProducts/gold-sea-moss-gel-with-ginger_v1vszu.webp"
+                  title="Ginger sea moss gel"
+                  alt="Ginger sea moss gel"
+                  className="related-products"
+                />
+                <h3>Ginger Sea Moss Gel</h3>
+                <p>$29.99</p>
+              </Link>
               <button>Add To Cart</button>
             </div>
           </div>
@@ -488,7 +492,7 @@ const Section = styled.section`
     }
 
     h3 {
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
 
     text-align: center;

@@ -161,8 +161,6 @@ const StrawberrySeaMossGel = () => {
               <h2>Strawberry Health Benefits</h2>
               <div>
                 <h3>Rich in Antioxidants:</h3>
-                <p>We chose strawberries for this sea moss gel.</p>
-                <p>Why?</p>
                 <p>
                   Because they are loaded with antioxidants, such as vitamin C
                   and flavonoids, which help in neutralizing free radicals in
@@ -536,7 +534,7 @@ const Section = styled.section`
     }
 
     h3 {
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
 
     text-align: center;
