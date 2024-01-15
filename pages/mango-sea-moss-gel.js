@@ -78,14 +78,14 @@ const MangoSeaMossGel = () => {
       <NextSeo {...SEO} />
       <Section>
         <div className="wide-container">
-          <div className="grid">
+          <div className="grid-hero">
             <img
               src="https://res.cloudinary.com/browne-company/image/upload/v1704729837/seaMossProducts/gold-sea-moss-gel-with-mango_hfzyes.webp"
               alt="Mango sea moss gel."
               title="Mango sea moss gel."
             />
             <div>
-              <h1>Mango Sea Moss gel</h1>
+              <h1>Mango Sea Moss Gel</h1>
               <p className="price">$29.99</p>
               <p>
                 Discover the enriching fusion of taste and health with our Mango
@@ -99,10 +99,6 @@ const MangoSeaMossGel = () => {
                 Ideal for those who prioritize wellness without compromising on
                 flavor, our Mango Sea Moss Gel offers more than just a palatable
                 experience.
-              </p>
-              <p>
-                It's a celebration of wholesome ingredients, designed to boost
-                your nutrition and delight your senses.
               </p>
               <p>
                 Whether you're integrating it into your daily routine for a
@@ -125,11 +121,63 @@ const MangoSeaMossGel = () => {
       </Section>
       <Section>
         <div className="wide-container">
+          <h2>Related Products</h2>
+          <div className="grid-related">
+            <div className="related-products">
+              <img
+                src="https://res.cloudinary.com/browne-company/image/upload/v1704729836/seaMossProducts/gold-sea-moss-gel-with-guava_zwyily.webp"
+                alt="Guava sea moss gel"
+                title="Guava sea moss gel"
+              />
+              <h3>Guava Se Moss Gel</h3>
+              <p>$29.99</p>
+              <button>Add To Cart</button>
+            </div>
+            <div className="related-products">
+              <img
+                src="https://res.cloudinary.com/browne-company/image/upload/v1704729837/seaMossProducts/gold-sea-moss-gel-with-strawberries_e4iagz.webp"
+                alt="Strawberry sea moss gel"
+                title="Strawberry sea moss gel"
+                className="related-products"
+              />
+              <h3>Strawberry Sea Moss Gel</h3>
+              <p>$29.99</p>
+              <button>Add To Cart</button>
+            </div>
+            <div className="related-products">
+              <Link href="/soursop-sea-moss-gel">
+                <img
+                  src="https://res.cloudinary.com/browne-company/image/upload/v1704729837/seaMossProducts/gold-sea-moss-gel-with-soursop_f7urvp.webp"
+                  alt="Soursop sea moss gel"
+                  title="Soursop sea moss gel"
+                  className="related-products"
+                />
+              </Link>
+              <h3>Soursop Sea Moss Gel</h3>
+              <p>$29.99</p>
+              <button>Add To Cart</button>
+            </div>
+            <div className="related-products">
+              <img
+                src="https://res.cloudinary.com/browne-company/image/upload/v1704729836/seaMossProducts/gold-sea-moss-gel-with-ginger_v1vszu.webp"
+                title="Ginger sea moss gel"
+                alt="Ginger sea moss gel"
+                className="related-products"
+              />
+              <h3>Ginger Sea Moss Gel</h3>
+              <p>$29.99</p>
+              <button>Add To Cart</button>
+            </div>
+          </div>
+        </div>
+      </Section>
+      {/* <Section>
+        <div className="wide-container">
           <p>Get Your Sea Moss Fast! Orders Ship Within 3-5 Business Days</p>
           <p>5-Star Reviews See Why Our Customers Love Our Products</p>
           <p>Get Free Shipping Today! Order over $100 and shippings on us!</p>
         </div>
-      </Section>
+      </Section> */}
       <Section>
         <div className="wide-container">
           <div>
@@ -304,59 +352,7 @@ const MangoSeaMossGel = () => {
           </div>
         </div>
       </Section>
-      <Section>
-        <div className="wide-container">
-          <h2>Related Products</h2>
-          <div className="grid">
-            <div className="related-products">
-              <img
-                src="https://res.cloudinary.com/browne-company/image/upload/v1704729836/seaMossProducts/gold-sea-moss-gel-with-guava_zwyily.webp"
-                alt="Guava sea moss gel"
-                title="Guava sea moss gel"
-              />
-              <h3>Guava Se Moss Gel</h3>
-              <p>$29.99</p>
-              <button>Add To Cart</button>
-            </div>
-            <div className="related-products">
-              <img
-                src="https://res.cloudinary.com/browne-company/image/upload/v1704729837/seaMossProducts/gold-sea-moss-gel-with-strawberries_e4iagz.webp"
-                alt="Strawberry sea moss gel"
-                title="Strawberry sea moss gel"
-                className="related-products"
-              />
-              <h3>Strawberry Sea Moss Gel</h3>
-              <p> Nutrient-rich | Delectable | Revitalizing</p>
-              <p>$29.99</p>
-              <button>Add To Cart</button>
-            </div>
-            <div className="related-products">
-              <Link href="/soursop-sea-moss-gel">
-                <img
-                  src="https://res.cloudinary.com/browne-company/image/upload/v1704729837/seaMossProducts/gold-sea-moss-gel-with-soursop_f7urvp.webp"
-                  alt="Soursop sea moss gel"
-                  title="Soursop sea moss gel"
-                  className="related-products"
-                />
-              </Link>
-              <h3>Soursop Sea Moss Gel</h3>
-              <p>$29.99</p>
-              <button>Add To Cart</button>
-            </div>
-            <div className="related-products">
-              <img
-                src="https://res.cloudinary.com/browne-company/image/upload/v1704729836/seaMossProducts/gold-sea-moss-gel-with-ginger_v1vszu.webp"
-                title="Ginger sea moss gel"
-                alt="Ginger sea moss gel"
-                className="related-products"
-              />
-              <h3>Ginger Sea Moss Gel</h3>
-              <p>$29.99</p>
-              <button>Add To Cart</button>
-            </div>
-          </div>
-        </div>
-      </Section>
+
       <Section>
         <div className="wide-container">
           <h2>Frequently Asked Questions</h2>
@@ -446,15 +442,20 @@ const Section = styled.section`
     font-weight: bold;
   }
 
+  a {
+    color: black;
+    text-decoration: none;
+  }
+
   .related-products {
     img {
       display: block;
-      max-width: 500px;
+      width: 400px;
       margin: 0 auto;
     }
 
     h3 {
-      font-size: 1.4rem;
+      font-size: 1rem;
     }
 
     text-align: center;
@@ -462,10 +463,17 @@ const Section = styled.section`
   }
 
   margin-bottom: 5em;
+
   .wide-container {
-    max-width: 1540px;
     margin: 0 auto;
     padding: 0 1.2em;
+    max-width: 1140px;
+  }
+
+  .faq-container {
+    margin: 0 auto;
+    padding: 0 1.2em;
+    max-width: 1140px;
   }
 
   ul.grid {
@@ -476,7 +484,13 @@ const Section = styled.section`
     }
   }
 
-  .section-header {
+  .grid-hero {
+    @media (min-width: 1028px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-content: center;
+      gap: 40px;
+    }
   }
 
   .grid {
@@ -489,10 +503,32 @@ const Section = styled.section`
     }
   }
 
+  .grid-shipping {
+    @media (min-width: 1028px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    p {
+      margin: 0.5em auto;
+    }
+  }
+
   .grid-faq {
     @media (min-width: 1028px) {
       display: grid;
       grid-template-columns: 1fr 1fr;
+      justify-content: center;
+      gap: 40px;
+    }
+  }
+
+  .grid-related {
+    @media (min-width: 1028px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
       justify-content: center;
       gap: 40px;
     }
@@ -516,16 +552,5 @@ const Section = styled.section`
   .grid-image-2 {
     grid-column: 2;
     grid-row: 1;
-  }
-
-  .flex {
-    display: grid;
-    grid-template-columns: repeat(1fr, 4);
-    justify-content: center;
-    gap: 40px;
-    text-align: center;
-    h3 {
-      font-size: 1.4rem;
-    }
   }
 `

@@ -25,14 +25,14 @@ const PinkGuavaSeaMossGel = () => {
       <ProductJsonLd
         productName="Pink Guava Sea Moss Gel"
         images={[
-          'https://res.cloudinary.com/browne-company/image/upload/v1704729837/seaMossProducts/gold-sea-moss-gel-with-strawberries_e4iagz.webp',
+          'https://res.cloudinary.com/browne-company/image/upload/v1704729836/seaMossProducts/gold-sea-moss-gel-with-guava_zwyily.webp',
           ,
         ]}
-        description="Experience the transformative power of Strawberry Sea Moss Gel. Discover its unique blend of flavors and benefits in every spoonful. Get a jar today!"
+        description="Experience the transformative power of Pin Guava Sea Moss Gel. Discover its unique blend of flavors and benefits in every spoonful. Get a jar today!"
         brand="Sea Moss Wellness"
         // manufacturerName="Gary Meehan"
         // manufacturerLogo="https://www.example.com/photos/logo.jpg"
-        slogan="Strawberry Sea Moss Gel: Flavorful Benefits in Every Spoon!"
+        slogan="Pin Guava Sea Moss Gel: Flavorful Benefits in Every Spoon!"
         // disambiguatingDescription="Executive Anvil, perfect for the business traveller."
         // releaseDate="2014-02-05T08:00:00+08:00"
         // productionDate="2015-02-05T08:00:00+08:00"
@@ -66,7 +66,7 @@ const PinkGuavaSeaMossGel = () => {
             // priceValidUntil: '2020-11-05',
             // itemCondition: 'https://schema.org/UsedCondition',
             availability: 'https://schema.org/OnlineOnly',
-            url: 'https://seamosswellness.com/strawberry-sea-moss-gel',
+            url: 'https://seamosswellness.com/pink-guava-sea-moss-gel',
             seller: {
               name: 'Sea Moss Wellness',
             },
