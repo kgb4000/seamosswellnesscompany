@@ -111,188 +111,9 @@ const PurpleSeaMossGel = () => {
               </p>
               <button>Coming Soon</button>
               <p>Ingredients:</p>
-              <p>Raw purple sea moss</p>
+              <p>Raw purple sea moss (Eucheuma Conttonii)</p>
               <p>Alkaline spring water</p>
             </div>
-          </div>
-        </div>
-      </Section>
-      {/* <Section>
-        <div className="wide-container">
-          <div className="grid-shipping">
-            <div>
-              <p>Get Your Sea Moss Fast!</p>
-              <p>Orders Ship Within 3-5 Business Days</p>
-            </div>
-            <div>
-              <p>5-Star Reviews</p>
-              <p>See Why Our Customers Love Our Products</p>
-            </div>
-            <div>
-              <p>Get FREE Shipping Today!</p>
-              <p>Orders over $35 get FREE shipping on us!</p>
-            </div>
-          </div>
-        </div>
-      </Section> */}
-      <Section>
-        <div className="wide-container">
-          <div className="grid">
-            <img
-              className="img"
-              src="https://res.cloudinary.com/browne-company/image/upload/v1704729839/seaMossProducts/raw-purple-sea-moss_a25mj0.webp"
-              title="Raw gold sea moss"
-              alt="Raw gold sea moss"
-            />
-            <div className="grid-text-1 ">
-              <h2>Benefits of Purple Sea Moss Gel</h2>
-
-              <p>
-                Purple Sea Moss Gel offers a range of health benefits, largely
-                due to its rich nutrient content and antioxidant properties.
-              </p>
-              <div className="benefit">
-                <img src="/images/icons/nutrients.png" width={50} height={50} />
-                <div>
-                  <h3>Nutrient-Rich:</h3>
-                  <p>
-                    Purple sea moss is packed with over 90 essential nutrients.
-                    Vitamins such as A, C, E, K, and a full complement of B
-                    vitamins enhance various body functions. Minerals like
-                    iodine, sodium, calcium, and zinc play critical roles in
-                    thyroid function, bone health, and overall metabolic
-                    processes.
-                  </p>
-                </div>
-              </div>
-              <div className="benefit">
-                <img
-                  src="/images/icons/thyroid-gland.png"
-                  width={50}
-                  height={50}
-                />
-                <div>
-                  <h3>Thyroid Support:</h3>
-                  <p>
-                    The gel's high iodine content is crucial for producing
-                    thyroid hormones, which regulate metabolism. These hormones
-                    also play a role in brain development, particularly in
-                    infants and children.
-                  </p>
-                </div>
-              </div>
-              <div className="benefit">
-                <img
-                  src="/images/icons/immune-system.png"
-                  width={50}
-                  height={50}
-                />
-                <div>
-                  <h3>Immune System Boost:</h3>
-                  <p>
-                    It contains compounds like zinc and vitamin C that are known
-                    to strengthen the immune system. These antioxidants help
-                    neutralize harmful free radicals and can aid in preventing
-                    cellular damage.
-                  </p>
-                </div>
-              </div>
-              <div className="benefit">
-                <img src="/images/icons/heart.png" width={50} height={50} />
-                <div>
-                  <h3>Supports Heart Health:</h3>
-                  <p>
-                    Purple colored sea moss is known for its high content of
-                    omega-3 fatty acids and potassium, which can help regulate
-                    blood pressure and promote overall heart health. This makes
-                    it beneficial for maintaining a healthy cardiovascular
-                    system.
-                  </p>
-                </div>
-              </div>
-              <div className="benefit">
-                <img src="/images/icons/stomach.png" width={50} height={50} />
-
-                <div>
-                  <h3>Digestive Health:</h3>
-                  <p>
-                    Its gelatinous nature soothes the digestive tract, promoting
-                    gut health. It acts as a prebiotic, stimulating the growth
-                    of beneficial gut bacteria, which is crucial for healthy
-                    digestion and overall gut health.
-                  </p>
-                </div>
-              </div>
-              <div className="benefit">
-                <img src="/images/icons/woman.png" width={50} height={50} />
-
-                <div>
-                  <h3>Promotes Skin Health:</h3>
-                  <p>
-                    The sulfur content in sea moss aids in reducing excess oil
-                    in the skin, making it beneficial for acne-prone skin. Its
-                    anti-inflammatory and antimicrobial properties help in
-                    treating skin conditions like eczema and psoriasis.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="grid">
-            <div>
-              <div className="grid-text-2">
-                <h3>Improves Blood Circulation:</h3>
-                <p>
-                  The iron content in the gel aids in promoting healthy blood
-                  circulation. Iron is a vital component of hemoglobin, a
-                  protein in red blood cells responsible for transporting oxygen
-                  throughout the body. Improved circulation can lead to better
-                  oxygenation of body tissues and organs.
-                </p>
-                <h3>Joint Health:</h3>
-                <p>
-                  Its anti-inflammatory properties are beneficial for those with
-                  joint pain or arthritis. The gel can help reduce swelling and
-                  alleviate pain, improving mobility and comfort.
-                </p>
-                <h3>Weight Management:</h3>
-                <p>
-                  Being low in calories and fat yet high in nutrients, it can be
-                  a valuable addition to a weight loss diet. It provides a sense
-                  of fullness, which can help in reducing overall calorie
-                  intake.
-                </p>
-                <h3>Detoxification:</h3>
-                <p>
-                  It has natural detoxifying properties, which aid in flushing
-                  out toxins from the body. This can improve overall health and
-                  support the functioning of vital organs like the liver and
-                  kidneys.
-                </p>
-                <h3>Mental Health and Cognitive Function:</h3>
-                <p>
-                  The high concentration of B vitamins, especially B12, and
-                  omega-3 fatty acids in Purple Sea Moss Gel supports brain
-                  health. These nutrients are essential for maintaining
-                  cognitive functions, improving focus, and potentially aiding
-                  in the reduction of mood disorders such as anxiety and
-                  depression.
-                </p>
-                <h3>Anti-Aging Properties:</h3>
-                <p>
-                  Purple Sea Moss is rich in antioxidants, which combat free
-                  radicals and oxidative stress that can lead to aging. Regular
-                  consumption can contribute to healthier, more youthful skin,
-                  potentially reducing wrinkles and improving skin elasticity.
-                </p>
-              </div>
-            </div>
-            <img
-              className="img"
-              src="https://res.cloudinary.com/browne-company/image/upload/v1704729839/seaMossProducts/raw-purple-sea-moss_a25mj0.webp"
-              title="Raw gold sea moss"
-              alt="Raw gold sea moss"
-            />
           </div>
         </div>
       </Section>
@@ -354,6 +175,232 @@ const PurpleSeaMossGel = () => {
           </div>
         </div>
       </Section>
+      {/* <Section>
+        <div className="wide-container">
+          <div className="grid-shipping">
+            <div>
+              <p>Get Your Sea Moss Fast!</p>
+              <p>Orders Ship Within 3-5 Business Days</p>
+            </div>
+            <div>
+              <p>5-Star Reviews</p>
+              <p>See Why Our Customers Love Our Products</p>
+            </div>
+            <div>
+              <p>Get FREE Shipping Today!</p>
+              <p>Orders over $35 get FREE shipping on us!</p>
+            </div>
+          </div>
+        </div>
+      </Section> */}
+      <Section>
+        <div className="wide-container">
+          <div className="grid">
+            <img
+              className="img"
+              src="https://res.cloudinary.com/browne-company/image/upload/v1704729839/seaMossProducts/raw-purple-sea-moss_a25mj0.webp"
+              title="Raw gold sea moss"
+              alt="Raw gold sea moss"
+            />
+            <div className="grid-text-1">
+              <h2>Benefits of Purple Sea Moss Gel</h2>
+
+              <p>
+                Purple Sea Moss Gel offers a range of health benefits, largely
+                due to its rich nutrient content and antioxidant properties.
+              </p>
+              <div className="benefit">
+                <img src="/images/icons/nutrients.png" width={50} height={50} />
+                <div>
+                  <h3>Nutrient-Rich:</h3>
+                  <p>
+                    Purple sea moss is packed with over 90 essential nutrients.
+                    Vitamins such as A, C, E, K, and a full complement of B
+                    vitamins enhance various body functions. Minerals like
+                    iodine, sodium, calcium, and zinc play critical roles in
+                    thyroid function, bone health, and overall metabolic
+                    processes.
+                  </p>
+                </div>
+              </div>
+              <div className="benefit">
+                <img
+                  src="/images/icons/thyroid-gland.png"
+                  width={50}
+                  height={50}
+                />
+                <div>
+                  <h3>Thyroid Support:</h3>
+                  <p>
+                    The gel's high iodine content is crucial for producing
+                    thyroid hormones, which regulate metabolism. These hormones
+                    also play a role in brain development, particularly in
+                    infants and children.
+                  </p>
+                </div>
+              </div>
+              <div className="benefit">
+                <img
+                  src="/images/icons/immune-system.png"
+                  width={50}
+                  height={50}
+                />
+                <div>
+                  <h3>Immune System Boost:</h3>
+                  <p>
+                    It contains compounds like zinc and vitamin C that are known
+                    to strengthen the immune system. These antioxidants help
+                    neutralize harmful free radicals and can aid in preventing
+                    cellular damage.
+                  </p>
+                </div>
+              </div>
+              <div className="grid-text-2">
+                <div className="benefit">
+                  <img src="/images/icons/heart.png" width={50} height={50} />
+                  <div>
+                    <h3>Supports Heart Health:</h3>
+                    <p>
+                      Purple colored sea moss is known for its high content of
+                      omega-3 fatty acids and potassium, which can help regulate
+                      blood pressure and promote overall heart health. This
+                      makes it beneficial for maintaining a healthy
+                      cardiovascular system.
+                    </p>
+                  </div>
+                </div>
+                <div className="benefit">
+                  <img src="/images/icons/stomach.png" width={50} height={50} />
+
+                  <div>
+                    <h3>Digestive Health:</h3>
+                    <p>
+                      Its gelatinous nature soothes the digestive tract,
+                      promoting gut health. It acts as a prebiotic, stimulating
+                      the growth of beneficial gut bacteria, which is crucial
+                      for healthy digestion and overall gut health.
+                    </p>
+                  </div>
+                </div>
+                <div className="benefit">
+                  <img src="/images/icons/woman.png" width={50} height={50} />
+                  <div>
+                    <h3>Promotes Skin Health:</h3>
+                    <p>
+                      The sulfur content in sea moss aids in reducing excess oil
+                      in the skin, making it beneficial for acne-prone skin. Its
+                      anti-inflammatory and antimicrobial properties help in
+                      treating skin conditions like eczema and psoriasis.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="grid">
+            <div>
+              <div className="grid-text-2">
+                <div className="benefit">
+                  <img src="/images/icons/blood.png" width={50} height={50} />
+                  <div>
+                    <h3>Improves Blood Circulation:</h3>
+                    <p>
+                      The iron content in the gel aids in promoting healthy
+                      blood circulation. Iron is a vital component of
+                      hemoglobin, a protein in red blood cells responsible for
+                      transporting oxygen throughout the body. Improved
+                      circulation can lead to better oxygenation of body tissues
+                      and organs.
+                    </p>
+                  </div>
+                </div>
+                <div className="benefit">
+                  <img src="/images/icons/joints.png" width={50} height={50} />
+                  <div>
+                    <h3>Joint Health:</h3>
+                    <p>
+                      Its anti-inflammatory properties are beneficial for those
+                      with joint pain or arthritis. The gel can help reduce
+                      swelling and alleviate pain, improving mobility and
+                      comfort.
+                    </p>
+                  </div>
+                </div>
+                <div className="benefit">
+                  <img
+                    src="/images/icons/weight-management.png"
+                    width={50}
+                    height={50}
+                  />
+                  <div>
+                    <h3>Weight Management:</h3>
+                    <p>
+                      Being low in calories and fat yet high in nutrients, it
+                      can be a valuable addition to a weight loss diet. It
+                      provides a sense of fullness, which can help in reducing
+                      overall calorie intake.
+                    </p>
+                  </div>
+                </div>
+                <div className="benefit">
+                  <img
+                    src="/images/icons/detoxification.png"
+                    width={50}
+                    height={50}
+                  />
+                  <div>
+                    <h3>Detoxification:</h3>
+                    <p>
+                      It has natural detoxifying properties, which aid in
+                      flushing out toxins from the body. This can improve
+                      overall health and support the functioning of vital organs
+                      like the liver and kidneys.
+                    </p>
+                  </div>
+                </div>
+                <div className="benefit">
+                  <img
+                    src="/images/icons/mental-health.png"
+                    width={50}
+                    height={50}
+                  />
+                  <div>
+                    <h3>Mental Health and Cognitive Function:</h3>
+                    <p>
+                      The high concentration of B vitamins, especially B12, and
+                      omega-3 fatty acids in Purple Sea Moss Gel supports brain
+                      health. These nutrients are essential for maintaining
+                      cognitive functions, improving focus, and potentially
+                      aiding in the reduction of mood disorders such as anxiety
+                      and depression.
+                    </p>
+                  </div>
+                </div>
+                <div className="benefit">
+                  <img src="/images/icons/time.png" width={50} height={50} />
+                  <div>
+                    <h3>Anti-Aging Properties:</h3>
+                    <p>
+                      Purple Sea Moss is rich in antioxidants, which combat free
+                      radicals and oxidative stress that can lead to aging.
+                      Regular consumption can contribute to healthier, more
+                      youthful skin, potentially reducing wrinkles and improving
+                      skin elasticity.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <img
+              className="img"
+              src="https://res.cloudinary.com/browne-company/image/upload/v1704729839/seaMossProducts/raw-purple-sea-moss_a25mj0.webp"
+              title="Raw gold sea moss"
+              alt="Raw gold sea moss"
+            />
+          </div>
+        </div>
+      </Section>
+
       <Section>
         <div className="faq-container">
           <h2>Frequently Asked Questions</h2>
