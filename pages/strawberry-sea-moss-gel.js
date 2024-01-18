@@ -356,7 +356,7 @@ const StrawberrySeaMossGel = () => {
           <h2>Related Products</h2>
           <div className="grid-related">
             <div className="related-products">
-              <Link href="/guava-sea-moss-gel">
+              <Link href="/pink-guava-sea-moss-gel">
                 <img
                   src="https://res.cloudinary.com/browne-company/image/upload/v1704729836/seaMossProducts/gold-sea-moss-gel-with-guava_zwyily.webp"
                   alt="Guava sea moss gel"
