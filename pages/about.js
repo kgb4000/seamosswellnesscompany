@@ -35,8 +35,9 @@ const About = () => {
             lifestyles and promote healing from the inside out.
           </p>
           <p>
-            Our product selection includes sea moss gel, teas, capsules and
-            other natural supplements.
+            Our product selection includes{' '}
+            <Link href="/purple-sea-moss-gel">purple sea moss gel</Link>, teas,
+            capsules and other natural supplements.
           </p>
           <p>
             We believe that nature has all the answers when it comes to health

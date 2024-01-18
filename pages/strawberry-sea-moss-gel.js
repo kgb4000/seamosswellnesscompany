@@ -362,7 +362,7 @@ const StrawberrySeaMossGel = () => {
                   alt="Guava sea moss gel"
                   title="Guava sea moss gel"
                 />
-                <h3>Guava Se Moss Gel</h3>
+                <h3>Guava Sea Moss Gel</h3>
                 <p>$29.99</p>
               </Link>
               <button>Add To Cart</button>
@@ -481,12 +481,7 @@ const StrawberrySeaMossGel = () => {
               </p>
               <h3>Do you offer international shipping?</h3>
               <p>No, we do not provide international shipping.</p>
-              <h3>Is Soursop Sea Moss Gel safe for children to consume?</h3>
-              <p>
-                While it's generally safe for children, we recommend consulting
-                with a healthcare professional before giving it to young
-                children or infants.
-              </p>
+
               <h3>Is the packaging eco-friendly, and can it be recycled?</h3>
               <p>
                 We are committed to sustainability. Our packaging is
