@@ -15,7 +15,7 @@ const cld = new Cloudinary({
 
 const GingerSeaMossGel = () => {
   const SEO = {
-    title: `Giner Sea Moss Gel | The Ultimate Health Elixir | Shop Online!`,
+    title: `Ginger Sea Moss Gel | The Ultimate Health Elixir | Shop Online!`,
     description:
       'Experience the transformative power of Strawberry Sea Moss Gel. Discover its unique blend of flavors and benefits in every spoonful. Get a jar today!',
     canonical: `https://seamosswellness.com/strawberry-sea-moss-gel`,
