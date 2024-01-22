@@ -15,7 +15,7 @@ const cld = new Cloudinary({
 
 const PurpleSeaMossGel = () => {
   const SEO = {
-    title: `Buy Premium Purple Sea Moss Gel | Rich in Antioxidants & Minerals`,
+    title: `Buy Premium Purple Sea Moss Gel - 16oz Jar | Rich in Antioxidants & Minerals`,
     description:
       'Boost your immune system naturally with our All-Natural Purple Sea Moss Gel. Packed with essential nutrients for optimal health. Buy a jar today!',
     canonical: `https://seamosswellness.com/purple-sea-moss-gel`,
