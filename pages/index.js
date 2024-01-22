@@ -69,8 +69,8 @@ export default function Blog({ data }) {
             <div className="top-blog-container">
               <h1 className="title">Sea Moss Wellness Blog</h1>
               <p className="subtext">
-                A blog about the health benefits you can get by adding sea moss
-                to your diet
+                The most up-to-date blog about Sea Moss and Sea Moss health
+                benefits
               </p>
             </div>
           </section>
