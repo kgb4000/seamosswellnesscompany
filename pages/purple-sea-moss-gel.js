@@ -23,7 +23,7 @@ const PurpleSeaMossGel = () => {
   return (
     <>
       <ProductJsonLd
-        productName="Strawberry Sea Moss Gel"
+        productName="Purple Sea Moss Gel"
         images={[
           'https://res.cloudinary.com/browne-company/image/upload/v1704729838/seaMossProducts/purple-sea-moss-gel_xdruds.webp',
           ,
@@ -128,7 +128,7 @@ const PurpleSeaMossGel = () => {
                   alt="Guava sea moss gel"
                   title="Guava sea moss gel"
                 />
-                <h3>Guava Se Moss Gel</h3>
+                <h3>Guava Sea Moss Gel</h3>
                 <p>$29.99</p>
               </Link>
               <button>Add To Cart</button>

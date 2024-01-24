@@ -534,8 +534,9 @@ const SeaMossMinerals = () => {
                 certain medical conditions.
               </p>
               <p>
-                The iron in sea moss is complemented by its vitamin C content,
-                which significantly enhances iron absorption in the body.
+                The <Link href="/sea-moss-for-anemia">iron in sea moss</Link> is
+                complemented by its vitamin C content, which significantly
+                enhances iron absorption in the body.
               </p>
               <p>
                 This synergy makes sea moss a valuable dietary addition for

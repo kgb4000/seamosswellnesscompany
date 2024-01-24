@@ -158,14 +158,16 @@ const MangoSeaMossGel = () => {
               <button>Add To Cart</button>
             </div>
             <div className="related-products">
-              <img
-                src="https://res.cloudinary.com/browne-company/image/upload/v1704729836/seaMossProducts/gold-sea-moss-gel-with-ginger_v1vszu.webp"
-                title="Ginger sea moss gel"
-                alt="Ginger sea moss gel"
-                className="related-products"
-              />
-              <h3>Ginger Sea Moss Gel</h3>
-              <p>$29.99</p>
+              <Link href="/ginger-sea-moss-gel">
+                <img
+                  src="https://res.cloudinary.com/browne-company/image/upload/v1704729836/seaMossProducts/gold-sea-moss-gel-with-ginger_v1vszu.webp"
+                  title="Ginger sea moss gel"
+                  alt="Ginger sea moss gel"
+                  className="related-products"
+                />
+                <h3>Ginger Sea Moss Gel</h3>
+                <p>$29.99</p>
+              </Link>
               <button>Add To Cart</button>
             </div>
           </div>
@@ -187,70 +189,75 @@ const MangoSeaMossGel = () => {
                 Mangoes are not only a deliciously sweet fruit but also a
                 powerhouse of nutrients, offering numerous health benefits:
               </p>
-              <div>
-                <h3>Rich in Vitamins and Antioxidants:</h3>
-                <p>
-                  Mangoes are an excellent source of Vitamin C, essential for a
-                  healthy immune system, and Vitamin A, crucial for good vision
-                  and skin health. They also contain folate, vitamin K, vitamin
-                  E, and several B vitamins. Antioxidants like quercetin,
-                  fisetin, isoquercitrin, astragalin, gallic acid, and methyl
-                  gallate in mangoes help protect the body against oxidative
-                  stress and free radicals.
-                </p>
-                <h3>Digestive Health: </h3>
-                <p>
-                  Mangoes are high in water and dietary fiber, which aids
-                  digestion and helps prevent constipation. The presence of
-                  enzymes like amylases in ripe mangoes assists in breaking down
-                  carbohydrates and improving digestive efficiency.
-                </p>
-                <h3>Heart Health:</h3>
-                <p>
-                  The fiber, potassium, and vitamins in mangoes help maintain a
-                  healthy heart. Potassium helps manage heart rate and blood
-                  pressure, while the fiber reduces the levels of LDL (bad)
-                  cholesterol.
-                </p>
-                <h3>Eye Health:</h3>
-                <p>
-                  Mangoes are a rich source of beta-carotene, which gets
-                  converted into Vitamin A and plays a vital role in maintaining
-                  healthy eyesight. They also contain lutein and zeaxanthin,
-                  antioxidants that filter harmful blue light waves, protecting
-                  and maintaining healthy cells in the eyes.
-                </p>
-                <h3>Cancer Prevention:</h3>
-                <p>
-                  The antioxidants and phytochemicals in mangoes can help
-                  protect against certain types of cancers. Compounds such as
-                  mangiferin, norathyriol, resveratrol, and quercetin have shown
-                  promising anti-cancer properties in various studies.
-                </p>
-                <h3>Skin and Hair Health:</h3>
-                <p>
-                  Vitamin A and Vitamin C in mangoes are crucial for healthy
-                  hair and skin. Vitamin C is involved in collagen formation,
-                  and Vitamin A is necessary for skin repair and maintenance.
-                </p>
-                <h3>Improves Immunity:</h3>
-                <p>
-                  The generous amounts of Vitamin C and Vitamin A in mangoes,
-                  along with 25 different kinds of carotenoids, keep your immune
-                  system healthy and strong.
-                </p>
-                <h3>Blood Sugar Regulation: </h3>
-                <p>
-                  Despite their natural sweetness, mangoes have a low glycemic
-                  index and can help in regulating blood sugar levels. The fiber
-                  in mangoes also helps in moderating blood sugar levels.
-                </p>
-                <h3>Alkalizes the Body:</h3>
-                <p>
-                  Mangoes contain tartaric and malic acid and traces of citric
-                  acid, which help in maintaining the alkali reserve of the
-                  body.
-                </p>
+              <div className="grid-faq">
+                <div>
+                  <h3>Vitamins and Antioxidants:</h3>
+                  <p>
+                    Mangoes are an excellent source of Vitamin C, essential for
+                    a healthy immune system, and Vitamin A, crucial for good
+                    vision and skin health. They also contain folate, vitamin K,
+                    vitamin E, and several B vitamins. Antioxidants like
+                    quercetin, fisetin, isoquercitrin, astragalin, gallic acid,
+                    and methyl gallate in mangoes help protect the body against
+                    oxidative stress and free radicals.
+                  </p>
+                  <h3>Digestive Health:</h3>
+                  <p>
+                    Mangoes are high in water and dietary fiber, which aids
+                    digestion and helps prevent constipation. The presence of
+                    enzymes like amylases in ripe mangoes assists in breaking
+                    down carbohydrates and improving digestive efficiency.
+                  </p>
+                  <h3>Heart Health:</h3>
+                  <p>
+                    The fiber, potassium, and vitamins in mangoes help maintain
+                    a healthy heart. Potassium helps manage heart rate and blood
+                    pressure, while the fiber reduces the levels of LDL (bad)
+                    cholesterol.
+                  </p>
+                  <h3>Eye Health:</h3>
+                  <p>
+                    Mangoes are a rich source of beta-carotene, which gets
+                    converted into Vitamin A and plays a vital role in
+                    maintaining healthy eyesight. They also contain lutein and
+                    zeaxanthin, antioxidants that filter harmful blue light
+                    waves, protecting and maintaining healthy cells in the eyes.
+                  </p>
+                </div>
+                <div>
+                  <h3>Cancer Prevention:</h3>
+                  <p>
+                    The antioxidants and phytochemicals in mangoes can help
+                    protect against certain types of cancers. Compounds such as
+                    mangiferin, norathyriol, resveratrol, and quercetin have
+                    shown promising anti-cancer properties in various studies.
+                  </p>
+                  <h3>Skin and Hair Health:</h3>
+                  <p>
+                    Vitamin A and Vitamin C in mangoes are crucial for healthy
+                    hair and skin. Vitamin C is involved in collagen formation,
+                    and Vitamin A is necessary for skin repair and maintenance.
+                  </p>
+                  <h3>Improves Immunity:</h3>
+                  <p>
+                    The generous amounts of Vitamin C and Vitamin A in mangoes,
+                    along with 25 different kinds of carotenoids, keep your
+                    immune system healthy and strong.
+                  </p>
+                  <h3>Blood Sugar Regulation: </h3>
+                  <p>
+                    Despite their natural sweetness, mangoes have a low glycemic
+                    index and can help in regulating blood sugar levels. The
+                    fiber in mangoes also helps in moderating blood sugar
+                    levels.
+                  </p>
+                  <h3>Alkalizes the Body:</h3>
+                  <p>
+                    Mangoes contain tartaric and malic acid and traces of citric
+                    acid, which help in maintaining the alkali reserve of the
+                    body.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
