@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { NextSeo, ProductJsonLd } from 'next-seo'
 import styled from 'styled-components'
 import { Cloudinary } from '@cloudinary/url-gen'
+import Button from '../components/Button'
 
 const cld = new Cloudinary({
   cloud: {
@@ -108,7 +109,7 @@ const PinkGuavaSeaMossGel = () => {
                 food; it's a journey toward a healthier life and vibrant
                 well-being.
               </p>
-              <button>Add To Cart</button>
+              <Button>Add To Cart</Button>
               <h3>Ingredients:</h3>
               <p>Strawberries</p>
               <p>Gold Sea moss gel</p>

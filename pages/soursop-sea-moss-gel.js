@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { NextSeo, ProductJsonLd } from 'next-seo'
 import styled from 'styled-components'
 import { Cloudinary } from '@cloudinary/url-gen'
+import Button from '../components/Button'
 
 const cld = new Cloudinary({
   cloud: {
@@ -114,7 +115,7 @@ const SoursopSeaMossGel = () => {
                 Prepare to embark on a culinary voyage that not only nourishes
                 your body but also rejuvenates your spirit.
               </p>
-              <button>Add To Cart</button>
+              <Button>Add To Cart</Button>
               <h3>Ingredients:</h3>
               <p>Soursop</p>
               <p>Gold Sea moss gel</p>
@@ -231,8 +232,8 @@ const SoursopSeaMossGel = () => {
             <img
               className="img"
               src="https://res.cloudinary.com/browne-company/image/upload/v1704729838/seaMossProducts/raw-gold-sea-moss_hkuu7h.webp"
-              title="Raw gold sea moss"
-              alt="Raw gold sea moss"
+              title="Raw gold sea moss."
+              alt="Raw gold sea moss."
             />
             <div className="grid-text-1 ">
               <h2>Benefits of Gold Sea Moss Gel?</h2>
@@ -313,8 +314,8 @@ const SoursopSeaMossGel = () => {
             <img
               className="img"
               src="https://res.cloudinary.com/browne-company/image/upload/v1704729838/seaMossProducts/raw-gold-sea-moss_hkuu7h.webp"
-              title="Raw gold sea moss"
-              alt="Raw gold sea moss"
+              title="Raw gold sea moss."
+              alt="Raw gold sea moss."
             />
           </div>
         </div>
@@ -327,8 +328,8 @@ const SoursopSeaMossGel = () => {
               <Link href="/pink-guava-sea-moss-gel">
                 <img
                   src="https://res.cloudinary.com/browne-company/image/upload/v1704729836/seaMossProducts/gold-sea-moss-gel-with-guava_zwyily.webp"
-                  alt="Guava sea moss gel"
-                  title="Guava sea moss gel"
+                  alt="Guava sea moss gel."
+                  title="Guava sea moss gel."
                 />
                 <h3>Guava Se Moss Gel</h3>
                 <p>$29.99</p>
@@ -339,8 +340,8 @@ const SoursopSeaMossGel = () => {
               <Link href="/strawberry-sea-moss-gel">
                 <img
                   src="https://res.cloudinary.com/browne-company/image/upload/v1704729837/seaMossProducts/gold-sea-moss-gel-with-strawberries_e4iagz.webp"
-                  alt="Strawberry sea moss gel"
-                  title="Strawberry sea moss gel"
+                  alt="Strawberry sea moss gel."
+                  title="Strawberry sea moss gel."
                   className="related-products"
                 />
                 <h3>Strawberry Sea Moss Gel</h3>
@@ -352,8 +353,8 @@ const SoursopSeaMossGel = () => {
               <Link href="/mango-sea-moss-gel">
                 <img
                   src="https://res.cloudinary.com/browne-company/image/upload/v1704729837/seaMossProducts/gold-sea-moss-gel-with-mango_hfzyes.webp"
-                  alt="Mango sea moss gel"
-                  title="Mango sea moss gel"
+                  alt="Mango sea moss gel."
+                  title="Mango sea moss gel."
                   className="related-products"
                 />
                 <h3>Mango Sea Moss Gel</h3>
@@ -365,8 +366,8 @@ const SoursopSeaMossGel = () => {
               <Link href="/ginger-sea-moss-gel">
                 <img
                   src="https://res.cloudinary.com/browne-company/image/upload/v1704729836/seaMossProducts/gold-sea-moss-gel-with-ginger_v1vszu.webp"
-                  title="Ginger sea moss gel"
-                  alt="Ginger sea moss gel"
+                  title="Ginger sea moss gel."
+                  alt="Ginger sea moss gel."
                   className="related-products"
                 />
                 <h3>Ginger Sea Moss Gel</h3>

@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { NextSeo, ProductJsonLd } from 'next-seo'
 import styled from 'styled-components'
 import { Cloudinary } from '@cloudinary/url-gen'
+import Button from '../components/Button'
 
 const cld = new Cloudinary({
   cloud: {
@@ -110,7 +111,7 @@ const MangoSeaMossGel = () => {
                 Get ready to indulge in a unique culinary journey that nourishes
                 your body and soul.
               </p>
-              <button>Add To Cart</button>
+              <Button>Add To Cart</Button>
               <h3>Ingredients:</h3>
               <p>Mangoes</p>
               <p>Gold Sea moss gel</p>
@@ -124,13 +125,15 @@ const MangoSeaMossGel = () => {
           <h2>Related Products</h2>
           <div className="grid-related">
             <div className="related-products">
-              <img
-                src="https://res.cloudinary.com/browne-company/image/upload/v1704729836/seaMossProducts/gold-sea-moss-gel-with-guava_zwyily.webp"
-                alt="Guava sea moss gel"
-                title="Guava sea moss gel"
-              />
-              <h3>Guava Se Moss Gel</h3>
-              <p>$29.99</p>
+              <Link href="/pink-guava-sea-moss-gel">
+                <img
+                  src="https://res.cloudinary.com/browne-company/image/upload/v1704729836/seaMossProducts/gold-sea-moss-gel-with-guava_zwyily.webp"
+                  alt="Guava sea moss gel"
+                  title="Guava sea moss gel"
+                />
+                <h3>Guava Se Moss Gel</h3>
+                <p>$29.99</p>
+              </Link>
               <button>Add To Cart</button>
             </div>
             <div className="related-products">

@@ -154,8 +154,8 @@ const StrawberrySeaMossGel = () => {
           <div className="grid">
             <img
               src="https://res.cloudinary.com/browne-company/image/upload/v1705242199/seaMossProducts/strawberries_ro0aq7.png"
-              alt="Strawberries"
-              title="Strawberries"
+              alt="Strawberries."
+              title="Strawberries."
             />
             <div>
               <h2>Strawberry Health Benefits</h2>
@@ -238,8 +238,8 @@ const StrawberrySeaMossGel = () => {
             </div>
             <img
               src="https://res.cloudinary.com/browne-company/image/upload/v1705242199/seaMossProducts/strawberry_z0lvht.png"
-              alt="One strawberry"
-              title="One strawberry"
+              alt="One strawberry."
+              title="One strawberry."
             />
           </div>
         </div>
@@ -251,8 +251,8 @@ const StrawberrySeaMossGel = () => {
             <img
               className="img"
               src="https://res.cloudinary.com/browne-company/image/upload/v1704729838/seaMossProducts/raw-gold-sea-moss_hkuu7h.webp"
-              title="Raw gold sea moss"
-              alt="Raw gold sea moss"
+              title="Raw gold sea moss."
+              alt="Raw gold sea moss."
             />
             <div className="grid-text-1 ">
               <h2>Benefits of Gold Sea Moss Gel?</h2>
@@ -345,8 +345,8 @@ const StrawberrySeaMossGel = () => {
             <img
               className="img"
               src="https://res.cloudinary.com/browne-company/image/upload/v1704729838/seaMossProducts/raw-gold-sea-moss_hkuu7h.webp"
-              title="Raw gold sea moss"
-              alt="Raw gold sea moss"
+              title="Raw gold sea moss."
+              alt="Raw gold sea moss."
             />
           </div>
         </div>
@@ -359,8 +359,8 @@ const StrawberrySeaMossGel = () => {
               <Link href="/pink-guava-sea-moss-gel">
                 <img
                   src="https://res.cloudinary.com/browne-company/image/upload/v1704729836/seaMossProducts/gold-sea-moss-gel-with-guava_zwyily.webp"
-                  alt="Guava sea moss gel"
-                  title="Guava sea moss gel"
+                  alt="Guava sea moss gel."
+                  title="Guava sea moss gel."
                 />
                 <h3>Guava Sea Moss Gel</h3>
                 <p>$29.99</p>
@@ -371,8 +371,8 @@ const StrawberrySeaMossGel = () => {
               <Link href="/soursop-sea-moss-gel">
                 <img
                   src="https://res.cloudinary.com/browne-company/image/upload/v1704729837/seaMossProducts/gold-sea-moss-gel-with-soursop_f7urvp.webp"
-                  alt="Soursop sea moss gel"
-                  title="Soursop sea moss gel"
+                  alt="Soursop sea moss gel."
+                  title="Soursop sea moss gel."
                   className="related-products"
                 />
                 <h3>Soursop Sea Moss Gel</h3>
@@ -384,8 +384,8 @@ const StrawberrySeaMossGel = () => {
               <Link href="/mango-sea-moss-gel">
                 <img
                   src="https://res.cloudinary.com/browne-company/image/upload/v1704729837/seaMossProducts/gold-sea-moss-gel-with-mango_hfzyes.webp"
-                  alt="Mango sea moss gel"
-                  title="Mango sea moss gel"
+                  alt="Mango sea moss gel."
+                  title="Mango sea moss gel."
                   className="related-products"
                 />
                 <h3>Mango Sea Moss Gel</h3>
@@ -397,8 +397,8 @@ const StrawberrySeaMossGel = () => {
               <Link href="/ginger-sea-moss-gel">
                 <img
                   src="https://res.cloudinary.com/browne-company/image/upload/v1704729836/seaMossProducts/gold-sea-moss-gel-with-ginger_v1vszu.webp"
-                  title="Ginger sea moss gel"
-                  alt="Ginger sea moss gel"
+                  title="Ginger sea moss gel."
+                  alt="Ginger sea moss gel."
                   className="related-products"
                 />
                 <h3>Ginger Sea Moss Gel</h3>

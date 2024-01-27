@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { NextSeo, ProductJsonLd } from 'next-seo'
 import styled from 'styled-components'
 import { Cloudinary } from '@cloudinary/url-gen'
+import Button from '../components/Button'
 
 const cld = new Cloudinary({
   cloud: {
@@ -111,7 +112,7 @@ const GreenSeaMoss = () => {
                 natural body deodorizer and nutritional supplement, a testament
                 to the life force of the sea.
               </p>
-              <button>Coming Soon</button>
+              <Button>Coming Soon</Button>
               <p>Ingredients:</p>
               <p>Organic green sea moss from St. Lucia (Eucheuma Conttonii)</p>
             </div>
@@ -352,7 +353,7 @@ const GreenSeaMoss = () => {
               <button>Add To Cart</button>
             </div>
             <div className="related-products">
-              <Link href="/">
+              <Link href="/golden-sea-moss">
                 <img
                   src="https://res.cloudinary.com/browne-company/image/upload/v1704729838/seaMossProducts/raw-gold-sea-moss_hkuu7h.webp"
                   alt="Gold sea moss."
