@@ -324,7 +324,7 @@ const GoldenSeaMoss = () => {
         <div className="wider-container">
           <h2 className="center">Health Benefits of Golden Sea Moss</h2>
           <div className="grid-faq">
-            <div className="benefits-bg">
+            <div className="benefits-bg-left">
               <div className="benefit">
                 <img
                   src="/images/icons/nutrients.png"
@@ -427,7 +427,7 @@ const GoldenSeaMoss = () => {
                 </div>
               </div>
             </div>
-            <div className="benefits-bg">
+            <div className="benefits-bg-right">
               <div className="benefit">
                 <img
                   src="/images/icons/weight-management.png"
@@ -517,8 +517,40 @@ const GoldenSeaMoss = () => {
               </div>
             </div>
           </div>
-          <div className="btn">
-            <Button>Add to My Cart</Button>
+        </div>
+      </Section>
+      <Section>
+        <div className="wider-container">
+          <h2 className="center">How To Use Golden Sea Moss</h2>
+          <div className="waystousegrid">
+            <div className="grid-ways">
+              <img
+                src="https://res.cloudinary.com/browne-company/image/upload/v1706383111/Gold%20Sea%20Moss%20Page/add-gold-sea-moss-to-water_mjoa6z.jpg"
+                alt="Add gold sea moss to water."
+              />
+              <p>Add to beverages like tea or water.</p>
+            </div>
+            <div className="grid-ways">
+              <img
+                src="https://res.cloudinary.com/browne-company/image/upload/v1706383718/Gold%20Sea%20Moss%20Page/add-gold-sea-moss-to-smoothies_bfzin2.jpg"
+                alt="Add sea moss to smoothies to boost mineral and vitamin conent."
+              />
+              <p>Add to smoothies and boost mineral and vitamin conent.</p>
+            </div>
+            <div className="grid-ways">
+              <img
+                src="https://res.cloudinary.com/browne-company/image/upload/v1706383111/Gold%20Sea%20Moss%20Page/add-gold-sea-moss-to-soup_cnfn2e.jpg"
+                alt="Add sea moss to thickenen soups and sauces."
+              />
+              <p>Add sea moss to thickenen soups and sauces.</p>
+            </div>
+            <div className="grid-ways">
+              <img
+                src="https://res.cloudinary.com/browne-company/image/upload/v1706383111/Gold%20Sea%20Moss%20Page/gold-sea-moss-for-skin-care_ja7haw.jpg"
+                alt="Use golde sea moss for skin care and treatment."
+              />
+              <p>Skin care and treatment.</p>
+            </div>
           </div>
         </div>
       </Section>
@@ -757,13 +789,9 @@ const Section = styled.section`
   margin-bottom: 2rem;
 
   @media (min-width: 1024px) {
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
   }
 
-  .btn {
-    margin: 0 auto;
-    width: 26rem;
-  }
   .shipping-returns {
     margin-top: 2em;
 
@@ -814,23 +842,67 @@ const Section = styled.section`
     background-color: #f8f8f8;
     padding: 2rem 4rem;
     border-radius: 50px;
+    border: 6px solid #f6e58d;
   }
 
-  .benefits-bg {
-    color: #fff;
+  .benefits-bg-left {
     background-color: #f6e58d;
     padding: 3rem 1rem;
     border-radius: 10px;
     margin-top: 2rem;
     margin-bottom: 3rem;
+
     @media (min-width: 1024px) {
-      border-radius: 50px;
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-top-left-radius: 50px;
+      border-bottom-left-radius: 50px;
       padding: 4rem;
     }
   }
 
+  .benefits-bg-right {
+    background-color: #f6e58d;
+    padding: 3rem 1rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+
+    @media (min-width: 1024px) {
+      border-top-right-radius: 50px;
+      border-bottom-right-radius: 50px;
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0px;
+      padding: 4rem;
+    }
+  }
+
+  .waystousegrid {
+    max-width: 1540px;
+    text-align: center;
+    @media (min-width: 600px) {
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    @media (min-width: 888px) {
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 20px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .grid-ways {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+  }
+
   h2 {
-    margin-bottom: 1.5rem;
+    margin-bottom: 3rem;
   }
 
   .benefit {
@@ -967,6 +1039,12 @@ const Section = styled.section`
   }
 
   .grid-related {
+    @media (min-width: 600px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-content: center;
+      gap: 40px;
+    }
     @media (min-width: 1028px) {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;

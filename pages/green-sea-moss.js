@@ -195,7 +195,6 @@ const GreenSeaMoss = () => {
                           and a guardian against cellular damage.
                         </p>
                         <p>
-                          {' '}
                           Adding it to your diet symbolizes an embrace of the
                           life force of the sea, a step towards harnessing the
                           pure, unadulterated essence of nature for your health.
@@ -333,8 +332,8 @@ const GreenSeaMoss = () => {
               <div className="benefit">
                 <img
                   src="/images/icons/chlorophyll.png"
-                  title="Clorophyll content."
-                  alt="Clorophyll content."
+                  title="Chlorophyll content."
+                  alt="Chlorophyll content."
                   width={50}
                   height={50}
                 />
@@ -354,7 +353,7 @@ const GreenSeaMoss = () => {
                   <h3>Vitamins and Minerals:</h3>
                   <p>
                     Green Sea Moss is a treasure trove of essential nutrients.
-                    It's packed with vitamins like Vitamin A, C, E, K, and a
+                    It's packed with vitamins like vitamins A, C, E, K, and a
                     host of B vitamins. It's also rich in minerals such as
                     iodine, potassium, calcium, and magnesium, making it a
                     comprehensive supplement for daily health.
@@ -405,9 +404,9 @@ const GreenSeaMoss = () => {
                     <p>
                       Its prebiotic properties can help to maintain a healthy
                       gut microbiome, fostering the growth of beneficial
-                      bacteria and enhancing digestive health. This can lead to
-                      improved digestion and relief from issues like bloating
-                      and constipation.
+                      bacteria and enhancing digestive health. This can improve
+                      digestion and relieve issues like bloating and
+                      constipation.
                     </p>
                   </div>
                 </div>
@@ -496,7 +495,7 @@ const GreenSeaMoss = () => {
                   <h3>Rich in Magnesium and Potassium:</h3>
                   <p>
                     Potassium and magnesium are minerals known for their role in
-                    brain health. They can help in regulating mood and relieving
+                    brain health. They can help in regulating mood and relieve
                     stress and anxiety, thereby potentially improving mental
                     well-being.
                   </p>
@@ -525,13 +524,48 @@ const GreenSeaMoss = () => {
       </Section>
       <Section>
         <div className="wider-container">
+          <h2 className="center">Ways To Use Green Sea Moss</h2>
+          <div className="waystousegrid">
+            <div className="grid-ways">
+              <img
+                src="https://res.cloudinary.com/browne-company/image/upload/v1706378159/Green%20Sea%20Moss%20Page/green-sea-moss-as-supplement_wfbsqp.jpg"
+                alt="Sea moss supplements"
+              />
+              <p>Add to beverages like tea or water.</p>
+            </div>
+            <div className="grid-ways">
+              <img
+                src="https://res.cloudinary.com/browne-company/image/upload/v1706378159/Green%20Sea%20Moss%20Page/green-sea-moss-smoothie_zdic0y.jpg"
+                alt="Sea moss supplements"
+              />
+              <p>Add to smoothies and boost mineral and vitamin conent.</p>
+            </div>
+            <div className="grid-ways">
+              <img
+                src="https://res.cloudinary.com/browne-company/image/upload/v1706378160/Green%20Sea%20Moss%20Page/green-sea-moss-thickener-for-soup_uujup0.jpg"
+                alt="Sea moss supplements"
+              />
+              <p>Add as a thickener to soups and sauces.</p>
+            </div>
+            <div className="grid-ways">
+              <img
+                src="https://res.cloudinary.com/browne-company/image/upload/v1706378159/Green%20Sea%20Moss%20Page/green-sea-moss-for-skin-care_bib5di.jpg"
+                alt="Sea moss supplements"
+              />
+              <p>Skin care and treatment.</p>
+            </div>
+          </div>
+        </div>
+      </Section>
+      <Section>
+        <div className="wider-container">
           <h2 className="center">How To Make Green Sea Moss Gel</h2>
           <div className="flex">
             <div className="howtousebg">
               <h3>#1. Clean the Sea Moss</h3>
               <ul>
                 <li>
-                  You'll need green sea moss, a large bowl, and fresh water
+                  You'll need green sea moss, a large bowl, and freshwater
                   (preferably spring or distilled water).
                 </li>
                 <li>
@@ -699,7 +733,7 @@ const GreenSeaMoss = () => {
               </p>
               <h3>Can I return the product if I’m not satisfied?</h3>
               <p>
-                Yes, we have a 60 day return policy. If you’re not satisfied,
+                Yes, we have a 90 day return policy. If you’re not satisfied,
                 please contact our customer service for a hassle-free return
                 process.
               </p>
@@ -721,8 +755,8 @@ const GreenSeaMoss = () => {
                 quality?
               </h3>
               <p>
-                High-quality green sea moss should have a minimal smell, a
-                natural color, and be free from any artificial additives.
+                High-quality green sea moss should have a minimal smell and a
+                natural color and be free from artificial additives.
               </p>
             </div>
           </div>
@@ -755,13 +789,9 @@ const Section = styled.section`
   margin-bottom: 2rem;
 
   @media (min-width: 1024px) {
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
   }
 
-  .btn {
-    margin: 0 auto;
-    max-width: 26rem;
-  }
   .shipping-returns {
     margin-top: 2em;
 
@@ -812,6 +842,7 @@ const Section = styled.section`
     background-color: #f8f8f8;
     padding: 2rem 4rem;
     border-radius: 50px;
+    border: 6px solid #27ae60;
   }
 
   .benefits-bg-left {
@@ -854,8 +885,32 @@ const Section = styled.section`
     }
   }
 
+  .waystousegrid {
+    max-width: 1540px;
+    text-align: center;
+    @media (min-width: 600px) {
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    @media (min-width: 888px) {
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 20px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .grid-ways {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+  }
+
   h2 {
-    margin-bottom: 1.5rem;
+    margin-bottom: 3rem;
   }
 
   .benefit {
@@ -992,6 +1047,12 @@ const Section = styled.section`
   }
 
   .grid-related {
+    @media (min-width: 600px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-content: center;
+      gap: 40px;
+    }
     @media (min-width: 1028px) {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
