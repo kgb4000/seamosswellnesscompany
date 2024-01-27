@@ -30,12 +30,12 @@ const GoldenSeaMoss = () => {
   return (
     <>
       <ProductJsonLd
-        productName="Green Sea Moss"
+        productName="Golden Sea Moss"
         images={[
           'https://res.cloudinary.com/browne-company/image/upload/v1704729838/seaMossProducts/raw-gold-sea-moss_hkuu7h.webp',
           ,
         ]}
-        description="Get the best organic green sea moss, a nutrient-dense addition to your daily health regimen. Supports thyroid function, improves immunity, and is rich in natural vitamins. Get a jar today!"
+        description="Discover the health benefits of Organic Golden Sea Moss, sourced directly from the pristine waters of St. Lucia. Buy one and boost your daily nutrition."
         brand="Sea Moss Wellness"
         // manufacturerName="Gary Meehan"
         // manufacturerLogo="https://www.example.com/photos/logo.jpg"
@@ -218,7 +218,17 @@ const GoldenSeaMoss = () => {
                           <span className="plus">+</span>
                         </DropDown>
                         <Disclosure.Panel>
-                          <p>100% natural gold sea moss.</p>
+                          <p>
+                            On its own, it doesn't have a strong flavor profile.
+                            Some people perceive a faint sweetness or nuttiness,
+                            while others barely taste anything at all.
+                          </p>
+                          <p>
+                            It's essentially a blank canvas for flavor. This
+                            makes it incredibly versatile and suitable for
+                            incorporating into various dishes and drinks without
+                            overpowering other ingredients.
+                          </p>
                         </Disclosure.Panel>
                       </>
                     )}
@@ -238,11 +248,11 @@ const GoldenSeaMoss = () => {
           <div className="grid-shipping">
             <div>
               <p>Natural Superfoods</p>
-              <p>Alkalizes your body with natural ingredients</p>
+              <p>Alkalizes your body with natural ingredients.</p>
             </div>
             <div>
               <p>5-Star Reviews</p>
-              <p>See Why Our Customers Love Our Products</p>
+              <p>See Why Our Customers Love Our Golde Sea Moss.</p>
             </div>
             <div>
               <p>Get FREE Shipping Today!</p>
@@ -504,6 +514,9 @@ const GoldenSeaMoss = () => {
               </div>
             </div>
           </div>
+          <div className="btn">
+            <Button>Add Golden Sea Moss to My Cart</Button>
+          </div>
         </div>
       </Section>
       <Section>
@@ -738,6 +751,16 @@ const DropDown = styled(Disclosure.Button)`
 export default GoldenSeaMoss
 
 const Section = styled.section`
+  margin-bottom: 2rem;
+
+  @media (min-width: 1024px) {
+    margin-bottom: 5rem;
+  }
+
+  .btn {
+    margin: 0 auto;
+    width: 26rem;
+  }
   .shipping-returns {
     margin-top: 2em;
   }
@@ -860,8 +883,6 @@ const Section = styled.section`
     text-align: center;
     margin-bottom: 1rem;
   }
-
-  margin-bottom: 5em;
 
   .wider-container {
     margin: 0 auto;
