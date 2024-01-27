@@ -631,7 +631,7 @@ const GoldenSeaMoss = () => {
               </Link>
             </div>
             <div className="related-products">
-              <Link href="/">
+              <Link href="/purple-sea-moss">
                 <img
                   src="https://res.cloudinary.com/browne-company/image/upload/v1704729839/seaMossProducts/raw-purple-sea-moss_a25mj0.webp"
                   alt="Purple sea moss."

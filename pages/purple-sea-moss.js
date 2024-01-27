@@ -5,7 +5,7 @@ import { NextSeo, ProductJsonLd } from 'next-seo'
 import styled from 'styled-components'
 import { Cloudinary } from '@cloudinary/url-gen'
 import Button from '../components/Button'
-import { Disclosure } from '@headlessui/react'
+import { Disclosure, Dialog } from '@headlessui/react'
 
 const cld = new Cloudinary({
   cloud: {
@@ -16,28 +16,30 @@ const cld = new Cloudinary({
   },
 })
 
-const GreenSeaMoss = () => {
+const PurpleSeaMoss = () => {
   const SEO = {
-    title: `Green Sea Moss From St. Lucia | Finest Qualtiy | Raw, Healthy, Superfood`,
+    title: `Purple Sea Moss from St. Lucia | Raw and Organic | Improve Energy & Vitality`,
     description:
-      'Our raw green sea moss is a natural wonder, loaded with health benefits. Boost your thyroid health and immunity with this organic, nutrient-rich superfood.',
-    canonical: `https://seamosswellness.com/green-sea-moss`,
+      'Discover our Premium Purple Sea Moss, packed with antioxidants and essential minerals. Enhance your health with this all-natural, nutrient-rich superfood.',
+    canonical: `https://seamosswellness.com/purple-sea-moss`,
   }
 
   const price = 29.99
+  const color = '#9b59b6'
+
   return (
     <>
       <ProductJsonLd
-        productName="Green Sea Moss"
+        productName="Purple Sea Moss"
         images={[
-          'https://res.cloudinary.com/browne-company/image/upload/v1704729838/seaMossProducts/raw-green-sea-moss_aaa6fq.webp',
+          'https://res.cloudinary.com/browne-company/image/upload/v1704729839/seaMossProducts/raw-purple-sea-moss_a25mj0.webp',
           ,
         ]}
-        description="Get the best organic green sea moss, a nutrient-dense addition to your daily health regimen. Supports thyroid function, improves immunity, and is rich in natural vitamins. Get a jar today!"
+        description="Discover our Premium Purple Sea Moss, packed with antioxidants and essential minerals. Enhance your health with this all-natural, nutrient-rich superfood."
         brand="Sea Moss Wellness"
         // manufacturerName="Gary Meehan"
         // manufacturerLogo="https://www.example.com/photos/logo.jpg"
-        slogan="Green Sea Moss: Flavorful Benefits in Every Spoon!"
+        slogan="The Gold Standard of Sea Moss – Pure, Organic, Essential."
         // disambiguatingDescription="Executive Anvil, perfect for the business traveller."
         // releaseDate="2014-02-05T08:00:00+08:00"
         // productionDate="2015-02-05T08:00:00+08:00"
@@ -71,7 +73,7 @@ const GreenSeaMoss = () => {
             // priceValidUntil: '2020-11-05',
             // itemCondition: 'https://schema.org/UsedCondition',
             availability: 'https://schema.org/OnlineOnly',
-            url: 'https://seamosswellness.com/green-sea-moss',
+            url: 'https://seamosswellness.com/purple-sea-moss',
             seller: {
               name: 'Sea Moss Wellness',
             },
@@ -83,16 +85,18 @@ const GreenSeaMoss = () => {
       <Section>
         <div className="wide-container">
           <div className="grid-hero">
-            <img
-              src="https://res.cloudinary.com/browne-company/image/upload/v1704729838/seaMossProducts/raw-green-sea-moss_aaa6fq.webp"
-              alt="Green sea moss."
-              title="Green sea moss."
-            />
+            <div>
+              <img
+                src="https://res.cloudinary.com/browne-company/image/upload/v1704729839/seaMossProducts/raw-purple-sea-moss_a25mj0.webp"
+                alt="Purple Sea Moss (Raw)."
+                title="Purple Sea Moss (Raw)."
+              />
+            </div>
             <div>
               <h1>
-                <span className="green">Green</span> Sea Moss (Raw)
+                <span className="purple">Purple</span> Sea Moss (Raw)
               </h1>
-              <p>DETOXIFYING | WHOLE30 | RAW FOOD | NON-GMO</p>
+              <p>RAW | NON-PROCESSED | WHOLE30 | LOW-CARB </p>
               <div className="product-flex">
                 <Image
                   src="/images/icons/plant-based.png"
@@ -121,13 +125,9 @@ const GreenSeaMoss = () => {
                 <p>100% Organic</p>
               </div>
               <p>
-                One of the rare types, Green sea moss, rich in chlorophyll, is a
-                natural detoxifier and a powerhouse of nutrition. It's teeming
-                with essential vitamins and minerals, helping purify the body by
-                removing toxins.
-                {/* Its
-                high chlorophyll content not only enhances its detox properties,
-                but also contributes to overall health and vitality. */}
+                Our Purple Sea Moss is a bastion of nutrition, densely packed
+                with essential vitamins, minerals, and anti-oxidants that play a
+                crucial role in rejuvenating and detoxifying the body.
               </p>
               <div className="price-info">
                 <p className="price-text">We're giving you</p>
@@ -150,9 +150,13 @@ const GreenSeaMoss = () => {
                       </DropDown>
                       <Disclosure.Panel>
                         <p>
-                          Carefully harvested from the crystal-clear waters of
-                          St. Lucia, our green sea moss, stands as a testament
-                          to the unspoiled beauty of this Caribbean island.
+                          Our Purple Sea Moss is sustainably hand-harvested in
+                          St. Lucia, ensuring that every batch retains its
+                          natural purity and nutrient density. The pristine
+                          waters of St. Lucia provide the ideal environment for
+                          the sea moss to thrive, resulting in a product that is
+                          not only rich in essential minerals and vitamins but
+                          also free from pollutants and contaminants.
                         </p>
                       </Disclosure.Panel>
                     </>
@@ -160,127 +164,122 @@ const GreenSeaMoss = () => {
                 </Disclosure>
               </div>
               <div className="more-info">
-                <Disclosure as="div" className="">
+                <Disclosure>
                   {({ open }) => (
                     <>
                       <DropDown>
-                        <span>More about Green Sea Moss</span>
+                        <span>More about Golden Sea Moss</span>
                         <span className="plus">+</span>
                       </DropDown>
                       <Disclosure.Panel>
                         <p>
-                          Our green sea moss, with its vivid natural hue, is not
-                          just visually striking but also a nutritional
-                          powerhouse. It is abundant in essential minerals like
-                          iodine, crucial for thyroid function; calcium, for
-                          bone strength; potassium, which aids in maintaining
-                          healthy blood pressure; and iron, essential for blood
+                          Rich in a spectrum of vital minerals, including zinc
+                          for robust immune function, magnesium for optimal
+                          nerve and muscle health, selenium for thyroid and
+                          reproductive well-being, and phosphorus for strong
+                          bones and teeth, our Purple Sea Moss is a nutritional
+                          powerhouse.
+                        </p>
+                        <p>
+                          The moss's comprehensive vitamin range, featuring
+                          energy-boosting B-vitamins, bone-strengthening Vitamin
+                          D, and essential fatty acids known as Vitamin F,
+                          fortifies the body’s immune system and contributes to
+                          overall health and vitality.
+                        </p>
+                        <p>
+                          Beyond its nutritional prowess, Purple Sea Moss from
+                          St. Lucia is celebrated for its high antioxidant
+                          content. These potent compounds counteract oxidative
+                          stress and cellular damage, providing a natural
+                          defense against aging and environmental pollutants.
+                        </p>
+                        <p>
+                          The anthocyanins, responsible for its distinctive
+                          purple color, offer additional anti-inflammatory and
+                          cardiovascular benefits, while its natural iodine
+                          content supports hormonal balance and metabolic
                           health.
                         </p>
-                        <p>
-                          The rich vitamin content, including A, C, E, K, and
-                          the B-complex, fortifies the body’s immune system and
-                          enhances overall well-being.
-                        </p>
-                        <p>
-                          Not only does it support thyroid health and boost
-                          immunity, but it also promotes detoxification, thanks
-                          to its high chlorophyll content. This powerful
-                          pigment, known for its cleansing properties, works to
-                          detoxify the body, enhancing your natural vitality.
-                        </p>
-                        <p>
-                          The antioxidants present in sea moss help neutralize
-                          free radicals, making it a potent natural body
-                          deodorizer and a guardian against cellular damage.
-                        </p>
-                        <p>
-                          Adding it to your diet symbolizes an embrace of the
-                          life force of the sea, a step towards harnessing the
-                          pure, unadulterated essence of nature for your health.
-                        </p>
                       </Disclosure.Panel>
                     </>
                   )}
                 </Disclosure>
-              </div>
-              <div className="more-info">
-                <Disclosure as="div" className="">
-                  {({ open }) => (
-                    <>
-                      <DropDown>
-                        <span>Ingredients</span>
-                        <span className="plus">+</span>
-                      </DropDown>
-                      <Disclosure.Panel>
-                        <p>Raw green sea moss.</p>
-                      </Disclosure.Panel>
-                    </>
-                  )}
-                </Disclosure>
-              </div>
-              <div className="more-info">
-                <Disclosure as="div" className="">
-                  {({ open }) => (
-                    <>
-                      <DropDown>
-                        <span>Flavor</span>
-                        <span className="plus">+</span>
-                      </DropDown>
-                      <Disclosure.Panel>
-                        <p>
-                          Some individuals perceive a mineral-like quality to
-                          the green sea moss flavor, possibly hinting at the
-                          rich mineral content it boasts. Think iron, potassium,
-                          and even a touch of iodine.
-                        </p>
-                        <p>
-                          It's definitely more of an acquired taste than gold
-                          sea moss.
-                        </p>
-                      </Disclosure.Panel>
-                    </>
-                  )}
-                </Disclosure>
-              </div>
-              <div className="more-info">
-                <Disclosure as="div" className="">
-                  {({ open }) => (
-                    <>
-                      <DropDown>
-                        <span>Shipping</span>
-                        <span className="plus">+</span>
-                      </DropDown>
-                      <Disclosure.Panel>
-                        <p>
-                          Free shipping on orders over $35.00. We ship within
-                          24-48 hours anywhere in the U.S., ensuring that you
-                          receive your sea moss in a timely manner.
-                        </p>
-                      </Disclosure.Panel>
-                    </>
-                  )}
-                </Disclosure>
-              </div>
-              <div className="more-info">
-                <Disclosure as="div" className="">
-                  {({ open }) => (
-                    <>
-                      <DropDown>
-                        <span>Returns</span>
-                        <span className="plus">+</span>
-                      </DropDown>
-                      <Disclosure.Panel>
-                        <p>
-                          If for any reason you are not fully satisfied with
-                          your green sea moss, we offer a 100% money-back
-                          guarantee. You can return the product within 90 days
-                          of your purchase for a full refund.
-                        </p>
-                      </Disclosure.Panel>
-                    </>
-                  )}
-                </Disclosure>
+                <div className="more-info">
+                  <Disclosure as="div" className="">
+                    {({ open }) => (
+                      <>
+                        <DropDown>
+                          <span>Ingredients</span>
+                          <span className="plus">+</span>
+                        </DropDown>
+                        <Disclosure.Panel>
+                          <p>Raw Purple Sea Moss.</p>
+                        </Disclosure.Panel>
+                      </>
+                    )}
+                  </Disclosure>
+                </div>
+                <div className="more-info">
+                  <Disclosure as="div" className="">
+                    {({ open }) => (
+                      <>
+                        <DropDown>
+                          <span>Flavor</span>
+                          <span className="plus">+</span>
+                        </DropDown>
+                        <Disclosure.Panel>
+                          <p>
+                            On its own, it doesn't have a strong flavor profile.
+                            Some people perceive a faint sweetness or nuttiness,
+                            while others barely taste anything at all.
+                          </p>
+                          <p>
+                            It's essentially a blank canvas for flavor. This
+                            makes it incredibly versatile and suitable for
+                            incorporating into various dishes and drinks without
+                            overpowering other ingredients.
+                          </p>
+                        </Disclosure.Panel>
+                      </>
+                    )}
+                  </Disclosure>
+                </div>
+                <div className="more-info">
+                  <Disclosure as="div" className="">
+                    {({ open }) => (
+                      <>
+                        <DropDown>
+                          <span>Shipping</span>
+                          <span className="plus">+</span>
+                        </DropDown>
+                        <Disclosure.Panel>
+                          <p>Free shipping on orders over $35.00.</p>
+                        </Disclosure.Panel>
+                      </>
+                    )}
+                  </Disclosure>
+                </div>
+                <div className="more-info">
+                  <Disclosure as="div" className="">
+                    {({ open }) => (
+                      <>
+                        <DropDown>
+                          <span>Returns</span>
+                          <span className="plus">+</span>
+                        </DropDown>
+                        <Disclosure.Panel>
+                          <p>
+                            If for any reason you are not fully satisfied with
+                            your green sea moss, we offer a 100% money-back
+                            guarantee. You can return the product within 90 days
+                            of your purchase for a full refund.
+                          </p>
+                        </Disclosure.Panel>
+                      </>
+                    )}
+                  </Disclosure>
+                </div>
               </div>
             </div>
           </div>
@@ -326,56 +325,63 @@ const GreenSeaMoss = () => {
       </Section> */}
       <Section>
         <div className="wider-container">
-          <h2 className="title">Health Benefits of Green Sea Moss</h2>
+          <h2 className="center">Purple Sea Moss Health Benefits</h2>
           <div className="grid-faq">
             <div className="benefits-bg-left">
               <div className="benefit">
                 <img
-                  src="/images/icons/chlorophyll.png"
-                  title="Chlorophyll content."
-                  alt="Chlorophyll content."
+                  src="/images/icons/nutrients.png"
+                  title="Rich in nutrients."
+                  alt="Rich in nutrients."
                   width={50}
                   height={50}
                 />
                 <div>
-                  <h3>Detoxifying Chlorophyll Content:</h3>
+                  <h3>Natural Energy Booster:</h3>
                   <p>
-                    Green Sea Moss contains chlorophyll, which is known for its
-                    detoxifying properties. Chlorophyll acts as a natural body
-                    deodorizer can help cleanse the body of toxins and improve
-                    liver function, contributing to overall health.
+                    Due to its high content of iron and B-vitamins, Raw Purple
+                    Sea Moss can act as a natural energy booster. These
+                    nutrients are vital for energy production in the body,
+                    making it an excellent supplement for those who need an
+                    energy uplift.
                   </p>
                 </div>
               </div>
-              <div className="benefit">
-                <img src="/images/icons/nutrients.png" width={50} height={50} />
-                <div>
-                  <h3>Vitamins and Minerals:</h3>
-                  <p>
-                    Green Sea Moss is a treasure trove of essential nutrients.
-                    It's packed with vitamins like vitamins A, C, E, K, and a
-                    host of B vitamins. It's also rich in minerals such as
-                    iodine, potassium, calcium, and magnesium, making it a
-                    comprehensive supplement for daily health.
-                  </p>
-                </div>
-              </div>
-
               <div className="benefit">
                 <img
-                  src="/images/icons/immune-system.png"
-                  title="Immune system."
-                  alt="Immune system."
+                  src="/images/icons/thyroid-gland.png"
+                  title="Supports your thyroid gland."
+                  alt="Supports your thyroid gland."
                   width={50}
                   height={50}
                 />
                 <div>
-                  <h3>Strengthens Immune System:</h3>
+                  <h3>Mental Health and Cognitive Function:</h3>
                   <p>
-                    Green Sea Moss is a great source of zinc, an essential
-                    mineral for immune function. Combined with its antioxidant
-                    properties, it can strengthen the body's defenses against
-                    infections and diseases.
+                    The magnesium and potassium in purple sea moss are
+                    beneficial for brain health. These nutrients can help
+                    improve mental function, concentration, and may even have a
+                    positive effect on mood, aiding in the management of stress
+                    and anxiety.
+                  </p>
+                </div>
+              </div>
+              <div className="benefit">
+                <img
+                  src="/images/icons/stomach.png"
+                  title="Stomach."
+                  alt="Stomach."
+                  width={50}
+                  height={50}
+                />
+                <div>
+                  <h3>Promotes Digestive Health:</h3>
+                  <p>
+                    Purple Sea Moss is a great source of dietary fiber, which is
+                    essential for healthy digestion. It acts as a prebiotic,
+                    fostering the growth of good bacteria in the gut. This can
+                    lead to improved gut health, aiding in issues like
+                    constipation and maintaining a healthy digestive tract.
                   </p>
                 </div>
               </div>
@@ -383,34 +389,26 @@ const GreenSeaMoss = () => {
                 <div className="benefit">
                   <img src="/images/icons/heart.png" width={50} height={50} />
                   <div>
-                    <h3>Supports Heart Health:</h3>
+                    <h3>Heart Health:</h3>
                     <p>
-                      Being high in potassium, Green Sea Moss can contribute to
-                      maintaining healthy blood pressure levels, which is
-                      beneficial for heart health.
+                      The potassium in Purple Sea Moss helps to regulate blood
+                      pressure levels, which is essential for heart health.
+                      Regular consumption can contribute to maintaining a
+                      healthy cardiovascular system by supporting the regulation
+                      of blood pressure and circulation.
                     </p>
                   </div>
                 </div>
                 <div className="benefit">
                   <img
-                    src="/images/icons/stomach.png"
-                    title="Stomach."
-                    alt="Stomach."
+                    src="/images/icons/immune-system.png"
+                    title="Immune system."
+                    alt="Immune system."
                     width={50}
                     height={50}
                   />
-                  <div>
-                    <h3>Promotes Digestive Health:</h3>
-                    <p>
-                      Its prebiotic properties can help to maintain a healthy
-                      gut microbiome, fostering the growth of beneficial
-                      bacteria and enhancing digestive health. This can improve
-                      digestion and relieve issues like bloating and
-                      constipation.
-                    </p>
-                  </div>
                 </div>
-                {/* <div className="benefit">
+                <div className="benefit">
                   <img
                     src="/images/icons/woman.png"
                     title="Skin health."
@@ -419,52 +417,18 @@ const GreenSeaMoss = () => {
                     height={50}
                   />
                   <div>
-                    <h3>Collagen and Vitamin E:</h3>
+                    <h3>Joint and Muscle Health:</h3>
                     <p>
-                      Its natural collagen content, along with Vitamin E, aids
-                      in maintaining skin elasticity and hydration, contributing
-                      to a youthful and radiant skin appearance.
+                      The anti-inflammatory properties of sea moss can help in
+                      reducing joint pain and inflammation. It's also beneficial
+                      for muscle recovery after intense exercise, making it
+                      popular among athletes and fitness enthusiasts.
                     </p>
                   </div>
-                </div> */}
+                </div>
               </div>
             </div>
             <div className="benefits-bg-right">
-              <div className="benefit">
-                <img
-                  src="/images/icons/blood.png"
-                  title="Blood circulation."
-                  alt="Blood circulation."
-                  width={50}
-                  height={50}
-                />
-                <div>
-                  <h3>Supports Blood Circulation:</h3>
-                  <p>
-                    The high iron content in Green Sea Moss aids in forming
-                    hemoglobin, which is essential for transporting oxygen in
-                    the blood. This can improve circulation and ensure that body
-                    tissues get adequate oxygen.
-                  </p>
-                </div>
-              </div>
-              <div className="benefit">
-                <img
-                  src="/images/icons/joints.png"
-                  title="Joint health."
-                  alt="Joint health."
-                  width={50}
-                  height={50}
-                />
-                <div>
-                  <h3>Improves Joint Health:</h3>
-                  <p>
-                    The compounds in Green Sea Moss may have anti-inflammatory
-                    effects, which can help in reducing joint pain and
-                    discomfort associated with conditions like arthritis.
-                  </p>
-                </div>
-              </div>
               <div className="benefit">
                 <img
                   src="/images/icons/weight-management.png"
@@ -474,12 +438,12 @@ const GreenSeaMoss = () => {
                   height={50}
                 />
                 <div>
-                  <h3>Low in Calories, High in Fiber:</h3>
+                  <h3>Detoxification:</h3>
                   <p>
-                    Its low-calorie and high-fiber content can be beneficial for
-                    people concerned about weight loss. The fiber provides a
-                    feeling of fullness, potentially reducing overall calorie
-                    intake.
+                    The natural compounds in Purple Sea Moss are known to aid in
+                    detoxifying the body. It can help in removing toxins and
+                    heavy metals from the body, promoting overall health and
+                    wellness.
                   </p>
                 </div>
               </div>
@@ -492,29 +456,69 @@ const GreenSeaMoss = () => {
                   height={50}
                 />
                 <div>
-                  <h3>Rich in Magnesium and Potassium:</h3>
+                  <h3>Respiratory Health:</h3>
                   <p>
-                    Potassium and magnesium are minerals known for their role in
-                    brain health. They can help in regulating mood and relieve
-                    stress and anxiety, thereby potentially improving mental
-                    well-being.
+                    Purple Sea Moss can have a soothing effect on the mucous
+                    membranes, making it beneficial for respiratory health. It
+                    may help alleviate symptoms of colds, sore throats, and even
+                    assist in reducing the severity of conditions like
+                    bronchitis.
                   </p>
                 </div>
               </div>
               <div className="benefit">
                 <img
-                  src="/images/icons/time.png"
-                  title="Anti-aging."
-                  alt="Anti-aging."
+                  src="/images/icons/weight-management.png"
+                  title="Weight management."
+                  alt="Weight management."
                   width={50}
                   height={50}
                 />
                 <div>
-                  <h3>Boosts Energy Levels:</h3>
+                  <h3>Blood Sugar Management:</h3>
                   <p>
-                    The iron in Green Sea Moss helps in the efficient transport
-                    of oxygen throughout the body, which can lead to increased
-                    energy levels and reduced fatigue.
+                    The fiber content in sea moss can help in regulating blood
+                    sugar levels, making it a helpful supplement for those
+                    managing diabetes or at risk of developing the condition.
+                  </p>
+                </div>
+              </div>
+              <div className="benefit">
+                <img
+                  src="/images/icons/mental-health.png"
+                  title="Mental health."
+                  alt="Mental health."
+                  width={50}
+                  height={50}
+                />
+                <div>
+                  <h3>Supports Weight Management:</h3>
+                  <p>
+                    Being low in calories and high in nutrients, Raw Purple Sea
+                    Moss can be a valuable addition to a weight management diet.
+                    It can promote feelings of fullness, thereby reducing
+                    overall calorie intake. Its iodine content also supports
+                    metabolism, which can aid in weight loss efforts.
+                  </p>
+                </div>
+              </div>
+              <div className="benefit">
+                <img
+                  src="/images/icons/joints.png"
+                  title="Joint health."
+                  alt="Joint health."
+                  width={50}
+                  height={50}
+                />
+                <div>
+                  <h3>Skin and Hair Health:</h3>
+                  <p>
+                    The sulfur in Purple Sea Moss can have a positive impact on
+                    skin and hair health. It is known for its anti-bacterial,
+                    anti-viral, and anti-inflammatory properties, which can help
+                    in reducing acne and promoting healthy skin. Additionally,
+                    the nutrients in sea moss can contribute to healthy hair
+                    growth and texture.
                   </p>
                 </div>
               </div>
@@ -524,33 +528,33 @@ const GreenSeaMoss = () => {
       </Section>
       <Section>
         <div className="wider-container">
-          <h2 className="center">Ways To Use Green Sea Moss</h2>
+          <h2 className="center">How To Use Purple Sea Moss</h2>
           <div className="waystousegrid">
             <div className="grid-ways">
               <img
-                src="https://res.cloudinary.com/browne-company/image/upload/v1706385955/Green%20Sea%20Moss%20Page/green-sea-moss-as-supplement_c1ew74.jpg"
-                alt="Sea moss supplements"
+                src="https://res.cloudinary.com/browne-company/image/upload/v1706383111/Gold%20Sea%20Moss%20Page/add-gold-sea-moss-to-water_mjoa6z.jpg"
+                alt="Add gold sea moss to water."
               />
               <p>Add to beverages like tea or water.</p>
             </div>
             <div className="grid-ways">
               <img
-                src="https://res.cloudinary.com/browne-company/image/upload/v1706378159/Green%20Sea%20Moss%20Page/green-sea-moss-smoothie_zdic0y.jpg"
-                alt="Sea moss supplements"
+                src="https://res.cloudinary.com/browne-company/image/upload/v1706383718/Gold%20Sea%20Moss%20Page/add-gold-sea-moss-to-smoothies_bfzin2.jpg"
+                alt="Add sea moss to smoothies to boost mineral and vitamin conent."
               />
               <p>Add to smoothies and boost mineral and vitamin conent.</p>
             </div>
             <div className="grid-ways">
               <img
-                src="https://res.cloudinary.com/browne-company/image/upload/v1706378160/Green%20Sea%20Moss%20Page/green-sea-moss-thickener-for-soup_uujup0.jpg"
-                alt="Sea moss supplements"
+                src="https://res.cloudinary.com/browne-company/image/upload/v1706383111/Gold%20Sea%20Moss%20Page/add-gold-sea-moss-to-soup_cnfn2e.jpg"
+                alt="Add sea moss to thickenen soups and sauces."
               />
-              <p>Add as a thickener to soups and sauces.</p>
+              <p>Add sea moss to thickenen soups and sauces.</p>
             </div>
             <div className="grid-ways">
               <img
-                src="https://res.cloudinary.com/browne-company/image/upload/v1706378159/Green%20Sea%20Moss%20Page/green-sea-moss-for-skin-care_bib5di.jpg"
-                alt="Sea moss supplements"
+                src="https://res.cloudinary.com/browne-company/image/upload/v1706383111/Gold%20Sea%20Moss%20Page/gold-sea-moss-for-skin-care_ja7haw.jpg"
+                alt="Use golde sea moss for skin care and treatment."
               />
               <p>Skin care and treatment.</p>
             </div>
@@ -559,13 +563,13 @@ const GreenSeaMoss = () => {
       </Section>
       <Section>
         <div className="wider-container">
-          <h2 className="center">How To Make Green Sea Moss Gel</h2>
+          <h2 className="center">How To Make Purple Sea Moss Gel</h2>
           <div className="flex">
             <div className="howtousebg">
               <h3>#1. Clean the Sea Moss</h3>
               <ul>
                 <li>
-                  You'll need green sea moss, a large bowl, and freshwater
+                  You'll need golden sea moss, a large bowl, and fresh water
                   (preferably spring or distilled water).
                 </li>
                 <li>
@@ -617,16 +621,17 @@ const GreenSeaMoss = () => {
       </Section>
       <Section>
         <div className="wider-container">
-          <h2 className="title">Other Products You May Like</h2>
+          <h2 className="center">You May Also Want to Try</h2>
           <div className="grid-related">
             <div className="related-products">
-              <Link href="/purple-sea-moss">
+              <Link href="/">
                 <img
-                  src="https://res.cloudinary.com/browne-company/image/upload/v1704729839/seaMossProducts/raw-purple-sea-moss_a25mj0.webp"
-                  alt="Purple sea moss."
-                  title="Purple sea moss."
+                  src="https://res.cloudinary.com/browne-company/image/upload/v1704729838/seaMossProducts/gold-sea-moss-gel_fm7v18.webp"
+                  alt="Gold sea moss gel."
+                  title="Gold sea moss gel."
+                  className="related-products"
                 />
-                <h3>Raw Purple Moss</h3>
+                <h3>Gold Sea Moss Gel</h3>
                 <p>$29.99</p>
               </Link>
             </div>
@@ -634,10 +639,21 @@ const GreenSeaMoss = () => {
               <Link href="/golden-sea-moss">
                 <img
                   src="https://res.cloudinary.com/browne-company/image/upload/v1704729838/seaMossProducts/raw-gold-sea-moss_hkuu7h.webp"
-                  alt="Gold sea moss."
-                  title="Gold sea moss."
+                  alt="Golden sea moss."
+                  title="Golden sea moss."
                 />
-                <h3>Raw Gold Moss</h3>
+                <h3>Golden Sea Moss</h3>
+                <p>$29.99</p>
+              </Link>
+            </div>
+            <div className="related-products">
+              <Link href="/green-sea-moss">
+                <img
+                  src="https://res.cloudinary.com/browne-company/image/upload/v1704729838/seaMossProducts/raw-green-sea-moss_aaa6fq.webp"
+                  alt="Raw green sea moss."
+                  title="Raw green sea moss."
+                />
+                <h3>Raw Green Sea Moss</h3>
                 <p>$29.99</p>
               </Link>
             </div>
@@ -653,49 +669,38 @@ const GreenSeaMoss = () => {
                 <p>$29.99</p>
               </Link>
             </div>
-            <div className="related-products">
-              <Link href="/">
-                <img
-                  src="https://res.cloudinary.com/browne-company/image/upload/v1704729838/seaMossProducts/gold-sea-moss-gel_fm7v18.webp"
-                  alt="Gold sea moss gel."
-                  title="Gold sea moss gel."
-                  className="related-products"
-                />
-                <h3>Gold Sea Moss Gel</h3>
-                <p>$29.99</p>
-              </Link>
-            </div>
           </div>
         </div>
       </Section>
-
       <Section>
         <div className="faq-container">
-          <h2 className="title">Frequently Asked Questions</h2>
+          <h2 className="center">Frequently Asked Questions</h2>
           <div className="grid-faq">
             <div>
-              <h3>How do I use raw green sea moss?</h3>
+              <h3>Where does your golden sea moss come from?</h3>
               <p>
-                Our green Sea Moss can be soaked, blended into a gel, and added
-                to various foods and drinks like smoothies, soups, and teas for
-                nutritional enhancement.
+                Our raw golden sea moss is sustainably harvested from the
+                pristine waters of St. Lucia in the Caribbean.
               </p>
-              <h3>Is your green sea moss sustainably harvested?</h3>
+              <h3>
+                How should I store the raw golden sea moss after receiving it?
+              </h3>
               <p>
-                We get our sea moss from the island of Saint Lucia in the
-                Caribbean. We ensure sustainable harvesting practices to protect
-                the ocean ecosystem and maintain the natural balance.
+                Store your gold sea moss in a cool, dry place away from direct
+                sunlight. If refrigerated in an airtight container, it can last
+                longer while maintaining its freshness and nutrient value.
               </p>
-              <h3>Can I use green sea moss for skincare?</h3>
+              <h3>Is your sea moss ethically sourced?</h3>
               <p>
-                Absolutely! You can use it for acne, rashes and eczema on you r
-                face, hands, and anywhere else. When applied topically, it can
-                help nourish and soothe the skin due to its high mineral and
-                vitamin content.
+                Yes, our commitment to sustainability means our golden sea moss
+                is ethically and sustainably sourced, respecting both the
+                environment and local communities
               </p>
-              <h3>How should I store the raw green sea moss?</h3>
+              <h3>Will the sea moss have a strong ocean smell?</h3>
               <p>
-                Store it in a cool, dry place. It can last up to twelve months.
+                Raw sea moss has a natural ocean aroma, which is a sign of its
+                purity. However, this scent diminishes significantly once it's
+                rinsed and prepared.
               </p>
               <h3>Why does the sea moss have a dried salt coating?</h3>
               <p>
@@ -733,7 +738,7 @@ const GreenSeaMoss = () => {
               </p>
               <h3>Can I return the product if I’m not satisfied?</h3>
               <p>
-                Yes, we have a 90 day return policy. If you’re not satisfied,
+                Yes, we have a 60 day return policy. If you’re not satisfied,
                 please contact our customer service for a hassle-free return
                 process.
               </p>
@@ -742,21 +747,21 @@ const GreenSeaMoss = () => {
                 Once your order is shipped, we’ll send you a tracking number via
                 email so you can monitor its progress.
               </p>
-              <h3>Does the green sea moss have any side effects?</h3>
+              <h3>Can I return the product if I'm not satisfied?</h3>
               <p>
-                It is generally well-tolerated, but as with any supplement, some
-                individuals may experience mild digestive upset. We recommend
-                starting with a small amount to assess tolerance. If you have
-                any concerns, especially if you are pregnant, nursing, or have a
-                medical condition, consult your healthcare provider.
+                Yes, we offer a satisfaction guarantee. If you're not happy with
+                your purchase, please contact our customer service within 60
+                days for a return.
               </p>
               <h3>
-                How do I know if the green sea moss I received is of high
-                quality?
+                Is your golden sea moss suitable for people with allergies?
               </h3>
               <p>
-                High-quality green sea moss should have a minimal smell and a
-                natural color and be free from artificial additives.
+                Our golden sea moss is a natural product, but as with any
+                sea-based item, it can cause reactions in individuals with
+                certain allergies, particularly shellfish or iodine allergies.
+                We recommend consulting with a healthcare professional if you
+                have concerns.
               </p>
             </div>
           </div>
@@ -765,8 +770,6 @@ const GreenSeaMoss = () => {
     </>
   )
 }
-
-export default GreenSeaMoss
 
 const DropDown = styled(Disclosure.Button)`
   border: none;
@@ -785,6 +788,8 @@ const DropDown = styled(Disclosure.Button)`
   }
 `
 
+export default PurpleSeaMoss
+
 const Section = styled.section`
   margin-bottom: 2rem;
 
@@ -800,8 +805,8 @@ const Section = styled.section`
       font-weight: 300;
     }
   }
-  .green {
-    color: #27ae60;
+  .purple {
+    color: #8e44ad;
     font-size: inherit;
     font-weight: 700;
   }
@@ -842,12 +847,11 @@ const Section = styled.section`
     background-color: #f8f8f8;
     padding: 2rem 4rem;
     border-radius: 50px;
-    border: 6px solid #27ae60;
+    border: 6px solid #9b59b6;
   }
 
   .benefits-bg-left {
-    color: #fff;
-    background-color: #27ae60;
+    background-color: #9b59b6;
     padding: 3rem 1rem;
     border-radius: 10px;
     margin-top: 2rem;
@@ -866,8 +870,7 @@ const Section = styled.section`
   }
 
   .benefits-bg-right {
-    color: #fff;
-    background-color: #27ae60;
+    background-color: #9b59b6;
     padding: 3rem 1rem;
     border-radius: 10px;
     margin-top: 2rem;
