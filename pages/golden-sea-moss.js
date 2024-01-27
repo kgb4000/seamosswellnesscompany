@@ -508,7 +508,9 @@ const GoldenSeaMoss = () => {
       </Section>
       <Section>
         <div className="wider-container">
-          <h2 className="center">How To Use Raw Golden Sea Moss</h2>
+          <h2 className="center">
+            How To Use Gold Sea Moss To Make Sea Moss Gel
+          </h2>
           <div className="flex">
             <div className="howtousebg">
               <h3>#1. Clean the Sea Moss</h3>
@@ -756,9 +758,22 @@ const Section = styled.section`
   }
 
   .flex {
-    display: flex;
-    gap: 40px;
+    margin-bottom: 1rem;
+    @media (min-width: 1024px) {
+      display: flex;
+      gap: 30px;
+    }
   }
+
+  .howtousebg {
+    margin-bottom: 1rem;
+    @media and screen (min-width: 1024px) {
+      width: 33%;
+      display: flex;
+      gap: 30px;
+    }
+  }
+
   .product-flex {
     display: flex;
     gap: 20px;
