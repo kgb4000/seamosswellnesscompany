@@ -1,9 +1,11 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { NextSeo, ProductJsonLd } from 'next-seo'
 import styled from 'styled-components'
 import { Cloudinary } from '@cloudinary/url-gen'
 import Button from '../components/Button'
+import { Disclosure } from '@headlessui/react'
 
 const cld = new Cloudinary({
   cloud: {
@@ -16,11 +18,13 @@ const cld = new Cloudinary({
 
 const GreenSeaMoss = () => {
   const SEO = {
-    title: `Green Sea Moss | St. Lucia's Finest | Raw, Healthy, and Nutritious`,
+    title: `Green Sea Moss From St. Lucia | Finest Qualtiy | Raw, Healthy, Superfood`,
     description:
       'Our raw green sea moss is a natural wonder, loaded with health benefits. Boost your thyroid health and immunity with this organic, nutrient-rich superfood.',
     canonical: `https://seamosswellness.com/green-sea-moss`,
   }
+
+  const price = 29.99
   return (
     <>
       <ProductJsonLd
@@ -85,64 +89,247 @@ const GreenSeaMoss = () => {
               title="Green sea moss."
             />
             <div>
-              <h1>Green Sea Moss (Raw)</h1>
-              <p className="price">$29.99</p>
-              <p>Discover our raw Green Sea Moss from St. Lucia.</p>
+              <h1>
+                <span className="green">Green</span> Sea Moss (Raw)
+              </h1>
+              <p>DETOXIFYING | WHOLE30 | RAW FOOD | NON-GMO</p>
+              <div className="product-flex">
+                <Image
+                  src="/images/icons/plant-based.png"
+                  alt="vegan"
+                  width={40}
+                  height={40}
+                />
+                <p>Plant-based</p>
+              </div>
+              <div className="product-flex">
+                <Image
+                  src="/images/icons/vegan.png"
+                  alt="vegan"
+                  width={40}
+                  height={40}
+                />
+                <p>Vegan</p>
+              </div>
+              <div className="product-flex">
+                <Image
+                  src="/images/icons/organic.png"
+                  alt="vegan"
+                  width={40}
+                  height={40}
+                />
+                <p>100% Organic</p>
+              </div>
               <p>
-                Carefully harvested from the pristine waters of this remote
-                Caribbean island, our green moss is a natural marvel.
+                One of the rare types, Green sea moss, rich in chlorophyll, is a
+                natural detoxifier and a powerhouse of nutrition. It's teeming
+                with essential vitamins and minerals, helping purify the body by
+                removing toxins.
+                {/* Its
+                high chlorophyll content not only enhances its detox properties,
+                but also contributes to overall health and vitality. */}
               </p>
-              <p>
-                With a very minimal smell compared to the much stronger ocean
-                smell of other varieties, our Green Sea Moss is a refined choice
-                for those seeking the full benefits of sea moss without the
-                overpowering scent.
-              </p>
-              <p>
-                It's a treasure trove of health benefits, rich in essential
-                minerals and vitamins that support thyroid health, boost
-                immunity, and enhance detoxification.
-              </p>
-              <p>
-                Each batch is imported fresh, carrying all the benefits of sea
-                with a light coating of dried salt showing authenticity.
-              </p>
-              <p>
-                Experience the unique color and powerful antioxidants of this
-                natural body deodorizer and nutritional supplement, a testament
-                to the life force of the sea.
-              </p>
-              <Button>Coming Soon</Button>
-              <p>Ingredients:</p>
-              <p>Organic green sea moss from St. Lucia (Eucheuma Conttonii)</p>
+              <div className="price-info">
+                <p className="price-text">We're giving you</p>
+                <p className="price-text">10% off</p>
+              </div>
+              <div className="price-info">
+                <p className="price">${price}</p>
+                <p className="price-strike-through">
+                  ${(price + (price * 15) / 100).toFixed(2)}
+                </p>
+              </div>
+              <Button>Add to My Cart</Button>
+              <div className="more-info">
+                <Disclosure as="div" className="">
+                  {({ open }) => (
+                    <>
+                      <DropDown>
+                        <span>Origin</span>
+                        <span className="plus">+</span>
+                      </DropDown>
+                      <Disclosure.Panel>
+                        <p>
+                          Carefully harvested from the crystal-clear waters of
+                          St. Lucia, our green sea moss, stands as a testament
+                          to the unspoiled beauty of this Caribbean island.
+                        </p>
+                      </Disclosure.Panel>
+                    </>
+                  )}
+                </Disclosure>
+              </div>
+              <div className="more-info">
+                <Disclosure as="div" className="">
+                  {({ open }) => (
+                    <>
+                      <DropDown>
+                        <span>More about Green Sea Moss</span>
+                        <span className="plus">+</span>
+                      </DropDown>
+                      <Disclosure.Panel>
+                        <p>
+                          Our green sea moss, with its vivid natural hue, is not
+                          just visually striking but also a nutritional
+                          powerhouse. It is abundant in essential minerals like
+                          iodine, crucial for thyroid function; calcium, for
+                          bone strength; potassium, which aids in maintaining
+                          healthy blood pressure; and iron, essential for blood
+                          health.
+                        </p>
+                        <p>
+                          The rich vitamin content, including A, C, E, K, and
+                          the B-complex, fortifies the body’s immune system and
+                          enhances overall well-being.
+                        </p>
+                        <p>
+                          Not only does it support thyroid health and boost
+                          immunity, but it also promotes detoxification, thanks
+                          to its high chlorophyll content. This powerful
+                          pigment, known for its cleansing properties, works to
+                          detoxify the body, enhancing your natural vitality.
+                        </p>
+                        <p>
+                          The antioxidants present sea moss help neutralize free
+                          radicals, making it a potent natural body deodorizer
+                          and a guardian against cellular damage.
+                        </p>
+                        <p>
+                          {' '}
+                          Adding it to your diet symbolizes an embrace of the
+                          life force of the sea, a step towards harnessing the
+                          pure, unadulterated essence of nature for your health.
+                        </p>
+                      </Disclosure.Panel>
+                    </>
+                  )}
+                </Disclosure>
+              </div>
+              <div className="more-info">
+                <Disclosure as="div" className="">
+                  {({ open }) => (
+                    <>
+                      <DropDown>
+                        <span>Ingredients</span>
+                        <span className="plus">+</span>
+                      </DropDown>
+                      <Disclosure.Panel>
+                        <p>Raw green sea moss.</p>
+                      </Disclosure.Panel>
+                    </>
+                  )}
+                </Disclosure>
+              </div>
+              <div className="more-info">
+                <Disclosure as="div" className="">
+                  {({ open }) => (
+                    <>
+                      <DropDown>
+                        <span>Flavor</span>
+                        <span className="plus">+</span>
+                      </DropDown>
+                      <Disclosure.Panel>
+                        <p>
+                          Some individuals perceive a mineral-like quality to
+                          the green sea moss flavor, possibly hinting at the
+                          rich mineral content it boasts. Think iron, potassium,
+                          and even a touch of iodine.
+                        </p>
+                        <p>
+                          It's definitely more of an acquired taste than gold
+                          sea moss.
+                        </p>
+                      </Disclosure.Panel>
+                    </>
+                  )}
+                </Disclosure>
+              </div>
+              <div className="more-info">
+                <Disclosure as="div" className="">
+                  {({ open }) => (
+                    <>
+                      <DropDown>
+                        <span>Shipping</span>
+                        <span className="plus">+</span>
+                      </DropDown>
+                      <Disclosure.Panel>
+                        <p>
+                          Free shipping on orders over $35.00. We ship within
+                          24-48 hours anywhere in the U.S., ensuring that you
+                          receive your sea moss in a timely manner.
+                        </p>
+                      </Disclosure.Panel>
+                    </>
+                  )}
+                </Disclosure>
+              </div>
+              <div className="more-info">
+                <Disclosure as="div" className="">
+                  {({ open }) => (
+                    <>
+                      <DropDown>
+                        <span>Returns</span>
+                        <span className="plus">+</span>
+                      </DropDown>
+                      <Disclosure.Panel>
+                        <p>
+                          If for any reason you are not fully satisfied with
+                          your green sea moss, we offer a 100% money-back
+                          guarantee. You can return the product within 90 days
+                          of your purchase for a full refund.
+                        </p>
+                      </Disclosure.Panel>
+                    </>
+                  )}
+                </Disclosure>
+              </div>
             </div>
           </div>
         </div>
       </Section>
-
       {/* <Section>
-        <div className="wide-container">
-          <div className="grid-shipping">
-            <div>
-              <p>Get Your Sea Moss Fast!</p>
-              <p>Orders Ship Within 3-5 Business Days</p>
+        <div className="wider-container">
+          <h2 className="center">Customer Reviews</h2>
+          <div className="flex">
+            <div className="howtousebg">
+              <p className="center">Danny A.</p>
+              <p>
+                I've been using sea moss in my diet for a few weeks now, and I'm
+                genuinely impressed with the quality of this product. I've used
+                it in my morning smoothies, and I feel more energized throughout
+                the day. Highly recommend this to anyone looking for a natural
+                health boost!
+              </p>
             </div>
-            <div>
-              <p>5-Star Reviews</p>
-              <p>See Why Our Customers Love Our Products</p>
+            <div className="howtousebg">
+              <p className="center">Monica B.</p>
+              <p>
+                I purchased gold sea moss on a friend's recommendation to help
+                with my digestive issues. It's easy to prepare, and I love how
+                it blends into my soups and sauces without changing the flavor.
+                I'm giving it four stars only because the ocean smell was a bit
+                strong when I first opened it, but it rinsed out easily.
+              </p>
             </div>
-            <div>
-              <p>Get FREE Shipping Today!</p>
-              <p>Orders over $35 get FREE shipping on us!</p>
+            <div className="howtousebg">
+              <p className="center">Katash K.</p>
+              <p>
+                I'm always on the lookout for natural skincare products, and
+                Golden Sea Moss has been a fantastic discovery. I've used it as
+                a face mask, and my skin feels rejuvenated and hydrated. The
+                fact that it's packed with minerals and vitamins is a huge plus
+                for me. Also, experimenting with it in my vegan recipes has been
+                fun. It's a five-star product for me!
+              </p>
             </div>
           </div>
         </div>
       </Section> */}
       <Section>
-        <div className="wide-container">
-          <h2 className="mb-10">Health Benefits of Green Sea Moss</h2>
+        <div className="wider-container">
+          <h2 className="title">Health Benefits of Green Sea Moss</h2>
           <div className="grid-faq">
-            <div>
+            <div className="benefits-bg-left">
               <div className="benefit">
                 <img
                   src="/images/icons/chlorophyll.png"
@@ -224,7 +411,7 @@ const GreenSeaMoss = () => {
                     </p>
                   </div>
                 </div>
-                <div className="benefit">
+                {/* <div className="benefit">
                   <img
                     src="/images/icons/woman.png"
                     title="Skin health."
@@ -240,10 +427,10 @@ const GreenSeaMoss = () => {
                       to a youthful and radiant skin appearance.
                     </p>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
-            <div>
+            <div className="benefits-bg-right">
               <div className="benefit">
                 <img
                   src="/images/icons/blood.png"
@@ -337,8 +524,66 @@ const GreenSeaMoss = () => {
         </div>
       </Section>
       <Section>
-        <div className="wide-container">
-          <h2>Other Products You May Like</h2>
+        <div className="wider-container">
+          <h2 className="center">How To Make Green Sea Moss Gel</h2>
+          <div className="flex">
+            <div className="howtousebg">
+              <h3>#1. Clean the Sea Moss</h3>
+              <ul>
+                <li>
+                  You'll need green sea moss, a large bowl, and fresh water
+                  (preferably spring or distilled water).
+                </li>
+                <li>
+                  Place the sea moss in a large bowl. Run cold water over it to
+                  remove any sea debris, sand, or salt.
+                </li>
+                <li>
+                  Carefully check the sea moss for any remaining debris. Rinse
+                  several times until the water runs clear.
+                </li>
+              </ul>
+            </div>
+            <div className="howtousebg">
+              <h3>#2. Soak the Sea Moss</h3>
+              <ul>
+                <li>
+                  After rinsing, cover the sea moss with a generous amount of
+                  water, as it will expand during soaking.
+                </li>
+                <li>
+                  Leave the sea moss to soak for at least 12 hours, or ideally,
+                  24 hours. The moss will absorb water and double in size.
+                </li>
+                <li>
+                  For added flavor and nutrients, consider adding a slice of
+                  lime or lemon to the soaking water.
+                </li>
+              </ul>
+            </div>
+            <div className="howtousebg">
+              <h3>#3. Blend the Sea Moss</h3>
+              <ul>
+                <li>
+                  After soaking, drain off the water and give the sea moss
+                  another rinse.
+                </li>
+                <li>
+                  Place the sea moss in a blender. Add fresh, clean water -
+                  about 1 cup of water for every ounce of sea moss.
+                </li>
+                <li>
+                  Blend until smooth. The mixture should form a thick, creamy
+                  gel.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </Section>
+      <Section>
+        <div className="wider-container">
+          <h2 className="title">Other Products You May Like</h2>
           <div className="grid-related">
             <div className="related-products">
               <Link href="/">
@@ -350,7 +595,6 @@ const GreenSeaMoss = () => {
                 <h3>Raw Purple Moss</h3>
                 <p>$29.99</p>
               </Link>
-              <button>Add To Cart</button>
             </div>
             <div className="related-products">
               <Link href="/golden-sea-moss">
@@ -362,7 +606,6 @@ const GreenSeaMoss = () => {
                 <h3>Raw Gold Moss</h3>
                 <p>$29.99</p>
               </Link>
-              <button>Add To Cart</button>
             </div>
             <div className="related-products">
               <Link href="/">
@@ -375,7 +618,6 @@ const GreenSeaMoss = () => {
                 <h3>Full Spectrum Sea Moss</h3>
                 <p>$29.99</p>
               </Link>
-              <button>Add To Cart</button>
             </div>
             <div className="related-products">
               <Link href="/">
@@ -388,14 +630,14 @@ const GreenSeaMoss = () => {
                 <h3>Gold Sea Moss Gel</h3>
                 <p>$29.99</p>
               </Link>
-              <button>Add To Cart</button>
             </div>
           </div>
         </div>
       </Section>
+
       <Section>
         <div className="faq-container">
-          <h2>Frequently Asked Questions</h2>
+          <h2 className="title">Frequently Asked Questions</h2>
           <div className="grid-faq">
             <div>
               <h3>How do I use raw green sea moss?</h3>
@@ -492,10 +734,130 @@ const GreenSeaMoss = () => {
 
 export default GreenSeaMoss
 
+const DropDown = styled(Disclosure.Button)`
+  border: none;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-weight: 700;
+
+  span {
+    margin-bottom: 0.5rem;
+  }
+
+  .plus {
+    font-size: 1.5rem;
+  }
+`
+
 const Section = styled.section`
+  margin-bottom: 2rem;
+
+  @media (min-width: 1024px) {
+    margin-bottom: 5rem;
+  }
+
+  .btn {
+    margin: 0 auto;
+    max-width: 26rem;
+  }
+  .shipping-returns {
+    margin-top: 2em;
+
+    p {
+      font-size: 1rem;
+      font-weight: 300;
+    }
+  }
+  .green {
+    color: #27ae60;
+    font-size: inherit;
+    font-weight: 700;
+  }
+
+  .more-info {
+    margin-top: 1rem;
+  }
+
+  .price-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .flex {
+    margin-bottom: 1rem;
+    @media (min-width: 1024px) {
+      display: flex;
+      gap: 30px;
+    }
+  }
+
+  .howtousebg {
+    margin-bottom: 1rem;
+    @media and screen (min-width: 1024px) {
+      width: 33%;
+      display: flex;
+      gap: 30px;
+    }
+  }
+
+  .product-flex {
+    display: flex;
+    gap: 20px;
+  }
+
+  .howtousebg {
+    background-color: #f8f8f8;
+    padding: 2rem 4rem;
+    border-radius: 50px;
+  }
+
+  .benefits-bg-left {
+    color: #fff;
+    background-color: #27ae60;
+    padding: 3rem 1rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    div h3,
+    p {
+      color: #fff;
+    }
+    @media (min-width: 1024px) {
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-top-left-radius: 50px;
+      border-bottom-left-radius: 50px;
+      padding: 4rem;
+    }
+  }
+
+  .benefits-bg-right {
+    color: #fff;
+    background-color: #27ae60;
+    padding: 3rem 1rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    div h3,
+    p {
+      color: #fff;
+    }
+    @media (min-width: 1024px) {
+      border-top-right-radius: 50px;
+      border-bottom-right-radius: 50px;
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0px;
+      padding: 4rem;
+    }
+  }
+
   h2 {
     margin-bottom: 1.5rem;
   }
+
   .benefit {
     display: flex;
     align-items: start;
@@ -505,15 +867,41 @@ const Section = styled.section`
     }
 
     h3 {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       margin-top: 0;
+      @media (min-width: 1024px) {
+        font-size: 1.5rem;
+      }
     }
   }
 
   .price {
     font-size: 2rem;
     color: green;
-    font-weight: bold;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+  }
+
+  .price-strike-through {
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    text-decoration: line-through;
+  }
+
+  .price-text {
+    font-size: 1.5rem;
+    color: green;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+  }
+
+  .shipping-returns {
+    display: flex;
+    justify-content: space-between;
   }
 
   a {
@@ -536,7 +924,11 @@ const Section = styled.section`
     margin-bottom: 1rem;
   }
 
-  margin-bottom: 5em;
+  .wider-container {
+    margin: 0 auto;
+    padding: 0 1.2em;
+    max-width: 1540px;
+  }
 
   .wide-container {
     margin: 0 auto;

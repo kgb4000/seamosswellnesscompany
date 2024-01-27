@@ -5,8 +5,7 @@ import { NextSeo, ProductJsonLd } from 'next-seo'
 import styled from 'styled-components'
 import { Cloudinary } from '@cloudinary/url-gen'
 import Button from '../components/Button'
-import { Disclosure } from '@headlessui/react'
-import { ChevronUpIcon } from '@heroicons/react/20/solid'
+import { Disclosure, Dialog } from '@headlessui/react'
 
 const cld = new Cloudinary({
   cloud: {
@@ -91,16 +90,6 @@ const GoldenSeaMoss = () => {
                 alt="Golden Sea Moss (Raw)."
                 title="Golden Sea Moss (Raw)."
               />
-              {/* <img
-                src="https://res.cloudinary.com/browne-company/image/upload/v1704729838/seaMossProducts/raw-gold-sea-moss_hkuu7h.webp"
-                alt="Golden Sea Moss (Raw)."
-                title="Golden Sea Moss (Raw)."
-              />
-              <img
-                src="https://res.cloudinary.com/browne-company/image/upload/v1704729838/seaMossProducts/raw-gold-sea-moss_hkuu7h.webp"
-                alt="Golden Sea Moss (Raw)."
-                title="Golden Sea Moss (Raw)."
-              /> */}
             </div>
             <div>
               <h1>
@@ -150,6 +139,25 @@ const GoldenSeaMoss = () => {
                 </p>
               </div>
               <Button>Add to My Cart</Button>
+              <div className="more-info">
+                <Disclosure as="div" className="">
+                  {({ open }) => (
+                    <>
+                      <DropDown>
+                        <span>Origin</span>
+                        <span className="plus">+</span>
+                      </DropDown>
+                      <Disclosure.Panel>
+                        <p>
+                          Sustainably harvested from the immaculate waters of
+                          St. Lucia, which is known for its nutrient-rich marine
+                          ecosystem and pristine environment.
+                        </p>
+                      </Disclosure.Panel>
+                    </>
+                  )}
+                </Disclosure>
+              </div>
               <div className="more-info">
                 <Disclosure>
                   {({ open }) => (
@@ -203,7 +211,7 @@ const GoldenSeaMoss = () => {
                           <span className="plus">+</span>
                         </DropDown>
                         <Disclosure.Panel>
-                          <p>100% Organic Golden Sea Moss from Saint Lucia.</p>
+                          <p>Raw Golden Sea Moss.</p>
                         </Disclosure.Panel>
                       </>
                     )}
@@ -214,7 +222,7 @@ const GoldenSeaMoss = () => {
                     {({ open }) => (
                       <>
                         <DropDown>
-                          <span>Natural Flavor</span>
+                          <span>Flavor</span>
                           <span className="plus">+</span>
                         </DropDown>
                         <Disclosure.Panel>
@@ -234,56 +242,52 @@ const GoldenSeaMoss = () => {
                     )}
                   </Disclosure>
                 </div>
-              </div>
-              <div className="shipping-returns">
-                <p>Shipping</p>
-                <p>100% Money Back Garauntee</p>
+                <div className="more-info">
+                  <Disclosure as="div" className="">
+                    {({ open }) => (
+                      <>
+                        <DropDown>
+                          <span>Shipping</span>
+                          <span className="plus">+</span>
+                        </DropDown>
+                        <Disclosure.Panel>
+                          <p>Free shipping on orders over $35.00.</p>
+                        </Disclosure.Panel>
+                      </>
+                    )}
+                  </Disclosure>
+                </div>
+                <div className="more-info">
+                  <Disclosure as="div" className="">
+                    {({ open }) => (
+                      <>
+                        <DropDown>
+                          <span>Returns</span>
+                          <span className="plus">+</span>
+                        </DropDown>
+                        <Disclosure.Panel>
+                          <p>
+                            If for any reason you are not fully satisfied with
+                            your green sea moss, we offer a 100% money-back
+                            guarantee. You can return the product within 90 days
+                            of your purchase for a full refund.
+                          </p>
+                        </Disclosure.Panel>
+                      </>
+                    )}
+                  </Disclosure>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </Section>
-      <Section>
-        <div className="wide-container">
-          <div className="grid-shipping">
-            <div>
-              <p>Natural Superfoods</p>
-              <p>Alkalizes your body with natural ingredients.</p>
-            </div>
-            <div>
-              <p>5-Star Reviews</p>
-              <p>See Why Our Customers Love Our Golde Sea Moss.</p>
-            </div>
-            <div>
-              <p>Get FREE Shipping Today!</p>
-              <p>Orders over $35 get FREE shipping on us!</p>
-            </div>
-          </div>
-        </div>
-      </Section>
-      {/* <Section>
-        <div className="wide-container">
-          <div className="grid-shipping">
-            <div>
-              <p>Get Your Sea Moss Fast!</p>
-              <p>Orders Ship Within 3-5 Business Days</p>
-            </div>
-            <div>
-              <p>5-Star Reviews</p>
-              <p>See Why Our Customers Love Our Products</p>
-            </div>
-            <div>
-              <p>Get FREE Shipping Today!</p>
-              <p>Orders over $35 get FREE shipping on us!</p>
-            </div>
-          </div>
-        </div>
-      </Section> */}
       <Section>
         <div className="wider-container">
           <h2 className="center">Customer Reviews</h2>
           <div className="flex">
             <div className="howtousebg">
+              <p className="center">Danny A.</p>
               <p>
                 I've been using sea moss in my diet for a few weeks now, and I'm
                 genuinely impressed with the quality of this product. I've used
@@ -291,9 +295,9 @@ const GoldenSeaMoss = () => {
                 the day. Highly recommend this to anyone looking for a natural
                 health boost!
               </p>
-              <p>Danny A.</p>
             </div>
             <div className="howtousebg">
+              <p className="center">Monica B.</p>
               <p>
                 I purchased gold sea moss on a friend's recommendation to help
                 with my digestive issues. It's easy to prepare, and I love how
@@ -301,9 +305,9 @@ const GoldenSeaMoss = () => {
                 I'm giving it four stars only because the ocean smell was a bit
                 strong when I first opened it, but it rinsed out easily.
               </p>
-              <p>Monica B.</p>
             </div>
             <div className="howtousebg">
+              <p className="center">Katash K.</p>
               <p>
                 I'm always on the lookout for natural skincare products, and
                 Golden Sea Moss has been a fantastic discovery. I've used it as
@@ -312,7 +316,6 @@ const GoldenSeaMoss = () => {
                 for me. Also, experimenting with it in my vegan recipes has been
                 fun. It's a five-star product for me!
               </p>
-              <p>Katash K.</p>
             </div>
           </div>
         </div>
@@ -515,7 +518,7 @@ const GoldenSeaMoss = () => {
             </div>
           </div>
           <div className="btn">
-            <Button>Add Golden Sea Moss to My Cart</Button>
+            <Button>Add to My Cart</Button>
           </div>
         </div>
       </Section>
@@ -763,6 +766,11 @@ const Section = styled.section`
   }
   .shipping-returns {
     margin-top: 2em;
+
+    p {
+      font-size: 1rem;
+      font-weight: 300;
+    }
   }
   .golden {
     color: #fecc33;
@@ -811,10 +819,14 @@ const Section = styled.section`
   .benefits-bg {
     color: #fff;
     background-color: #f6e58d;
-    padding: 3rem;
-    border-radius: 50px;
+    padding: 3rem 1rem;
+    border-radius: 10px;
     margin-top: 2rem;
     margin-bottom: 3rem;
+    @media (min-width: 1024px) {
+      border-radius: 50px;
+      padding: 4rem;
+    }
   }
 
   h2 {
@@ -830,8 +842,11 @@ const Section = styled.section`
     }
 
     h3 {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       margin-top: 0;
+      @media (min-width: 1024px) {
+        font-size: 1.5rem;
+      }
     }
   }
 
