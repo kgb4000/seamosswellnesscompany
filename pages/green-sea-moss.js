@@ -866,6 +866,7 @@ const DropDown = styled(Disclosure.Button)`
   background-color: transparent;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   font-weight: 700;
 
@@ -875,6 +876,7 @@ const DropDown = styled(Disclosure.Button)`
 
   .plus {
     font-size: 1.5rem;
+    font-weight: 700;
   }
 `
 

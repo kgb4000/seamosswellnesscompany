@@ -561,7 +561,7 @@ const Section = styled.section`
   }
 
   .grid-hero {
-    @media (min-width: 1028px) {
+    @media (min-width: 768px) {
       display: grid;
       grid-template-columns: 1fr 1fr;
       justify-content: center;

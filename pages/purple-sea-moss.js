@@ -5,7 +5,7 @@ import { NextSeo, ProductJsonLd } from 'next-seo'
 import styled from 'styled-components'
 import { Cloudinary } from '@cloudinary/url-gen'
 import Button from '../components/Button'
-import { Disclosure, Dialog } from '@headlessui/react'
+import { Disclosure } from '@headlessui/react'
 
 const cld = new Cloudinary({
   cloud: {
@@ -90,6 +90,12 @@ const PurpleSeaMoss = () => {
                 src="https://res.cloudinary.com/browne-company/image/upload/v1704729839/seaMossProducts/raw-purple-sea-moss_a25mj0.webp"
                 alt="Purple Sea Moss (Raw)."
                 title="Purple Sea Moss (Raw)."
+                width={670}
+                height={670}
+                style={{
+                  width: '100%',
+                  height: 'auto',
+                }}
               />
             </div>
             <div>
@@ -181,11 +187,11 @@ const PurpleSeaMoss = () => {
                           powerhouse.
                         </p>
                         <p>
-                          The moss's comprehensive vitamin range, featuring
-                          energy-boosting B-vitamins, bone-strengthening Vitamin
-                          D, and essential fatty acids known as Vitamin F,
-                          fortifies the body’s immune system and contributes to
-                          overall health and vitality.
+                          The purple moss's comprehensive vitamin range,
+                          featuring energy-boosting B-vitamins,
+                          bone-strengthening Vitamin D, and essential fatty
+                          acids, fortifies the body’s immune system and
+                          contributes to overall health and vitality.
                         </p>
                         <p>
                           Beyond its nutritional prowess, Purple Sea Moss from
@@ -623,91 +629,93 @@ const PurpleSeaMoss = () => {
           <h2 className="center">Frequently Asked Questions</h2>
           <div className="grid-faq">
             <div>
-              <h3>Where does your golden sea moss come from?</h3>
+              <h3>Is your purple sea moss pool grown?</h3>
               <p>
-                Our raw golden sea moss is sustainably harvested from the
-                pristine waters of St. Lucia in the Caribbean.
+                No, our sea moss is not pool grown. It's naturally harvested
+                from the ocean, ensuring it retains all its natural nutrients
+                and benefits.
+              </p>
+              <h3>Where does your purple sea moss come from?</h3>
+              <p>
+                Our Purple Sea Moss is harvested from the pristine waters of St.
+                Lucia, where it grows naturally and is nurtured by the
+                nutrient-rich ocean environment.
               </p>
               <h3>
-                How should I store the raw golden sea moss after receiving it?
+                How should I store the raw purple sea moss after receiving it?
               </h3>
               <p>
-                Store your gold sea moss in a cool, dry place away from direct
-                sunlight. If refrigerated in an airtight container, it can last
-                longer while maintaining its freshness and nutrient value.
+                Store the raw sea moss in a cool, dry place away from direct
+                sunlight. Once you turn it into a gel, keep it in an airtight
+                container in the refrigerator.
               </p>
               <h3>Is your sea moss ethically sourced?</h3>
               <p>
-                Yes, our commitment to sustainability means our golden sea moss
-                is ethically and sustainably sourced, respecting both the
-                environment and local communities
+                Absolutely. Our sea moss is sustainably and ethically
+                hand-harvested to ensure environmental preservation and support
+                for the local communities involved in its collection.
               </p>
               <h3>Will the sea moss have a strong ocean smell?</h3>
               <p>
-                Raw sea moss has a natural ocean aroma, which is a sign of its
-                purity. However, this scent diminishes significantly once it's
-                rinsed and prepared.
+                The sea moss may have a mild oceanic smell when raw, which is
+                natural and indicates its freshness. However, this smell
+                diminishes significantly once it's rinsed and prepared into a
+                gel.
               </p>
               <h3>Why does the sea moss have a dried salt coating?</h3>
               <p>
-                The sea salt is occurs naturally and is simpley dried saltwater.
-                It's a result of drying the sea moss which is dried in a dark
-                room to preserve the green color. The salt also helps preserve
-                the sea moss.
+                The salt coating is a natural result of the drying process as
+                the sea moss is sun-dried on the beaches. It helps preserve the
+                moss and can be easily rinsed off before use.
               </p>
               <h3>Is this product suitable for vegans and vegetarians?</h3>
               <p>
-                Yes, our green sea moss is a perfect addition to vegan and
-                vegetarian diets, providing a natural source of essential
-                nutrients often hard to find in plant-based diets.
+                Yes, our Purple Sea Moss is 100% plant-based and suitable for
+                both vegans and vegetarians.
               </p>
             </div>
             <div>
               <h3>How long does the shipping take?</h3>
               <p>
-                Shipping times vary depending on the destination, but we
-                typically dispatch orders within 3-5 business days.
+                Shipping times vary depending on the destination. Generally,
+                domestic orders are delivered within 3-5 business days.
               </p>
               <h3>
-                How does green sea moss differ from other types of sea moss?
+                How does purple sea moss differ from gold or green sea moss?
               </h3>
               <p>
-                The green variety is particularly noted for its high chlorophyll
-                content, which may offer additional health benefits compared to
-                other types such as gold or purple sea moss.
+                Purple Sea Moss differs from gold or green sea moss primarily in
+                its antioxidant content and color, which is due to the different
+                environmental conditions in which each variety grows. While all
+                types offer similar nutritional profiles, the purple variety is
+                often praised for its higher antioxidant properties, attributed
+                to its vibrant color.
               </p>
-              <h3>How much green sea moss should I consume daily?</h3>
+              <h3>How much sea moss should I consume daily?</h3>
               <p>
-                We recommend starting with 1-2 tablespoons of the prepared gel
-                daily. However, it's best to consult with a healthcare
-                professional for personalized advice.
+                It's recommended to consume no more than 1-2 tablespoons of sea
+                moss gel per day. Start with a smaller amount and gradually
+                increase it to suit your needs.
               </p>
               <h3>Can I return the product if I’m not satisfied?</h3>
               <p>
-                Yes, we have a 60 day return policy. If you’re not satisfied,
-                please contact our customer service for a hassle-free return
-                process.
+                Yes, we have a satisfaction guarantee and a 90-day return
+                policy. If you’re not satisfied, please contact our customer
+                service for a hassle-free return process.
               </p>
               <h3>How can I track my order?</h3>
               <p>
-                Once your order is shipped, we’ll send you a tracking number via
-                email so you can monitor its progress.
-              </p>
-              <h3>Can I return the product if I'm not satisfied?</h3>
-              <p>
-                Yes, we offer a satisfaction guarantee. If you're not happy with
-                your purchase, please contact our customer service within 60
-                days for a return.
+                Once your order is shipped, you will receive a tracking number
+                via email. You can use this number to track your shipment's
+                progress online.
               </p>
               <h3>
                 Is your golden sea moss suitable for people with allergies?
               </h3>
               <p>
-                Our golden sea moss is a natural product, but as with any
-                sea-based item, it can cause reactions in individuals with
-                certain allergies, particularly shellfish or iodine allergies.
-                We recommend consulting with a healthcare professional if you
-                have concerns.
+                Our sea moss is a natural product, but if you have allergies to
+                iodine or other sea-based products, we advise consulting with a
+                healthcare professional before consumption.
               </p>
             </div>
           </div>
@@ -717,11 +725,14 @@ const PurpleSeaMoss = () => {
   )
 }
 
+export default PurpleSeaMoss
+
 const DropDown = styled(Disclosure.Button)`
   border: none;
   background-color: transparent;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   font-weight: 700;
 
@@ -731,10 +742,9 @@ const DropDown = styled(Disclosure.Button)`
 
   .plus {
     font-size: 1.5rem;
+    font-weight: 700;
   }
 `
-
-export default PurpleSeaMoss
 
 const Section = styled.section`
   margin-bottom: 2rem;
@@ -960,7 +970,7 @@ const Section = styled.section`
   }
 
   .grid-hero {
-    @media (min-width: 1028px) {
+    @media (min-width: 768px) {
       display: grid;
       grid-template-columns: 1fr 1fr;
       justify-content: center;
