@@ -346,8 +346,8 @@ const GreenSeaMoss = () => {
             </div>
             <img
               src={greenSeaMoss.toURL()}
-              alt="Green sea moss."
-              title="Green sea moss."
+              alt="Raw green sea moss."
+              title="Raw green sea moss."
               width={670}
               height={670}
               style={{
@@ -982,6 +982,9 @@ const Section = styled.section`
     .right {
       text-align: right;
       justify-content: end;
+    }
+    img {
+      align-self: center;
     }
 
     .left {
