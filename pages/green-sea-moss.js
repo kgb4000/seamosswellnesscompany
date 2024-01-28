@@ -15,7 +15,8 @@ const GreenSeaMoss = () => {
     canonical: `https://seamosswellness.com/green-sea-moss`,
   }
 
-  const price = 29.99
+  const price = 49.95
+  const discount = 15 / 100
 
   const cld = new Cloudinary({
     cloud: {
@@ -131,7 +132,7 @@ const GreenSeaMoss = () => {
             />
             <div>
               <h1>
-                <span className="green">Green</span> Sea Moss (Raw)
+                <span className="green">Green</span> Sea Moss (Raw) 8oz
               </h1>
               <p>DETOXIFYING | WHOLE30 | RAW FOOD | NON-GMO</p>
               <div className="product-flex">
@@ -172,13 +173,13 @@ const GreenSeaMoss = () => {
               </p>
               <div className="price-info">
                 <p className="price-text">We're giving you:</p>
-                <p className="price-text">10% off</p>
+                <p className="price-text">{discount * 100}% off</p>
               </div>
               <div className="price-info">
-                <p className="price">${price}</p>
-                <p className="price-strike-through">
-                  ${(price + (price * 15) / 100).toFixed(2)}
+                <p className="price">
+                  ${(price - price * discount).toFixed(2)}
                 </p>
+                <p className="price-strike-through">${price}</p>
               </div>
               <Button>Add to My Cart</Button>
               <div className="more-info">

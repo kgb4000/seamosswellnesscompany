@@ -24,7 +24,8 @@ const PurpleSeaMoss = () => {
     canonical: `https://seamosswellness.com/purple-sea-moss`,
   }
 
-  const price = 29.99
+  const price = 49.95
+  const discount = 15 / 100
   const color = '#9b59b6'
 
   return (
@@ -100,7 +101,7 @@ const PurpleSeaMoss = () => {
             </div>
             <div>
               <h1>
-                <span className="purple">Purple</span> Sea Moss (Raw)
+                <span className="purple">Purple</span> Sea Moss (Raw) 8oz
               </h1>
               <p>RAW | NON-PROCESSED | WHOLE30 | LOW-CARB </p>
               <div className="product-flex">
@@ -136,14 +137,14 @@ const PurpleSeaMoss = () => {
                 crucial role in rejuvenating and detoxifying the body.
               </p>
               <div className="price-info">
-                <p className="price-text">We're giving you</p>
-                <p className="price-text">10% off</p>
+                <p className="price-text">We're giving you:</p>
+                <p className="price-text">{discount * 100}% off</p>
               </div>
               <div className="price-info">
-                <p className="price">${price}</p>
-                <p className="price-strike-through">
-                  ${(price + (price * 15) / 100).toFixed(2)}
+                <p className="price">
+                  ${(price - price * discount).toFixed(2)}
                 </p>
+                <p className="price-strike-through">${price}</p>
               </div>
               <Button>Add to My Cart</Button>
               <div className="more-info">

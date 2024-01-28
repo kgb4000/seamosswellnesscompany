@@ -24,7 +24,8 @@ const GoldenSeaMoss = () => {
     canonical: `https://seamosswellness.com/golden-sea-moss`,
   }
 
-  const price = 29.99
+  const price = 24.95
+  const discount = 15 / 100
 
   return (
     <>
@@ -93,7 +94,7 @@ const GoldenSeaMoss = () => {
             </div>
             <div>
               <h1>
-                <span className="golden">Golden</span> Sea Moss (Raw)
+                <span className="golden">Golden</span> Sea Moss (Raw) 8oz
               </h1>
               <p>SUPERFOOD | KETO | PALEO | VEGAN | NON-GMO</p>
               <div className="product-flex">
@@ -129,8 +130,8 @@ const GoldenSeaMoss = () => {
                 minerals and vitamins but also that it is 100% organic for sure.
               </p>
               <div className="price-info">
-                <p className="price-text">We're giving you</p>
-                <p className="price-text">10% off</p>
+                <p className="price-text">We're giving you:</p>
+                <p className="price-text">{discount * 100}% off</p>
               </div>
               <div className="price-info">
                 <p className="price">${price}</p>
