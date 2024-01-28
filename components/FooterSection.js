@@ -26,6 +26,9 @@ const FooterSection = () => {
                   <li>
                     <Link href="/contact">Contact</Link>
                   </li>
+                  <li>
+                    <Link href="/refund-policy">Refund Policy</Link>
+                  </li>
                 </ul>
               </nav>
             </div>

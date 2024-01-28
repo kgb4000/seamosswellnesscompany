@@ -329,51 +329,6 @@ const GreenSeaMoss = () => {
       </Section>
       <Section>
         <div className="wider-container">
-          <h2 className="title">Vitamins and Minerals in Green Sea Moss</h2>
-          <div className="vitamin-grid">
-            <div className="right">
-              <ul>
-                <li>Iodine</li>
-                <li>Iron</li>
-                <li>Zinc</li>
-                <li>Calcium</li>
-                <li>Magnesium</li>
-                <li>Potassium</li>
-                <li>Selenium</li>
-                <li>Sulfur</li>
-                <li>Manganese</li>
-              </ul>
-            </div>
-            <img
-              src={greenSeaMoss.toURL()}
-              alt="Raw green sea moss."
-              title="Raw green sea moss."
-              width={670}
-              height={670}
-              style={{
-                width: '100%',
-                height: 'auto',
-              }}
-              sizes="(max-width: 768px) 50vw, (max-width: 1200px) 50vw, 33vw"
-            />
-            <div className="left">
-              <ul>
-                <li>Sulfur</li>
-                <li>Manganese</li>
-                <li>Vitamin A</li>
-                <li>Vitamin B2 (Riboflavin)</li>
-                <li>Vitamin B9 (Folate)</li>
-                <li>Vitamin C</li>
-                <li>Vitamin E</li>
-                <li>Vitamin K</li>
-                <li>Dietary Fiber</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </Section>
-      <Section>
-        <div className="wider-container">
           <h2 className="title">Health Benefits of Green Sea Moss</h2>
           <div className="grid-faq">
             <div className="benefits-bg-left">
@@ -564,6 +519,51 @@ const GreenSeaMoss = () => {
                   </p>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </Section>
+      <Section>
+        <div className="wider-container">
+          <h2 className="title">Vitamins and Minerals in Green Sea Moss</h2>
+          <div className="vitamin-grid">
+            <div className="right">
+              <ul>
+                <li>Iodine</li>
+                <li>Iron</li>
+                <li>Zinc</li>
+                <li>Calcium</li>
+                <li>Magnesium</li>
+                <li>Potassium</li>
+                <li>Selenium</li>
+                <li>Sulfur</li>
+                <li>Manganese</li>
+              </ul>
+            </div>
+            <img
+              src={greenSeaMoss.toURL()}
+              alt="Raw green sea moss."
+              title="Raw green sea moss."
+              width={670}
+              height={670}
+              style={{
+                width: '100%',
+                height: 'auto',
+              }}
+              sizes="(max-width: 768px) 50vw, (max-width: 1200px) 50vw, 33vw"
+            />
+            <div className="left">
+              <ul>
+                <li>Sulfur</li>
+                <li>Manganese</li>
+                <li>Vitamin A</li>
+                <li>Vitamin B2 (Riboflavin)</li>
+                <li>Vitamin B9 (Folate)</li>
+                <li>Vitamin C</li>
+                <li>Vitamin E</li>
+                <li>Vitamin K</li>
+                <li>Dietary Fiber</li>
+              </ul>
             </div>
           </div>
         </div>
