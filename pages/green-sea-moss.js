@@ -40,7 +40,27 @@ const GreenSeaMoss = () => {
   )
   fullSpectrumSeaMoss.quality('auto').format('auto')
 
-  https: return (
+  const greenSupplement = cld.image(
+    'greenSeaMossPage/green-sea-moss-as-supplement_mq1fsf'
+  )
+  greenSupplement.quality('auto').format('auto')
+
+  const greenSmoothie = cld.image(
+    'greenSeaMossPage/green-sea-moss-smoothie_tlii6o'
+  )
+  greenSmoothie.quality('auto').format('auto')
+
+  const greenThickener = cld.image(
+    'greenSeaMossPage/green-sea-moss-thickener-for-soup_iog6ba'
+  )
+  greenThickener.quality('auto').format('auto')
+
+  const greenSkinCare = cld.image(
+    'greenSeaMossPage/green-sea-moss-for-skin-care_bmwnne'
+  )
+  greenSkinCare.quality('auto').format('auto')
+
+  return (
     <>
       <ProductJsonLd
         productName="Green Sea Moss"
@@ -151,7 +171,7 @@ const GreenSeaMoss = () => {
                 but also contributes to overall health and vitality. */}
               </p>
               <div className="price-info">
-                <p className="price-text">We're giving you</p>
+                <p className="price-text">We're giving you:</p>
                 <p className="price-text">10% off</p>
               </div>
               <div className="price-info">
@@ -321,7 +341,7 @@ const GreenSeaMoss = () => {
                 <li>Potassium</li>
                 <li>Selenium</li>
                 <li>Sulfur</li>
-                <li>Maganese</li>
+                <li>Manganese</li>
               </ul>
             </div>
             <img
@@ -372,8 +392,8 @@ const GreenSeaMoss = () => {
                   <p>
                     Green Sea Moss contains chlorophyll, which is known for its
                     detoxifying properties. Chlorophyll acts as a natural body
-                    deodorizer can help cleanse the body of toxins and improve
-                    liver function, contributing to overall health.
+                    deodorizer and can help cleanse the body of toxins and
+                    improve liver function, contributing to overall health.
                   </p>
                 </div>
               </div>
@@ -383,10 +403,10 @@ const GreenSeaMoss = () => {
                   <h3>Vitamins and Minerals:</h3>
                   <p>
                     Green Sea Moss is a treasure trove of essential nutrients.
-                    It's packed with vitamins like vitamins A, C, E, K, and a
-                    host of B vitamins. It's also rich in minerals such as
-                    iodine, potassium, calcium, and magnesium, making it a
-                    comprehensive supplement for daily health.
+                    It's packed with vitamins A, C, E, K, and a host of B
+                    vitamins. It's also rich in minerals such as iodine,
+                    potassium, calcium, and magnesium, making it a comprehensive
+                    supplement for daily health.
                   </p>
                 </div>
               </div>
@@ -402,7 +422,7 @@ const GreenSeaMoss = () => {
                 <div>
                   <h3>Strengthens Immune System:</h3>
                   <p>
-                    Green Sea Moss is a great source of zinc, an essential
+                    Green Sea Moss is a excellent source of zinc, an essential
                     mineral for immune function. Combined with its antioxidant
                     properties, it can strengthen the body's defenses against
                     infections and diseases.
@@ -490,8 +510,8 @@ const GreenSeaMoss = () => {
                   <h3>Improves Joint Health:</h3>
                   <p>
                     The compounds in Green Sea Moss may have anti-inflammatory
-                    effects, which can help in reducing joint pain and
-                    discomfort associated with conditions like arthritis.
+                    effects, which can help reduce joint pain and discomfort
+                    associated with conditions like arthritis.
                   </p>
                 </div>
               </div>
@@ -506,10 +526,9 @@ const GreenSeaMoss = () => {
                 <div>
                   <h3>Low in Calories, High in Fiber:</h3>
                   <p>
-                    Its low-calorie and high-fiber content can be beneficial for
-                    people concerned about weight loss. The fiber provides a
-                    feeling of fullness, potentially reducing overall calorie
-                    intake.
+                    Its low-calorie and high-fiber content can help people
+                    concerned about weight loss. The fiber provides a feeling of
+                    fullness, potentially reducing overall calorie intake.
                   </p>
                 </div>
               </div>
@@ -525,9 +544,8 @@ const GreenSeaMoss = () => {
                   <h3>Rich in Magnesium and Potassium:</h3>
                   <p>
                     Potassium and magnesium are minerals known for their role in
-                    brain health. They can help in regulating mood and relieve
-                    stress and anxiety, thereby potentially improving mental
-                    well-being.
+                    brain health. They can help regulate mood and relieve stress
+                    and anxiety, potentially improving mental well-being.
                   </p>
                 </div>
               </div>
@@ -542,9 +560,9 @@ const GreenSeaMoss = () => {
                 <div>
                   <h3>Boosts Energy Levels:</h3>
                   <p>
-                    The iron in Green Sea Moss helps in the efficient transport
-                    of oxygen throughout the body, which can lead to increased
-                    energy levels and reduced fatigue.
+                    The iron in Green Sea Moss helps transport oxygen throughout
+                    the body, leading to increased energy levels and reduced
+                    fatigue.
                   </p>
                 </div>
               </div>
@@ -558,7 +576,7 @@ const GreenSeaMoss = () => {
           <div className="waystousegrid">
             <div className="grid-ways">
               <img
-                src="https://res.cloudinary.com/browne-company/image/upload/v1706385955/Green%20Sea%20Moss%20Page/green-sea-moss-as-supplement_c1ew74.jpg"
+                src={greenSupplement.toURL()}
                 alt="Sea moss supplements"
                 width={400}
                 height={300}
@@ -571,8 +589,7 @@ const GreenSeaMoss = () => {
             </div>
             <div className="grid-ways">
               <img
-                src="https://res.cloudinary.com/browne-company/image/upload/v1706378159/Green%20Sea%20Moss%20Page/green-sea-moss-smoothie_zdic0y.jpg"
-                alt="Sea moss supplements"
+                src={greenSmoothie.toURL()}
                 width={400}
                 height={300}
                 style={{
@@ -580,11 +597,11 @@ const GreenSeaMoss = () => {
                   height: 'auto',
                 }}
               />
-              <p>Add to smoothies and boost mineral and vitamin conent.</p>
+              <p>Add to smoothies and boost mineral and vitamin content.</p>
             </div>
             <div className="grid-ways">
               <img
-                src="https://res.cloudinary.com/browne-company/image/upload/v1706378160/Green%20Sea%20Moss%20Page/green-sea-moss-thickener-for-soup_uujup0.jpg"
+                src={greenThickener.toURL()}
                 alt="Sea moss supplements"
                 width={400}
                 height={300}
@@ -597,7 +614,7 @@ const GreenSeaMoss = () => {
             </div>
             <div className="grid-ways">
               <img
-                src="https://res.cloudinary.com/browne-company/image/upload/v1706378159/Green%20Sea%20Moss%20Page/green-sea-moss-for-skin-care_bib5di.jpg"
+                src={greenSkinCare.toURL()}
                 alt="Sea moss supplements"
                 width={400}
                 height={300}
@@ -804,12 +821,12 @@ const GreenSeaMoss = () => {
               <h3>How much green sea moss should I consume daily?</h3>
               <p>
                 We recommend starting with 1-2 tablespoons of the prepared gel
-                daily. However, it's best to consult with a healthcare
-                professional for personalized advice.
+                daily. However, it's best to consult a healthcare professional
+                for personalized advice.
               </p>
               <h3>Can I return the product if I’m not satisfied?</h3>
               <p>
-                Yes, we have a 90 day return policy. If you’re not satisfied,
+                Yes, we have a 90 day return policy. If you’re unsatisfied,
                 please contact our customer service for a hassle-free return
                 process.
               </p>

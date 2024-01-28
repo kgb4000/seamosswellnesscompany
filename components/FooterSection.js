@@ -43,7 +43,7 @@ const FooterSection = () => {
         <Disclaimer>
           <div className="container">
             <p className="center">
-              The content in this website is not medical advice and it’s
+              The content on this website is not medical advice and it’s
               intended for informational and educational purposes only. Read our{' '}
               <Link href="/disclaimer" target="_blank">
                 disclaimer
