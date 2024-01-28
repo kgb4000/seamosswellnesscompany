@@ -825,24 +825,20 @@ const Section = styled.section`
   }
 
   .howtousebg {
+    background-color: #f8f8f8;
+    padding: 2rem 4rem;
+    border-radius: 50px;
+    border: 6px solid #f6e58d;
     margin-bottom: 1rem;
-    @media and screen (min-width: 1024px) {
+    @media (min-width: 1024px) {
       width: 33%;
-      display: flex;
-      gap: 30px;
+      margin-bottom: 0;
     }
   }
 
   .product-flex {
     display: flex;
     gap: 20px;
-  }
-
-  .howtousebg {
-    background-color: #f8f8f8;
-    padding: 2rem 4rem;
-    border-radius: 50px;
-    border: 6px solid #f6e58d;
   }
 
   .benefits-bg-left {
@@ -1039,12 +1035,6 @@ const Section = styled.section`
   }
 
   .grid-related {
-    @media (min-width: 600px) {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      justify-content: center;
-      gap: 40px;
-    }
     @media (min-width: 1028px) {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;

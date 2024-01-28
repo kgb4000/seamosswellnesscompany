@@ -150,13 +150,13 @@ const PurpleSeaMoss = () => {
                       </DropDown>
                       <Disclosure.Panel>
                         <p>
-                          Our Purple Sea Moss is sustainably hand-harvested in
-                          St. Lucia, ensuring that every batch retains its
-                          natural purity and nutrient density. The pristine
-                          waters of St. Lucia provide the ideal environment for
-                          the sea moss to thrive, resulting in a product that is
-                          not only rich in essential minerals and vitamins but
-                          also free from pollutants and contaminants.
+                          Our Purple Sea Moss is hand-harvested in St. Lucia,
+                          ensuring that every batch retains its natural purity
+                          and nutrient density. These waters provide the ideal
+                          environment for the sea moss to thrive, resulting in a
+                          product that is not only rich in essential minerals
+                          and vitamins but also free from pollutants and
+                          contaminants.
                         </p>
                       </Disclosure.Panel>
                     </>
@@ -285,44 +285,6 @@ const PurpleSeaMoss = () => {
           </div>
         </div>
       </Section>
-      {/* <Section>
-        <div className="wider-container">
-          <h2 className="center">Customer Reviews</h2>
-          <div className="flex">
-            <div className="howtousebg">
-              <p className="center">Danny A.</p>
-              <p>
-                I've been using sea moss in my diet for a few weeks now, and I'm
-                genuinely impressed with the quality of this product. I've used
-                it in my morning smoothies, and I feel more energized throughout
-                the day. Highly recommend this to anyone looking for a natural
-                health boost!
-              </p>
-            </div>
-            <div className="howtousebg">
-              <p className="center">Monica B.</p>
-              <p>
-                I purchased gold sea moss on a friend's recommendation to help
-                with my digestive issues. It's easy to prepare, and I love how
-                it blends into my soups and sauces without changing the flavor.
-                I'm giving it four stars only because the ocean smell was a bit
-                strong when I first opened it, but it rinsed out easily.
-              </p>
-            </div>
-            <div className="howtousebg">
-              <p className="center">Katash K.</p>
-              <p>
-                I'm always on the lookout for natural skincare products, and
-                Golden Sea Moss has been a fantastic discovery. I've used it as
-                a face mask, and my skin feels rejuvenated and hydrated. The
-                fact that it's packed with minerals and vitamins is a huge plus
-                for me. Also, experimenting with it in my vegan recipes has been
-                fun. It's a five-star product for me!
-              </p>
-            </div>
-          </div>
-        </div>
-      </Section> */}
       <Section>
         <div className="wider-container">
           <h2 className="center">Purple Sea Moss Health Benefits</h2>
@@ -404,15 +366,6 @@ const PurpleSeaMoss = () => {
                     src="/images/icons/immune-system.png"
                     title="Immune system."
                     alt="Immune system."
-                    width={50}
-                    height={50}
-                  />
-                </div>
-                <div className="benefit">
-                  <img
-                    src="/images/icons/woman.png"
-                    title="Skin health."
-                    alt="Skin health."
                     width={50}
                     height={50}
                   />
@@ -532,31 +485,31 @@ const PurpleSeaMoss = () => {
           <div className="waystousegrid">
             <div className="grid-ways">
               <img
-                src="https://res.cloudinary.com/browne-company/image/upload/v1706383111/Gold%20Sea%20Moss%20Page/add-gold-sea-moss-to-water_mjoa6z.jpg"
-                alt="Add gold sea moss to water."
+                src="https://res.cloudinary.com/browne-company/image/upload/v1706396846/Purple%20Sea%20Moss%20Page/add-purple-sea-moss-to-sports-drinks_qw08eh.jpg"
+                alt="Add purple sea moss to tea or water."
               />
               <p>Add to beverages like tea or water.</p>
             </div>
             <div className="grid-ways">
               <img
-                src="https://res.cloudinary.com/browne-company/image/upload/v1706383718/Gold%20Sea%20Moss%20Page/add-gold-sea-moss-to-smoothies_bfzin2.jpg"
+                src="https://res.cloudinary.com/browne-company/image/upload/v1706396898/Purple%20Sea%20Moss%20Page/purple-sea-moss-infused-drinks_nkqaqs.jpg"
                 alt="Add sea moss to smoothies to boost mineral and vitamin conent."
               />
-              <p>Add to smoothies and boost mineral and vitamin conent.</p>
+              <p>Fuse with other fruits to create healthier smoothies.</p>
             </div>
             <div className="grid-ways">
               <img
-                src="https://res.cloudinary.com/browne-company/image/upload/v1706383111/Gold%20Sea%20Moss%20Page/add-gold-sea-moss-to-soup_cnfn2e.jpg"
+                src="https://res.cloudinary.com/browne-company/image/upload/v1706396845/Purple%20Sea%20Moss%20Page/add-purple-sea-moss-to-soups_l3qhxu.jpg"
                 alt="Add sea moss to thickenen soups and sauces."
               />
-              <p>Add sea moss to thickenen soups and sauces.</p>
+              <p>Add to soups and sauces to add thickness and color.</p>
             </div>
             <div className="grid-ways">
               <img
-                src="https://res.cloudinary.com/browne-company/image/upload/v1706383111/Gold%20Sea%20Moss%20Page/gold-sea-moss-for-skin-care_ja7haw.jpg"
+                src="https://res.cloudinary.com/browne-company/image/upload/v1706396848/Purple%20Sea%20Moss%20Page/beautiful-black-woman_btj9oc.jpg"
                 alt="Use golde sea moss for skin care and treatment."
               />
-              <p>Skin care and treatment.</p>
+              <p>Use as a natural remedy for healthier, clearer skin.</p>
             </div>
           </div>
         </div>
@@ -569,16 +522,16 @@ const PurpleSeaMoss = () => {
               <h3>#1. Clean the Sea Moss</h3>
               <ul>
                 <li>
-                  You'll need golden sea moss, a large bowl, and fresh water
-                  (preferably spring or distilled water).
+                  You'll need purple sea moss, a large glass or stainless steel
+                  bowl, and fresh water (preferably spring or distilled water).
                 </li>
                 <li>
-                  Place the sea moss in a large bowl. Run cold water over it to
-                  remove any sea debris, sand, or salt.
+                  Submerge the sea moss in the bowl. Gently agitate it under
+                  cold, running water to release any natural ocean elements like
+                  sand or salt.
                 </li>
                 <li>
-                  Carefully check the sea moss for any remaining debris. Rinse
-                  several times until the water runs clear.
+                  Inspect and rinse several times until the water is clear.
                 </li>
               </ul>
             </div>
@@ -586,16 +539,13 @@ const PurpleSeaMoss = () => {
               <h3>#2. Soak the Sea Moss</h3>
               <ul>
                 <li>
-                  After rinsing, cover the sea moss with a generous amount of
-                  water, as it will expand during soaking.
+                  After cleaning, put the sea moss in a large bowl and cover it
+                  with plenty of water; it will expand as it soaks.
                 </li>
+                <li>Leave it to soak for 12-24 hours. It will grow in size.</li>
                 <li>
-                  Leave the sea moss to soak for at least 12 hours, or ideally,
-                  24 hours. The moss will absorb water and double in size.
-                </li>
-                <li>
-                  For added flavor and nutrients, consider adding a slice of
-                  lime or lemon to the soaking water.
+                  Optional: Add a slice of lime or lemon for extra flavor and
+                  nutrients.
                 </li>
               </ul>
             </div>
@@ -603,17 +553,13 @@ const PurpleSeaMoss = () => {
               <h3>#3. Blend the Sea Moss</h3>
               <ul>
                 <li>
-                  After soaking, drain off the water and give the sea moss
-                  another rinse.
+                  Drain the soaked sea moss and give it another quick rinse.
                 </li>
                 <li>
-                  Place the sea moss in a blender. Add fresh, clean water -
-                  about 1 cup of water for every ounce of sea moss.
+                  Add about 1 cup of fresh, clean water for every ounce of sea
+                  moss.
                 </li>
-                <li>
-                  Blend until smooth. The mixture should form a thick, creamy
-                  gel.
-                </li>
+                <li>Blend until you get a smooth, thick gel.</li>
               </ul>
             </div>
           </div>
@@ -848,6 +794,11 @@ const Section = styled.section`
     padding: 2rem 4rem;
     border-radius: 50px;
     border: 6px solid #9b59b6;
+    margin-bottom: 1rem;
+    @media (min-width: 1024px) {
+      width: 33%;
+      margin-bottom: 0;
+    }
   }
 
   .benefits-bg-left {

@@ -3,18 +3,9 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { NextSeo, ProductJsonLd } from 'next-seo'
 import styled from 'styled-components'
-import { Cloudinary } from '@cloudinary/url-gen'
 import Button from '../components/Button'
 import { Disclosure } from '@headlessui/react'
-
-const cld = new Cloudinary({
-  cloud: {
-    cloudName: 'browne-company',
-  },
-  url: {
-    secure: true,
-  },
-})
+import { Cloudinary } from '@cloudinary/url-gen'
 
 const GreenSeaMoss = () => {
   const SEO = {
@@ -25,7 +16,31 @@ const GreenSeaMoss = () => {
   }
 
   const price = 29.99
-  return (
+
+  const cld = new Cloudinary({
+    cloud: {
+      cloudName: 'browne-company',
+    },
+    url: {
+      secure: true,
+    },
+  })
+
+  const greenSeaMoss = cld.image('seaMossProducts/raw-green-sea-moss_aaa6fq')
+  greenSeaMoss.quality('auto').format('auto')
+
+  const goldSeaMoss = cld.image('seaMossProducts/raw-gold-sea-moss_hkuu7h')
+  goldSeaMoss.quality('auto').format('auto')
+
+  const purpleSeaMoss = cld.image('seaMossProducts/raw-purple-sea-moss_a25mj0')
+  purpleSeaMoss.quality('auto').format('auto')
+
+  const fullSpectrumSeaMoss = cld.image(
+    'seaMossProducts/full-specturm-sea-moss_geyqtg'
+  )
+  fullSpectrumSeaMoss.quality('auto').format('auto')
+
+  https: return (
     <>
       <ProductJsonLd
         productName="Green Sea Moss"
@@ -83,10 +98,16 @@ const GreenSeaMoss = () => {
       <Section>
         <div className="wide-container">
           <div className="grid-hero">
-            <img
-              src="https://res.cloudinary.com/browne-company/image/upload/v1704729838/seaMossProducts/raw-green-sea-moss_aaa6fq.webp"
+            <Image
+              src={greenSeaMoss.toURL()}
               alt="Green sea moss."
               title="Green sea moss."
+              width={670}
+              height={670}
+              style={{
+                width: '100%',
+                height: 'auto',
+              }}
             />
             <div>
               <h1>
@@ -286,44 +307,53 @@ const GreenSeaMoss = () => {
           </div>
         </div>
       </Section>
-      {/* <Section>
+      <Section>
         <div className="wider-container">
-          <h2 className="center">Customer Reviews</h2>
-          <div className="flex">
-            <div className="howtousebg">
-              <p className="center">Danny A.</p>
-              <p>
-                I've been using sea moss in my diet for a few weeks now, and I'm
-                genuinely impressed with the quality of this product. I've used
-                it in my morning smoothies, and I feel more energized throughout
-                the day. Highly recommend this to anyone looking for a natural
-                health boost!
-              </p>
+          <h2 className="title">Vitamins and Minerals in Green Sea Moss</h2>
+          <div className="vitamin-grid">
+            <div className="right">
+              <ul>
+                <li>Iodine</li>
+                <li>Iron</li>
+                <li>Zinc</li>
+                <li>Calcium</li>
+                <li>Magnesium</li>
+                <li>Potassium</li>
+                <li>Selenium</li>
+                <li>Sulfur</li>
+                <li>Maganese</li>
+              </ul>
             </div>
-            <div className="howtousebg">
-              <p className="center">Monica B.</p>
-              <p>
-                I purchased gold sea moss on a friend's recommendation to help
-                with my digestive issues. It's easy to prepare, and I love how
-                it blends into my soups and sauces without changing the flavor.
-                I'm giving it four stars only because the ocean smell was a bit
-                strong when I first opened it, but it rinsed out easily.
-              </p>
-            </div>
-            <div className="howtousebg">
-              <p className="center">Katash K.</p>
-              <p>
-                I'm always on the lookout for natural skincare products, and
-                Golden Sea Moss has been a fantastic discovery. I've used it as
-                a face mask, and my skin feels rejuvenated and hydrated. The
-                fact that it's packed with minerals and vitamins is a huge plus
-                for me. Also, experimenting with it in my vegan recipes has been
-                fun. It's a five-star product for me!
-              </p>
+            <img
+              src={greenSeaMoss.toURL()}
+              alt="Green sea moss."
+              title="Green sea moss."
+              width={670}
+              height={670}
+              style={{
+                width: '100%',
+                height: 'auto',
+              }}
+              sizes="(max-width: 768px) 50vw, (max-width: 1200px) 50vw, 33vw"
+            />
+            <div className="left">
+              <ul>
+                <li>Vitamin A</li>
+                <li>Vitamin B2 (Riboflavin)</li>
+                <li>Vitamin B9 (Folate)</li>
+                <li>Vitamin C</li>
+                <li>Vitamin D</li>
+                <li>Vitamin E</li>
+                <li>Vitamin K</li>
+                <li>Dietary Fiber</li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
             </div>
           </div>
         </div>
-      </Section> */}
+      </Section>
       <Section>
         <div className="wider-container">
           <h2 className="title">Health Benefits of Green Sea Moss</h2>
@@ -530,6 +560,12 @@ const GreenSeaMoss = () => {
               <img
                 src="https://res.cloudinary.com/browne-company/image/upload/v1706385955/Green%20Sea%20Moss%20Page/green-sea-moss-as-supplement_c1ew74.jpg"
                 alt="Sea moss supplements"
+                width={400}
+                height={300}
+                style={{
+                  width: '100%',
+                  height: 'auto',
+                }}
               />
               <p>Add to beverages like tea or water.</p>
             </div>
@@ -537,6 +573,12 @@ const GreenSeaMoss = () => {
               <img
                 src="https://res.cloudinary.com/browne-company/image/upload/v1706378159/Green%20Sea%20Moss%20Page/green-sea-moss-smoothie_zdic0y.jpg"
                 alt="Sea moss supplements"
+                width={400}
+                height={300}
+                style={{
+                  width: '100%',
+                  height: 'auto',
+                }}
               />
               <p>Add to smoothies and boost mineral and vitamin conent.</p>
             </div>
@@ -544,6 +586,12 @@ const GreenSeaMoss = () => {
               <img
                 src="https://res.cloudinary.com/browne-company/image/upload/v1706378160/Green%20Sea%20Moss%20Page/green-sea-moss-thickener-for-soup_uujup0.jpg"
                 alt="Sea moss supplements"
+                width={400}
+                height={300}
+                style={{
+                  width: '100%',
+                  height: 'auto',
+                }}
               />
               <p>Add as a thickener to soups and sauces.</p>
             </div>
@@ -551,6 +599,12 @@ const GreenSeaMoss = () => {
               <img
                 src="https://res.cloudinary.com/browne-company/image/upload/v1706378159/Green%20Sea%20Moss%20Page/green-sea-moss-for-skin-care_bib5di.jpg"
                 alt="Sea moss supplements"
+                width={400}
+                height={300}
+                style={{
+                  width: '100%',
+                  height: 'auto',
+                }}
               />
               <p>Skin care and treatment.</p>
             </div>
@@ -622,9 +676,15 @@ const GreenSeaMoss = () => {
             <div className="related-products">
               <Link href="/purple-sea-moss">
                 <img
-                  src="https://res.cloudinary.com/browne-company/image/upload/v1704729839/seaMossProducts/raw-purple-sea-moss_a25mj0.webp"
+                  src={purpleSeaMoss.toURL()}
                   alt="Purple sea moss."
                   title="Purple sea moss."
+                  width={670}
+                  height={670}
+                  style={{
+                    width: '100%',
+                    height: 'auto',
+                  }}
                 />
                 <h3>Raw Purple Moss</h3>
                 <p>$29.99</p>
@@ -633,9 +693,15 @@ const GreenSeaMoss = () => {
             <div className="related-products">
               <Link href="/golden-sea-moss">
                 <img
-                  src="https://res.cloudinary.com/browne-company/image/upload/v1704729838/seaMossProducts/raw-gold-sea-moss_hkuu7h.webp"
+                  src={goldSeaMoss.toURL()}
                   alt="Gold sea moss."
                   title="Gold sea moss."
+                  width={670}
+                  height={670}
+                  style={{
+                    width: '100%',
+                    height: 'auto',
+                  }}
                 />
                 <h3>Raw Gold Moss</h3>
                 <p>$29.99</p>
@@ -644,10 +710,15 @@ const GreenSeaMoss = () => {
             <div className="related-products">
               <Link href="/">
                 <img
-                  src="https://res.cloudinary.com/browne-company/image/upload/v1704729836/seaMossProducts/full-specturm-sea-moss_geyqtg.webp"
+                  src={fullSpectrumSeaMoss.toURL()}
                   alt="Full spectrum sea moss."
                   title="Full spectrum sea moss."
-                  className="related-products"
+                  width={670}
+                  height={670}
+                  style={{
+                    width: '100%',
+                    height: 'auto',
+                  }}
                 />
                 <h3>Full Spectrum Sea Moss</h3>
                 <p>$29.99</p>
@@ -659,7 +730,12 @@ const GreenSeaMoss = () => {
                   src="https://res.cloudinary.com/browne-company/image/upload/v1704729838/seaMossProducts/gold-sea-moss-gel_fm7v18.webp"
                   alt="Gold sea moss gel."
                   title="Gold sea moss gel."
-                  className="related-products"
+                  width={670}
+                  height={670}
+                  style={{
+                    width: '100%',
+                    height: 'auto',
+                  }}
                 />
                 <h3>Gold Sea Moss Gel</h3>
                 <p>$29.99</p>
@@ -885,6 +961,46 @@ const Section = styled.section`
     }
   }
 
+  .vitamin-grid {
+    .right {
+      text-align: right;
+      justify-content: end;
+    }
+
+    .left {
+      justify-content: start;
+    }
+    div {
+      display: flex;
+      justify-content: center;
+      ul {
+        li {
+          list-style-type: none;
+        }
+      }
+    }
+
+    max-width: 1540px;
+    ${
+      '' /* @media (min-width: 600px) {
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-content: center;
+      gap: 20px;
+    } */
+    }
+    @media (min-width: 480px) {
+      margin: 0 auto;
+      max-width: 1540px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-content: center;
+      align-content: center;
+      gap: 20px;
+    }
+  }
+
   .waystousegrid {
     max-width: 1540px;
     text-align: center;
@@ -1006,7 +1122,7 @@ const Section = styled.section`
   }
 
   .grid-hero {
-    @media (min-width: 1028px) {
+    @media (min-width: 768px) {
       display: grid;
       grid-template-columns: 1fr 1fr;
       justify-content: center;
