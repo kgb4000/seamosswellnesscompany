@@ -295,9 +295,8 @@ const GreenSeaMoss = () => {
                       </DropDown>
                       <Disclosure.Panel>
                         <p>
-                          Free shipping on orders over $35.00. We ship within
-                          24-48 hours anywhere in the U.S., ensuring that you
-                          receive your sea moss in a timely manner.
+                          Free shipping on orders over $35.00. Get your sea moss
+                          in 3-5 business days.
                         </p>
                       </Disclosure.Panel>
                     </>
@@ -309,7 +308,7 @@ const GreenSeaMoss = () => {
                   {({ open }) => (
                     <>
                       <DropDown>
-                        <span>Returns</span>
+                        <span>Return Policy</span>
                         <span className="plus">+</span>
                       </DropDown>
                       <Disclosure.Panel>

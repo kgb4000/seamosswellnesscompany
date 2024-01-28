@@ -252,7 +252,10 @@ const GoldenSeaMoss = () => {
                           <span className="plus">+</span>
                         </DropDown>
                         <Disclosure.Panel>
-                          <p>Free shipping on orders over $35.00.</p>
+                          <p>
+                            Free shipping on orders over $35.00. Get your sea
+                            moss in 3-5 business days.
+                          </p>
                         </Disclosure.Panel>
                       </>
                     )}
@@ -263,7 +266,7 @@ const GoldenSeaMoss = () => {
                     {({ open }) => (
                       <>
                         <DropDown>
-                          <span>Returns</span>
+                          <span>Return Policy</span>
                           <span className="plus">+</span>
                         </DropDown>
                         <Disclosure.Panel>
@@ -995,7 +998,7 @@ const Section = styled.section`
   }
 
   .grid-hero {
-    @media (min-width: 1028px) {
+    @media (min-width: 768px) {
       display: grid;
       grid-template-columns: 1fr 1fr;
       justify-content: center;
