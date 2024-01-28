@@ -358,17 +358,15 @@ const GreenSeaMoss = () => {
             />
             <div className="left">
               <ul>
+                <li>Sulfur</li>
+                <li>Manganese</li>
                 <li>Vitamin A</li>
                 <li>Vitamin B2 (Riboflavin)</li>
                 <li>Vitamin B9 (Folate)</li>
                 <li>Vitamin C</li>
-                <li>Vitamin D</li>
                 <li>Vitamin E</li>
                 <li>Vitamin K</li>
                 <li>Dietary Fiber</li>
-                <li></li>
-                <li></li>
-                <li></li>
               </ul>
             </div>
           </div>
