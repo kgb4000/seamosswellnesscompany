@@ -139,7 +139,7 @@ const GoldenSeaMoss = () => {
                   ${(price + (price * 15) / 100).toFixed(2)}
                 </p>
               </div>
-              <Button>Add to My Cart</Button>
+              <Button>Add to Cart</Button>
               <div className="more-info">
                 <Disclosure as="div" className="">
                   {({ open }) => (

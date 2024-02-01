@@ -33,13 +33,9 @@ const FooterSection = () => {
               </nav>
             </div>
             <p>
-              <Link href="/terms-of-service" target="_blank">
-                Terms of Service
-              </Link>
+              <Link href="/terms-of-service">Terms of Service</Link>
             </p>
-            <Link href="/privacy-policy" target="_blank">
-              Privacy Policy
-            </Link>
+            <Link href="/privacy-policy">Privacy Policy</Link>
           </LowerFooter>
         </div>
 
@@ -48,10 +44,7 @@ const FooterSection = () => {
             <p className="center">
               The content on this website is not medical advice and it’s
               intended for informational and educational purposes only. Read our{' '}
-              <Link href="/disclaimer" target="_blank">
-                disclaimer
-              </Link>
-              .
+              <Link href="/disclaimer">disclaimer</Link>.
             </p>
           </div>
         </Disclaimer>

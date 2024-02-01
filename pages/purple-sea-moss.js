@@ -146,7 +146,7 @@ const PurpleSeaMoss = () => {
                 </p>
                 <p className="price-strike-through">${price}</p>
               </div>
-              <Button>Add to My Cart</Button>
+              <Button>Add to Cart</Button>
               <div className="more-info">
                 <Disclosure as="div" className="">
                   {({ open }) => (

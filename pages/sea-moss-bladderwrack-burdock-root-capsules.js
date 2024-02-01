@@ -7,12 +7,12 @@ import Button from '../components/Button'
 import { Disclosure } from '@headlessui/react'
 import { Cloudinary } from '@cloudinary/url-gen'
 
-const GreenSeaMoss = () => {
+const seaMossBladderwrackBurdockRoot = () => {
   const SEO = {
     title: `Green Sea Moss From St. Lucia | Finest Qualtiy | Raw, Healthy, Superfood`,
     description:
       'Our raw green sea moss is a natural wonder, loaded with health benefits. Boost your thyroid health and immunity with this organic, nutrient-rich superfood.',
-    canonical: `https://seamosswellness.com/green-sea-moss`,
+    canonical: `https://seamosswellness.com/sea-moss-bladderwrack-burdock-root-capsules`,
   }
 
   const price = 49.95
@@ -64,7 +64,7 @@ const GreenSeaMoss = () => {
   return (
     <>
       <ProductJsonLd
-        productName="Green Sea Moss"
+        productName="Sea Moss Bladderwrack and Burdock Root Capsules"
         images={[
           'https://res.cloudinary.com/browne-company/image/upload/v1704729838/seaMossProducts/raw-green-sea-moss_aaa6fq.webp',
           ,
@@ -102,12 +102,12 @@ const GreenSeaMoss = () => {
         // }}
         offers={[
           {
-            price: '29.99',
+            price: '42.45',
             priceCurrency: 'USD',
             // priceValidUntil: '2020-11-05',
             // itemCondition: 'https://schema.org/UsedCondition',
             availability: 'https://schema.org/OnlineOnly',
-            url: 'https://seamosswellness.com/green-sea-moss',
+            url: 'https://seamosswellness.com/sea-moss-bladderwrack-burdock-root-capsules',
             seller: {
               name: 'Sea Moss Wellness',
             },
@@ -132,9 +132,10 @@ const GreenSeaMoss = () => {
             />
             <div>
               <h1>
-                <span className="green">Green</span> Sea Moss (Raw) 8oz
+                <span className="green">Sea Moss</span> Bladderwrack and
+                BurdockRoot Capsules (200 Count)
               </h1>
-              <p>DETOXIFYING | WHOLE30 | RAW FOOD | NON-GMO</p>
+              <p>ANTI-INFLAMMATORY | DETOXIFYING | WHOLE30 | RAW FOOD</p>
               <div className="product-flex">
                 <Image
                   src="/images/icons/plant-based.png"
@@ -163,10 +164,11 @@ const GreenSeaMoss = () => {
                 <p>100% Organic</p>
               </div>
               <p>
-                One of the rare types, Green sea moss, rich in chlorophyll, is a
-                natural detoxifier and a powerhouse of nutrition. It's teeming
-                with essential vitamins and minerals, helping purify the body by
-                removing toxins.
+                Each Sea Moss, Bladderwrack and Burdock root capsule is a
+                carefully crafted blend of some of nature's most potent marine
+                and land botanicals. These capsules are not just supplements;
+                they are your daily dose of nature's best, designed to support
+                overall health and vitality.
                 {/* Its
                 high chlorophyll content not only enhances its detox properties,
                 but also contributes to overall health and vitality. */}
@@ -181,7 +183,7 @@ const GreenSeaMoss = () => {
                 </p>
                 <p className="price-strike-through">${price}</p>
               </div>
-              <Button>Add to Cart</Button>
+              <Button>Add to My Cart</Button>
               <div className="more-info">
                 <Disclosure as="div" className="">
                   {({ open }) => (
@@ -206,30 +208,35 @@ const GreenSeaMoss = () => {
                   {({ open }) => (
                     <>
                       <DropDown>
-                        <span>More about Green Sea Moss</span>
+                        <span>Sea Moss, Bladderwrack, and Burdock Root</span>
                         <span className="plus">+</span>
                       </DropDown>
                       <Disclosure.Panel>
                         <p>
-                          Our green sea moss, with its vivid natural hue, is not
-                          just visually striking but also a nutritional
-                          powerhouse. It is abundant in essential minerals like
-                          iodine, crucial for thyroid function; calcium, for
-                          bone strength; potassium, which aids in maintaining
-                          healthy blood pressure; and iron, essential for blood
-                          health.
+                          Our sea moss, bladderwrack and burdock root capsules
+                          are not just a supplement; they're a celebration of
+                          nature's profound wisdom. Each capsule is a blend of
+                          some of the ocean's and earth's most beneficial
+                          botanicals, crafted to elevate your health and
+                          vitality.
                         </p>
                         <p>
-                          The rich vitamin content, including A, C, E, K, and
-                          the B-complex, fortifies the body’s immune system and
-                          enhances overall well-being.
+                          Our Gold Sea Moss is a spectacle of nature with its
+                          radiant golden hue, symbolizing the rich nutritional
+                          value it holds. It's a treasure trove of essential
+                          minerals: iodine for thyroid health, calcium for
+                          robust bones, potassium for balanced blood pressure,
+                          and iron, crucial for maintaining healthy blood. This
+                          sea-based miracle is not only aesthetically
+                          magnificent but also a powerhouse of wellness.
                         </p>
                         <p>
-                          Not only does it support thyroid health and boost
-                          immunity, but it also promotes detoxification, thanks
-                          to its high chlorophyll content. This powerful
-                          pigment, known for its cleansing properties, works to
-                          detoxify the body, enhancing your natural vitality.
+                          Bladderwrack, a brown seaweed companion in these
+                          capsules, is a natural iodine powerhouse, vital for
+                          thyroid function. Its nutrient-rich profile
+                          complements the sea moss, augmenting your health with
+                          its mineral abundance and supporting metabolic balance
+                          and overall vitality.
                         </p>
                         <p>
                           The antioxidants present in sea moss help neutralize
@@ -237,9 +244,12 @@ const GreenSeaMoss = () => {
                           deodorizer and a guardian against cellular damage.
                         </p>
                         <p>
-                          Adding it to your diet symbolizes an embrace of the
-                          life force of the sea, a step towards harnessing the
-                          pure, unadulterated essence of nature for your health.
+                          Burdock Root, the third key ingredient, is revered for
+                          its blood-purifying and anti-inflammatory properties.
+                          This earthy component synergizes with sea moss and
+                          bladderwrack to enhance the detoxifying power of the
+                          capsules, aiding in purging toxins from the body and
+                          promoting a natural internal cleanse.
                         </p>
                       </Disclosure.Panel>
                     </>
@@ -255,7 +265,7 @@ const GreenSeaMoss = () => {
                         <span className="plus">+</span>
                       </DropDown>
                       <Disclosure.Panel>
-                        <p>Raw green sea moss.</p>
+                        <p>Gold sea moss, bladderwrack and burdock root.</p>
                       </Disclosure.Panel>
                     </>
                   )}
@@ -266,19 +276,16 @@ const GreenSeaMoss = () => {
                   {({ open }) => (
                     <>
                       <DropDown>
-                        <span>Flavor</span>
+                        <span>Usage</span>
                         <span className="plus">+</span>
                       </DropDown>
                       <Disclosure.Panel>
                         <p>
-                          Some individuals perceive a mineral-like quality to
-                          the green sea moss flavor, possibly hinting at the
-                          rich mineral content it boasts. Think iron, potassium,
-                          and even a touch of iodine.
-                        </p>
-                        <p>
-                          It's definitely more of an acquired taste than gold
-                          sea moss.
+                          Each bottle contains 200 easy-to-swallow capsules,
+                          with a recommended dosage of 1-2 capsules daily,
+                          preferably with meals. This makes it a convenient
+                          addition to your daily routine, ensuring you get the
+                          right amount of these powerful ingredients every day.
                         </p>
                       </Disclosure.Panel>
                     </>
@@ -329,7 +336,14 @@ const GreenSeaMoss = () => {
       </Section>
       <Section>
         <div className="wider-container">
-          <h2 className="title">Health Benefits of Green Sea Moss</h2>
+          <h2 className="title">Organic Ingredients</h2>
+        </div>
+      </Section>
+      <Section>
+        <div className="wider-container">
+          <h2 className="title">
+            Health Benefits of Sea Moss, Burdock Root, and Bladderwrack Capsules
+          </h2>
           <div className="grid-faq">
             <div className="benefits-bg-left">
               <div className="benefit">
@@ -341,25 +355,28 @@ const GreenSeaMoss = () => {
                   height={50}
                 />
                 <div>
-                  <h3>Detoxifying Chlorophyll Content:</h3>
+                  <h3>Supports Digestive Health:</h3>
                   <p>
-                    Green Sea Moss contains chlorophyll, which is known for its
-                    detoxifying properties. Chlorophyll acts as a natural body
-                    deodorizer and can help cleanse the body of toxins and
-                    improve liver function, contributing to overall health.
+                    Organic Sea Moss, Bladderwrack, and Burdock Root are
+                    instrumental in promoting digestive health. The gentle
+                    laxative effect of Sea Moss aids in regular bowel movements,
+                    essential for gut health. Bladderwrack, with its soothing
+                    effects on the digestive system, and Burdock Root's
+                    prebiotic properties, enhance overall digestive wellness.
                   </p>
                 </div>
               </div>
               <div className="benefit">
                 <img src="/images/icons/nutrients.png" width={50} height={50} />
                 <div>
-                  <h3>Vitamins and Minerals:</h3>
+                  <h3>Enhances Thyroid Function:</h3>
                   <p>
-                    Green Sea Moss is a treasure trove of essential nutrients.
-                    It's packed with vitamins A, C, E, K, and a host of B
-                    vitamins. It's also rich in minerals such as iodine,
-                    potassium, calcium, and magnesium, making it a comprehensive
-                    supplement for daily health.
+                    Irish Sea Moss and Bladderwrack, rich in essential
+                    nutrients, are crucial for healthy thyroid function. They
+                    provide natural thyroid support due to their high iodine
+                    content, necessary for the production of thyroid hormones,
+                    thus boosting metabolism and maintaining proper thyroid
+                    function.
                   </p>
                 </div>
               </div>
@@ -373,12 +390,13 @@ const GreenSeaMoss = () => {
                   height={50}
                 />
                 <div>
-                  <h3>Strengthens Immune System:</h3>
+                  <h3>Boosts Immune System:</h3>
                   <p>
-                    Green Sea Moss is a excellent source of zinc, an essential
-                    mineral for immune function. Combined with its antioxidant
-                    properties, it can strengthen the body's defenses against
-                    infections and diseases.
+                    Sea Moss supplements, especially the organic Irish Sea Moss,
+                    are packed with nutrients that play a vital role in boosting
+                    immunity. Alongside Bladderwrack and Burdock Root, they
+                    strengthen the immune system, fortifying the body against
+                    health conditions and promoting overall wellness.
                   </p>
                 </div>
               </div>
@@ -386,11 +404,13 @@ const GreenSeaMoss = () => {
                 <div className="benefit">
                   <img src="/images/icons/heart.png" width={50} height={50} />
                   <div>
-                    <h3>Supports Heart Health:</h3>
+                    <h3>Potential in Cancer Prevention:</h3>
                     <p>
-                      Being high in potassium, Green Sea Moss can contribute to
-                      maintaining healthy blood pressure levels, which is
-                      beneficial for heart health.
+                      Studies suggest that the phenolic acids in Sea Moss,
+                      Bladderwrack, and Burdock Root have properties that could
+                      potentially inhibit cancer cells. While not a cure, this
+                      trio offers active ingredients that may aid in cancer
+                      prevention, contributing to overall health.
                     </p>
                   </div>
                 </div>
@@ -403,33 +423,34 @@ const GreenSeaMoss = () => {
                     height={50}
                   />
                   <div>
-                    <h3>Promotes Digestive Health:</h3>
+                    <h3>Supports Skin and Eye Health:</h3>
                     <p>
-                      Its prebiotic properties can help to maintain a healthy
-                      gut microbiome, fostering the growth of beneficial
-                      bacteria and enhancing digestive health. This can improve
-                      digestion and relieve issues like bloating and
-                      constipation.
+                      Sea Moss, known for its hydrating properties, promote
+                      healthy skin and may aid in preventing macular
+                      degeneration. Bladderwrack and Burdock Root, with their
+                      rich mineral and beta-carotene content, support collagen
+                      production and overall skin health.
                     </p>
                   </div>
                 </div>
-                {/* <div className="benefit">
+                <div className="benefit">
                   <img
-                    src="/images/icons/woman.png"
-                    title="Skin health."
-                    alt="Skin health."
+                    src="/images/icons/stomach.png"
+                    title="Stomach."
+                    alt="Stomach."
                     width={50}
                     height={50}
                   />
                   <div>
-                    <h3>Collagen and Vitamin E:</h3>
+                    <h3>Antioxidant Properties:</h3>
                     <p>
-                      Its natural collagen content, along with Vitamin E, aids
-                      in maintaining skin elasticity and hydration, contributing
-                      to a youthful and radiant skin appearance.
+                      All three – Sea Moss, Bladderwrack, and Burdock Root – are
+                      rich in antioxidants, which help combat oxidative stress
+                      in the body. This can reduce the risk of chronic diseases
+                      and slow down the aging process at the cellular level.
                     </p>
                   </div>
-                </div> */}
+                </div>
               </div>
             </div>
             <div className="benefits-bg-right">
@@ -444,10 +465,11 @@ const GreenSeaMoss = () => {
                 <div>
                   <h3>Supports Blood Circulation:</h3>
                   <p>
-                    The high iron content in Green Sea Moss aids in forming
-                    hemoglobin, which is essential for transporting oxygen in
-                    the blood. This can improve circulation and ensure that body
-                    tissues get adequate oxygen.
+                    Sea Moss and Bladderwrack supplements aid in maintaining
+                    healthy blood flow and blood pressure, crucial for
+                    cardiovascular health. Their rich mineral content, including
+                    iron, supports blood health and helps in lowering blood
+                    pressure.
                   </p>
                 </div>
               </div>
@@ -460,11 +482,12 @@ const GreenSeaMoss = () => {
                   height={50}
                 />
                 <div>
-                  <h3>Improves Joint Health:</h3>
+                  <h3>Promotes Joint Health:</h3>
                   <p>
-                    The compounds in Green Sea Moss may have anti-inflammatory
-                    effects, which can help reduce joint pain and discomfort
-                    associated with conditions like arthritis.
+                    The anti-inflammatory properties of Bladderwrack and Burdock
+                    Root are particularly effective in improving joint health.
+                    These, along with Sea Moss’s essential minerals, help reduce
+                    joint pain and enhance mobility.
                   </p>
                 </div>
               </div>
@@ -477,11 +500,12 @@ const GreenSeaMoss = () => {
                   height={50}
                 />
                 <div>
-                  <h3>Low in Calories, High in Fiber:</h3>
+                  <h3>Reduces Inflammation:</h3>
                   <p>
-                    Its low-calorie and high-fiber content can help people
-                    concerned about weight loss. The fiber provides a feeling of
-                    fullness, potentially reducing overall calorie intake.
+                    These all-natural supplements are known for their
+                    anti-inflammatory properties. They help reduce overall
+                    inflammation in the body, alleviating conditions like joint
+                    pain and contributing to improved joint health.
                   </p>
                 </div>
               </div>
@@ -494,11 +518,12 @@ const GreenSeaMoss = () => {
                   height={50}
                 />
                 <div>
-                  <h3>Rich in Magnesium and Potassium:</h3>
+                  <h3>Weight Loss and Weight Management:</h3>
                   <p>
-                    Potassium and magnesium are minerals known for their role in
-                    brain health. They can help regulate mood and relieve stress
-                    and anxiety, potentially improving mental well-being.
+                    The high fiber content in Sea Moss and Burdock Root aids in
+                    weight loss by promoting a feeling of fullness and reducing
+                    appetite. Bladderwrack’s iodine can support a healthy
+                    metabolism, aiding in weight management.
                   </p>
                 </div>
               </div>
@@ -511,11 +536,48 @@ const GreenSeaMoss = () => {
                   height={50}
                 />
                 <div>
-                  <h3>Boosts Energy Levels:</h3>
+                  <h3>Detoxification and Hormonal Balance:</h3>
                   <p>
-                    The iron in Green Sea Moss helps transport oxygen throughout
-                    the body, leading to increased energy levels and reduced
-                    fatigue.
+                    Burdock Root is renowned for its ability to remove toxins
+                    and support the lymphatic system. Alongside Sea Moss and
+                    Bladderwrack, it aids in hormonal balance and
+                    detoxification, crucial for maintaining health and vitality.
+                  </p>
+                </div>
+              </div>
+              <div className="benefit">
+                <img
+                  src="/images/icons/woman.png"
+                  title="Skin health."
+                  alt="Skin health."
+                  width={50}
+                  height={50}
+                />
+                <div>
+                  <h3>Diabetes Management:</h3>
+                  <p>
+                    Burdock Root can help in diabetes management due to its
+                    inulin, a type of dietary fiber that helps manage blood
+                    sugar levels. The fiber in Sea Moss and Bladderwrack also
+                    contributes to blood sugar regulation.
+                  </p>
+                </div>
+              </div>
+              <div className="benefit">
+                <img
+                  src="/images/icons/woman.png"
+                  title="Skin health."
+                  alt="Skin health."
+                  width={50}
+                  height={50}
+                />
+                <div>
+                  <h3>Combat Anemia:</h3>
+                  <p>
+                    Iron in Sea Moss helps in combating anemia by aiding in the
+                    formation of hemoglobin. Burdock Root also supports blood
+                    health with its iron content, helping to improve oxygen
+                    transport in the body.
                   </p>
                 </div>
               </div>
@@ -523,7 +585,7 @@ const GreenSeaMoss = () => {
           </div>
         </div>
       </Section>
-      <Section>
+      {/* <Section>
         <div className="wider-container">
           <h2 className="title">Vitamins and Minerals in Green Sea Moss</h2>
           <div className="vitamin-grid">
@@ -567,8 +629,8 @@ const GreenSeaMoss = () => {
             </div>
           </div>
         </div>
-      </Section>
-      <Section>
+      </Section> */}
+      {/* <Section>
         <div className="wider-container">
           <h2 className="center">Ways To Use Green Sea Moss</h2>
           <div className="waystousegrid">
@@ -683,7 +745,7 @@ const GreenSeaMoss = () => {
             </div>
           </div>
         </div>
-      </Section>
+      </Section> */}
       <Section>
         <div className="wider-container">
           <h2 className="title">Other Products You May Like</h2>
@@ -765,41 +827,56 @@ const GreenSeaMoss = () => {
           <h2 className="title">Frequently Asked Questions</h2>
           <div className="grid-faq">
             <div>
-              <h3>How do I use raw green sea moss?</h3>
+              <h3>
+                What are the main health benefits of taking these capsules?
+              </h3>
               <p>
-                Our green Sea Moss can be soaked, blended into a gel, and added
-                to various foods and drinks like smoothies, soups, and teas for
-                nutritional enhancement.
+                These capsules combine the natural benefits of Sea Moss,
+                Bladderwrack, and Burdock Root. They support thyroid health,
+                boost the immune system, aid in digestive health, promote
+                healthy skin and joints, assist in weight management, and help
+                in maintaining healthy blood circulation, metabolism, and energy
+                levels.
               </p>
-              <h3>Is your green sea moss sustainably harvested?</h3>
+              <h3>
+                How should I take these capsules? What is the recommended
+                dosage?
+              </h3>
               <p>
-                We get our sea moss from the island of Saint Lucia in the
-                Caribbean. We ensure sustainable harvesting practices to protect
-                the ocean ecosystem and maintain the natural balance.
+                The recommended dosage for our Sea Moss, Bladderwrack, and
+                Burdock Root capsules is 1-2 capsules per day, preferably with
+                meals. It's important to follow the recommended dosage or
+                consult with a healthcare professional for personalized advice.
               </p>
-              <h3>Can I use green sea moss for skincare?</h3>
+              <h3>Are these capsules suitable for everyone?</h3>
               <p>
-                Absolutely! You can use it for acne, rashes and eczema on you r
-                face, hands, and anywhere else. When applied topically, it can
-                help nourish and soothe the skin due to its high mineral and
-                vitamin content.
+                While these capsules are made from natural ingredients, we
+                recommend those who are pregnant, nursing, or have any existing
+                health conditions to consult a healthcare professional before
+                use. Additionally, individuals with allergies to seaweed or
+                iodine should exercise caution.
               </p>
-              <h3>How should I store the raw green sea moss?</h3>
+              <h3>Can these capsules help with weight loss?</h3>
               <p>
-                Store it in a cool, dry place. It can last up to twelve months.
+                Yes, these capsules can support weight loss efforts due to their
+                high fiber content, which can promote a feeling of fullness and
+                aid in appetite control. They also support healthy metabolism,
+                which is key in weight management.
               </p>
-              <h3>Why does the sea moss have a dried salt coating?</h3>
+              <h3>Are these capsules vegan and organic?</h3>
               <p>
-                The sea salt is occurs naturally and is simpley dried saltwater.
-                It's a result of drying the sea moss which is dried in a dark
-                room to preserve the green color. The salt also helps preserve
-                the sea moss.
+                Yes, our capsules are made with all-natural, organic ingredients
+                and are 100% vegan. They are free from any animal products,
+                making them suitable for vegans and vegetarians.
               </p>
-              <h3>Is this product suitable for vegans and vegetarians?</h3>
+              <h3>
+                How long does it take to see results from taking these capsules?
+              </h3>
               <p>
-                Yes, our green sea moss is a perfect addition to vegan and
-                vegetarian diets, providing a natural source of essential
-                nutrients often hard to find in plant-based diets.
+                Results can vary depending on individual health conditions and
+                lifestyle. Generally, some benefits may be noticed within a few
+                weeks, but consistent, long-term use is recommended for optimal
+                results.
               </p>
             </div>
             <div>
@@ -808,46 +885,48 @@ const GreenSeaMoss = () => {
                 Shipping times vary depending on the destination, but we
                 typically dispatch orders within 3-5 business days.
               </p>
-              <h3>
-                How does green sea moss differ from other types of sea moss?
-              </h3>
+              <h3>Do these capsules have any known side effects?</h3>
               <p>
-                The green variety is particularly noted for its high chlorophyll
-                content, which may offer additional health benefits compared to
-                other types such as gold or purple sea moss.
-              </p>
-              <h3>How much green sea moss should I consume daily?</h3>
-              <p>
-                We recommend starting with 1-2 tablespoons of the prepared gel
-                daily. However, it's best to consult a healthcare professional
-                for personalized advice.
-              </p>
-              <h3>Can I return the product if I’m not satisfied?</h3>
-              <p>
-                Yes, we have a 90 day return policy. If you’re unsatisfied,
-                please contact our customer service for a hassle-free return
-                process.
-              </p>
-              <h3>How can I track my order?</h3>
-              <p>
-                Once your order is shipped, we’ll send you a tracking number via
-                email so you can monitor its progress.
-              </p>
-              <h3>Does the green sea moss have any side effects?</h3>
-              <p>
-                It is generally well-tolerated, but as with any supplement, some
-                individuals may experience mild digestive upset. We recommend
-                starting with a small amount to assess tolerance. If you have
-                any concerns, especially if you are pregnant, nursing, or have a
-                medical condition, consult your healthcare provider.
+                These capsules are generally safe with no known severe side
+                effects due to their natural composition. However, as with any
+                supplement, some individuals might experience mild digestive
+                upset. It’s important to adhere to the recommended dosage.
               </p>
               <h3>
-                How do I know if the green sea moss I received is of high
-                quality?
+                Can I take these capsules in conjunction with other medications?
               </h3>
               <p>
-                High-quality green sea moss should have a minimal smell and a
-                natural color and be free from artificial additives.
+                If you are on medication, especially for thyroid or blood
+                pressure issues, it’s crucial to consult with a healthcare
+                professional before starting these capsules to avoid any
+                potential interactions.
+              </p>
+              <h3>Where do these ingredients come from?</h3>
+              <p>
+                Our Sea Moss and Bladderwrack is sourced from the pristine
+                waters of the Atlantic Ocean, while our Burdock Roots are
+                harvested from organic farms known for their high-quality
+                produce.
+              </p>
+              <h3>Is there a return policy or money-back guarantee?</h3>
+              <p>
+                Yes, we stand behind the quality of our products. If you are not
+                satisfied with your purchase, we offer a money-back guarantee
+                within 90 days. Please refer to our return policy for detailed
+                information.
+              </p>
+              <h3>How should I store these capsules?</h3>
+              <p>
+                Store the capsules in a cool, dry place away from direct
+                sunlight. Ensure the bottle is tightly sealed to maintain
+                freshness.
+              </p>
+              <h3>Can these capsules improve skin health?</h3>
+              <p>
+                Absolutely. The ingredients in these capsules are known for
+                promoting healthy skin. They aid in hydration, reduce
+                inflammation, and support collagen production, leading to
+                improved skin texture and appearance.
               </p>
             </div>
           </div>
@@ -857,7 +936,7 @@ const GreenSeaMoss = () => {
   )
 }
 
-export default GreenSeaMoss
+export default seaMossBladderwrackBurdockRoot
 
 const DropDown = styled(Disclosure.Button)`
   border: none;
@@ -940,15 +1019,11 @@ const Section = styled.section`
 
   .benefits-bg-left {
     color: #fff;
-    background-color: #27ae60;
+    background-color: #f5f6fa;
     padding: 3rem 1rem;
     border-radius: 10px;
     margin-top: 2rem;
     margin-bottom: 3rem;
-    div h3,
-    p {
-      color: #fff;
-    }
     @media (min-width: 1024px) {
       border-top-right-radius: 0px;
       border-bottom-right-radius: 0px;
@@ -960,15 +1035,11 @@ const Section = styled.section`
 
   .benefits-bg-right {
     color: #fff;
-    background-color: #27ae60;
+    background-color: #f5f6fa;
     padding: 3rem 1rem;
     border-radius: 10px;
     margin-top: 2rem;
     margin-bottom: 3rem;
-    div h3,
-    p {
-      color: #fff;
-    }
     @media (min-width: 1024px) {
       border-top-right-radius: 50px;
       border-bottom-right-radius: 50px;
